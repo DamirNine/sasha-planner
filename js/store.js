@@ -14,7 +14,12 @@ export function createStore({ readEvents, readSettings, writeEvents, autosaveDel
   function markDirty() {
     dirty = true;
     if (autosaveTimer) clearTimeout(autosaveTimer);
-    autosaveTimer = setTimeout(() => { save(); }, autosaveDelayMs);
+    autosaveTimer = setTimeout(() => {
+      // Autosave failures (e.g. no token configured yet) stay silent — the
+      // dirty flag already tells the UI there are unsaved changes; a manual
+      // save() surfaces the real error via its own .catch() in main.js.
+      save().catch(() => {});
+    }, autosaveDelayMs);
     notify();
   }
 
