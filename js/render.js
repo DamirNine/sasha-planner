@@ -62,7 +62,7 @@ function renderDayCard(code, dayDate, dayEvents, settings, onToggle) {
   return card;
 }
 
-export function renderDashboard(container, events, settings, { onToggle, referenceDate = new Date() }) {
+export function renderDashboard(container, events, settings, { onToggle, referenceDate = new Date(), onPrevWeek, onNextWeek, onToday }) {
   container.innerHTML = '';
   const { start: monday, end: sunday } = getWeekRange(referenceDate);
   const weekNum = getAcademicWeekNumber(monday, settings);
@@ -79,6 +79,27 @@ export function renderDashboard(container, events, settings, { onToggle, referen
   const header = el('div', 'planner-header');
   header.appendChild(el('h1', null, `Мой планер — Саша • ${settings.group} • ${settings.semester_label}`));
   header.appendChild(el('div', 'planner-week', `Неделя ${weekNum} (${formatDateDDMM(monday)}–${formatDateDDMM(sunday)}) • ${parityLabel}`));
+
+  const nav = el('div', 'week-nav');
+  const prevBtn = document.createElement('button');
+  prevBtn.type = 'button';
+  prevBtn.textContent = '← Пред. неделя';
+  prevBtn.addEventListener('click', () => onPrevWeek && onPrevWeek());
+  nav.appendChild(prevBtn);
+
+  const todayBtn = document.createElement('button');
+  todayBtn.type = 'button';
+  todayBtn.textContent = 'Текущая неделя';
+  todayBtn.addEventListener('click', () => onToday && onToday());
+  nav.appendChild(todayBtn);
+
+  const nextBtn = document.createElement('button');
+  nextBtn.type = 'button';
+  nextBtn.textContent = 'След. неделя →';
+  nextBtn.addEventListener('click', () => onNextWeek && onNextWeek());
+  nav.appendChild(nextBtn);
+
+  header.appendChild(nav);
   container.appendChild(header);
 
   const weekProgress = computeProgress(visible, settings.required_weight, settings.task_weight);
