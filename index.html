@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Мой планер — Саша</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="app"></div>
+
+  <div class="toolbar">
+    <button id="save-button" type="button">Сохранить</button>
+    <span id="save-status"></span>
+    <form id="token-form">
+      <input id="token-input" type="password" placeholder="GitHub токен (fine-grained, только этот репозиторий)" />
+      <button type="submit">Сохранить токен</button>
+    </form>
+  </div>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
