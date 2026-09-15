@@ -874,7 +874,7 @@
     "updated_at": "2026-09-15T00:00:00.000Z"
   },
   {
-    "event_id": "676de487-9c6d-45d7-9361-c0b17d1ba55b",
+    "event_id": "71683136-0174-49a7-b7d2-dca0f3db1297",
     "source_type": "university",
     "date": "2026-08-31",
     "start_time": "11:50",
@@ -889,11 +889,11 @@
     "recurrence_rule": "",
     "parent_event_id": "num-mon-1",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "d7ef930b-cdc1-43bc-8957-e4916e3bce43",
+    "event_id": "06e7239d-2930-44ce-b572-bd6fa7a0703c",
     "source_type": "university",
     "date": "2026-09-14",
     "start_time": "11:50",
@@ -908,11 +908,11 @@
     "recurrence_rule": "",
     "parent_event_id": "num-mon-1",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "64ccd229-88f3-4046-b495-4cd76e74ca25",
+    "event_id": "9073b57b-94f2-415f-a869-6802f2f49519",
     "source_type": "university",
     "date": "2026-09-28",
     "start_time": "11:50",
@@ -927,11 +927,11 @@
     "recurrence_rule": "",
     "parent_event_id": "num-mon-1",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "462685c2-ef38-41dd-b1b6-31d920874ccc",
+    "event_id": "914f2429-0091-49bf-812b-1097f97f884f",
     "source_type": "university",
     "date": "2026-10-12",
     "start_time": "11:50",
@@ -946,11 +946,11 @@
     "recurrence_rule": "",
     "parent_event_id": "num-mon-1",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "5b271997-4b42-4db4-b8f0-4f8c6001e495",
+    "event_id": "9e27acaa-c64a-4201-8c65-fe2173b981c0",
     "source_type": "university",
     "date": "2026-10-26",
     "start_time": "11:50",
@@ -965,11 +965,11 @@
     "recurrence_rule": "",
     "parent_event_id": "num-mon-1",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "09cd8de1-40b9-4e45-af76-a73c4942bfc3",
+    "event_id": "fb949d55-85de-41a4-9522-4219810d53e4",
     "source_type": "university",
     "date": "2026-11-09",
     "start_time": "11:50",
@@ -984,11 +984,11 @@
     "recurrence_rule": "",
     "parent_event_id": "num-mon-1",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "35bcf7e3-acc9-47f8-aede-989157bea749",
+    "event_id": "d452a546-3a0c-47b6-a945-6712fe949444",
     "source_type": "university",
     "date": "2026-11-23",
     "start_time": "11:50",
@@ -1003,11 +1003,11 @@
     "recurrence_rule": "",
     "parent_event_id": "num-mon-1",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "ba3ec94d-273d-4d51-80ce-cf1df5e98007",
+    "event_id": "231df26a-613a-4fdf-ba47-8995a1a30bdd",
     "source_type": "university",
     "date": "2026-12-07",
     "start_time": "11:50",
@@ -1022,11 +1022,11 @@
     "recurrence_rule": "",
     "parent_event_id": "num-mon-1",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "a6ff3cfe-ef02-47f0-a632-6dd071ca4ed2",
+    "event_id": "a6304d0d-097d-4344-87bf-cbd3ee7dc2ec",
     "source_type": "university",
     "date": "2026-12-21",
     "start_time": "11:50",
@@ -1041,11 +1041,11 @@
     "recurrence_rule": "",
     "parent_event_id": "num-mon-1",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "8101e91b-4279-4571-a0a6-d50db4d2aea1",
+    "event_id": "9926fa56-c123-4b0c-a029-0c9f2d8f3352",
     "source_type": "university",
     "date": "2026-08-31",
     "start_time": "14:05",
@@ -1060,11 +1060,11 @@
     "recurrence_rule": "",
     "parent_event_id": "num-mon-2",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "88f0dfea-f79e-4273-a3a4-4a030699d440",
+    "event_id": "d80e9bb4-c880-48fa-adeb-bac43cba4085",
     "source_type": "university",
     "date": "2026-09-14",
     "start_time": "14:05",
@@ -1079,11 +1079,11 @@
     "recurrence_rule": "",
     "parent_event_id": "num-mon-2",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "bc844a11-a7fe-4cf1-b4bc-fe88746d7d2c",
+    "event_id": "55df379c-a786-4c76-b7de-82254d1c5be3",
     "source_type": "university",
     "date": "2026-09-28",
     "start_time": "14:05",
@@ -1098,11 +1098,11 @@
     "recurrence_rule": "",
     "parent_event_id": "num-mon-2",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "756c49ca-aba0-448c-8b77-d0abf9b0c31f",
+    "event_id": "f8f53942-601e-47fb-8933-17a4b59d505e",
     "source_type": "university",
     "date": "2026-10-12",
     "start_time": "14:05",
@@ -1117,11 +1117,11 @@
     "recurrence_rule": "",
     "parent_event_id": "num-mon-2",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "dd91d6bc-0717-4d1c-b31a-eec83eac0dfc",
+    "event_id": "d9fad85b-4b37-4a71-a12e-ad5ac9669984",
     "source_type": "university",
     "date": "2026-10-26",
     "start_time": "14:05",
@@ -1136,11 +1136,11 @@
     "recurrence_rule": "",
     "parent_event_id": "num-mon-2",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "3ef29aa0-cb6b-4255-a0d8-d9224556c99f",
+    "event_id": "108e63d6-ffff-47ec-8db5-ff3977bedea0",
     "source_type": "university",
     "date": "2026-11-09",
     "start_time": "14:05",
@@ -1155,11 +1155,11 @@
     "recurrence_rule": "",
     "parent_event_id": "num-mon-2",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "df2e14c9-274b-497b-a55b-3062333c4ba4",
+    "event_id": "10da0741-9d6f-4f80-ab29-c668af3fb7b4",
     "source_type": "university",
     "date": "2026-11-23",
     "start_time": "14:05",
@@ -1174,11 +1174,11 @@
     "recurrence_rule": "",
     "parent_event_id": "num-mon-2",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "c3eceea6-876d-46e5-b2da-1a9c4fce7335",
+    "event_id": "7d9356a0-0ee7-472f-95f6-31608afaa446",
     "source_type": "university",
     "date": "2026-12-07",
     "start_time": "14:05",
@@ -1193,11 +1193,11 @@
     "recurrence_rule": "",
     "parent_event_id": "num-mon-2",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "6204c08d-4905-4adf-b87b-a8e06b6ca1f0",
+    "event_id": "8b1d282d-4bd7-4584-8c32-acbc5872b8c5",
     "source_type": "university",
     "date": "2026-12-21",
     "start_time": "14:05",
@@ -1212,11 +1212,11 @@
     "recurrence_rule": "",
     "parent_event_id": "num-mon-2",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "df522f66-d412-49c5-bcae-dc9fd8f9c45a",
+    "event_id": "1a6e60f5-915a-4b15-994f-4adbc844c4e9",
     "source_type": "university",
     "date": "2026-09-01",
     "start_time": "09:50",
@@ -1231,11 +1231,11 @@
     "recurrence_rule": "",
     "parent_event_id": "num-tue-1",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "15738a5c-2cc8-4c76-8008-eef1b0bc7597",
+    "event_id": "7d0326ad-267a-4463-953d-d533ca0e527e",
     "source_type": "university",
     "date": "2026-09-15",
     "start_time": "09:50",
@@ -1250,11 +1250,11 @@
     "recurrence_rule": "",
     "parent_event_id": "num-tue-1",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "38fa6508-d3cf-4d5a-bbd8-7ec4bf8f939c",
+    "event_id": "7440f21c-05ff-4807-9b22-bf50e30cd3e2",
     "source_type": "university",
     "date": "2026-09-29",
     "start_time": "09:50",
@@ -1269,11 +1269,11 @@
     "recurrence_rule": "",
     "parent_event_id": "num-tue-1",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "92149982-71dd-4242-9cb7-8acb75b480bc",
+    "event_id": "3d48a1b7-01df-4dc7-b2ec-c03165dcf564",
     "source_type": "university",
     "date": "2026-10-13",
     "start_time": "09:50",
@@ -1288,11 +1288,11 @@
     "recurrence_rule": "",
     "parent_event_id": "num-tue-1",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "a8bf4ee2-47ad-49d0-8fb8-f4cab8c8c24a",
+    "event_id": "2a3e7e99-75dc-4447-9727-25f20c0bd92a",
     "source_type": "university",
     "date": "2026-10-27",
     "start_time": "09:50",
@@ -1307,11 +1307,11 @@
     "recurrence_rule": "",
     "parent_event_id": "num-tue-1",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "56c2c075-d527-4e66-b26b-1ecf8b01f320",
+    "event_id": "067236fd-2a86-4471-a16b-ff2cb71da781",
     "source_type": "university",
     "date": "2026-11-10",
     "start_time": "09:50",
@@ -1326,11 +1326,11 @@
     "recurrence_rule": "",
     "parent_event_id": "num-tue-1",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "ca3d6acb-23d6-456a-8deb-50f2900489f6",
+    "event_id": "e495a0dc-6999-42bb-810e-5ce79dbf182b",
     "source_type": "university",
     "date": "2026-11-24",
     "start_time": "09:50",
@@ -1345,11 +1345,11 @@
     "recurrence_rule": "",
     "parent_event_id": "num-tue-1",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "a4431246-3571-41f6-96bc-a5b1946925b8",
+    "event_id": "c8779810-0f3d-45e3-92fe-f7535b028b33",
     "source_type": "university",
     "date": "2026-12-08",
     "start_time": "09:50",
@@ -1364,11 +1364,11 @@
     "recurrence_rule": "",
     "parent_event_id": "num-tue-1",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "9b8a1c19-3b14-4c5c-ad85-78b95d341b35",
+    "event_id": "78bd276e-d940-4eb5-8535-a8e7277d36ff",
     "source_type": "university",
     "date": "2026-12-22",
     "start_time": "09:50",
@@ -1383,11 +1383,11 @@
     "recurrence_rule": "",
     "parent_event_id": "num-tue-1",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "d244335f-6015-476a-bca5-df174673eedf",
+    "event_id": "d6d77e7e-62c6-44c2-aae9-67386391916c",
     "source_type": "university",
     "date": "2026-09-01",
     "start_time": "11:50",
@@ -1402,11 +1402,11 @@
     "recurrence_rule": "",
     "parent_event_id": "num-tue-2",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "1b5a1ce8-f697-4a45-82a5-1e2b3d2aae14",
+    "event_id": "0e14ec06-a2ab-4af4-9bf8-043c9e6cc7cd",
     "source_type": "university",
     "date": "2026-09-15",
     "start_time": "11:50",
@@ -1421,11 +1421,11 @@
     "recurrence_rule": "",
     "parent_event_id": "num-tue-2",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "dbce1ffa-ce17-4b4d-83e6-d367c1a012a7",
+    "event_id": "9a7f7593-d900-4184-870d-5d304d556842",
     "source_type": "university",
     "date": "2026-09-29",
     "start_time": "11:50",
@@ -1440,11 +1440,11 @@
     "recurrence_rule": "",
     "parent_event_id": "num-tue-2",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "38d264be-a558-4006-afd9-031f78004187",
+    "event_id": "57b9bcf9-7340-4250-b704-edf2730fcdf6",
     "source_type": "university",
     "date": "2026-10-13",
     "start_time": "11:50",
@@ -1459,11 +1459,11 @@
     "recurrence_rule": "",
     "parent_event_id": "num-tue-2",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "54a22b4f-ce63-44ee-873e-09eeda3b213d",
+    "event_id": "1180dce4-bd5d-4557-8d88-f1d77bcc186d",
     "source_type": "university",
     "date": "2026-10-27",
     "start_time": "11:50",
@@ -1478,11 +1478,11 @@
     "recurrence_rule": "",
     "parent_event_id": "num-tue-2",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "4114fb8c-d0a9-4b78-b826-686fba57f91d",
+    "event_id": "ba98d6ef-4203-4299-9c34-e1fe240628bf",
     "source_type": "university",
     "date": "2026-11-10",
     "start_time": "11:50",
@@ -1497,11 +1497,11 @@
     "recurrence_rule": "",
     "parent_event_id": "num-tue-2",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "a151f02e-fa98-42c4-afde-10d19352f41e",
+    "event_id": "a3b4eef0-ddfc-40f0-a666-0fcd2f7dc0f7",
     "source_type": "university",
     "date": "2026-11-24",
     "start_time": "11:50",
@@ -1516,11 +1516,11 @@
     "recurrence_rule": "",
     "parent_event_id": "num-tue-2",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "024fd709-bfe3-492b-9b22-9ad8ab6d0c8f",
+    "event_id": "893d9e3a-b254-4b80-bb96-d7f7bf0bd111",
     "source_type": "university",
     "date": "2026-12-08",
     "start_time": "11:50",
@@ -1535,11 +1535,11 @@
     "recurrence_rule": "",
     "parent_event_id": "num-tue-2",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "115a2d2b-d531-492c-8a8c-9b761c21fd2e",
+    "event_id": "44cbb5c9-f5fe-4383-9cdd-f1d78b2db235",
     "source_type": "university",
     "date": "2026-12-22",
     "start_time": "11:50",
@@ -1554,11 +1554,11 @@
     "recurrence_rule": "",
     "parent_event_id": "num-tue-2",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "050a06e2-045c-4524-9ea2-d679174862e8",
+    "event_id": "61c5ddbc-cd0a-4319-b951-05af2b87d61c",
     "source_type": "university",
     "date": "2026-09-01",
     "start_time": "14:05",
@@ -1573,11 +1573,11 @@
     "recurrence_rule": "",
     "parent_event_id": "num-tue-3",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "723d99d3-ab8e-4164-9f3e-e5f7e950c479",
+    "event_id": "81153981-9886-45d6-ab09-176f440f89de",
     "source_type": "university",
     "date": "2026-09-15",
     "start_time": "14:05",
@@ -1592,11 +1592,11 @@
     "recurrence_rule": "",
     "parent_event_id": "num-tue-3",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "302962c1-1ec1-4eec-9fb6-6e649726ef18",
+    "event_id": "be33a6ee-fd46-45e3-8752-7ee43a96f7b4",
     "source_type": "university",
     "date": "2026-09-29",
     "start_time": "14:05",
@@ -1611,11 +1611,11 @@
     "recurrence_rule": "",
     "parent_event_id": "num-tue-3",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "e4ca6728-172a-41f9-bccf-739e36119617",
+    "event_id": "b4a41bc0-fc06-4538-ba89-1c1a1dceabc3",
     "source_type": "university",
     "date": "2026-10-13",
     "start_time": "14:05",
@@ -1630,11 +1630,11 @@
     "recurrence_rule": "",
     "parent_event_id": "num-tue-3",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "a027c985-3374-40c0-b8c6-49e476ebcb7a",
+    "event_id": "4bca1512-5bd3-4c2b-8364-a2f80b8c9486",
     "source_type": "university",
     "date": "2026-10-27",
     "start_time": "14:05",
@@ -1649,11 +1649,11 @@
     "recurrence_rule": "",
     "parent_event_id": "num-tue-3",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "c607d9e3-009e-4c7f-972a-aa885d9c1fd7",
+    "event_id": "3951f2b2-abad-41eb-bbbf-fd65ded0e072",
     "source_type": "university",
     "date": "2026-11-10",
     "start_time": "14:05",
@@ -1668,11 +1668,11 @@
     "recurrence_rule": "",
     "parent_event_id": "num-tue-3",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "03122a7c-aee6-49b9-87bc-2d042cdc5a27",
+    "event_id": "4659b21d-916a-486f-b4b9-f23ad2c5f119",
     "source_type": "university",
     "date": "2026-11-24",
     "start_time": "14:05",
@@ -1687,11 +1687,11 @@
     "recurrence_rule": "",
     "parent_event_id": "num-tue-3",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "9c7f8d9d-2e92-4b6d-a674-e3dde40d58b9",
+    "event_id": "cc6b4abe-0070-48d2-a1c3-022a47161a3b",
     "source_type": "university",
     "date": "2026-12-08",
     "start_time": "14:05",
@@ -1706,11 +1706,11 @@
     "recurrence_rule": "",
     "parent_event_id": "num-tue-3",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "446413d5-6ef4-410e-abc8-acc640015286",
+    "event_id": "65d39e66-e82c-4ee3-a559-014ed905c445",
     "source_type": "university",
     "date": "2026-12-22",
     "start_time": "14:05",
@@ -1725,11 +1725,11 @@
     "recurrence_rule": "",
     "parent_event_id": "num-tue-3",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "6e4aa4e9-b489-4b7f-bb34-237ec61e849f",
+    "event_id": "799f2ab9-cfc8-45d8-90d5-647986bb149b",
     "source_type": "university",
     "date": "2026-09-01",
     "start_time": "15:55",
@@ -1744,11 +1744,11 @@
     "recurrence_rule": "",
     "parent_event_id": "num-tue-4",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "409a9beb-a6cd-40f2-a0c5-091b085a6ba8",
+    "event_id": "334f2c48-c72f-464c-9c1d-885e385bb1de",
     "source_type": "university",
     "date": "2026-09-15",
     "start_time": "15:55",
@@ -1763,11 +1763,11 @@
     "recurrence_rule": "",
     "parent_event_id": "num-tue-4",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "a83bebdf-54ef-4729-9c7d-484d34beb498",
+    "event_id": "5021f780-4f48-4eba-a73a-06da343e85ae",
     "source_type": "university",
     "date": "2026-09-29",
     "start_time": "15:55",
@@ -1782,11 +1782,11 @@
     "recurrence_rule": "",
     "parent_event_id": "num-tue-4",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "19025920-6044-4c4f-8bfd-a3baf5b031c4",
+    "event_id": "abeb9cae-d901-4211-b2a0-ed105710fe3d",
     "source_type": "university",
     "date": "2026-10-13",
     "start_time": "15:55",
@@ -1801,11 +1801,11 @@
     "recurrence_rule": "",
     "parent_event_id": "num-tue-4",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "27159ddd-c9f8-4caa-9af1-34feecad39c5",
+    "event_id": "5caf5f2c-6f2c-4ff0-bf00-e917254dfa11",
     "source_type": "university",
     "date": "2026-10-27",
     "start_time": "15:55",
@@ -1820,11 +1820,11 @@
     "recurrence_rule": "",
     "parent_event_id": "num-tue-4",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "bc8e85a4-da50-4402-9891-f62670671a24",
+    "event_id": "dc541c85-cb16-45dc-b9aa-8caf26fc0a69",
     "source_type": "university",
     "date": "2026-11-10",
     "start_time": "15:55",
@@ -1839,11 +1839,11 @@
     "recurrence_rule": "",
     "parent_event_id": "num-tue-4",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "56bf88d9-b575-4947-a836-194d3b1fb48e",
+    "event_id": "689f3d3f-1e1a-4421-887b-0078a762872a",
     "source_type": "university",
     "date": "2026-11-24",
     "start_time": "15:55",
@@ -1858,11 +1858,11 @@
     "recurrence_rule": "",
     "parent_event_id": "num-tue-4",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "285f2383-48b3-4c6b-8fe0-23fdbefd7f21",
+    "event_id": "5c10a48a-83f1-4518-b259-9fc192eb4c20",
     "source_type": "university",
     "date": "2026-12-08",
     "start_time": "15:55",
@@ -1877,11 +1877,11 @@
     "recurrence_rule": "",
     "parent_event_id": "num-tue-4",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "ea73d494-7198-4eac-99cd-51b517b1a744",
+    "event_id": "3aa80de4-61f9-4e14-b138-933cc40376b6",
     "source_type": "university",
     "date": "2026-12-22",
     "start_time": "15:55",
@@ -1896,11 +1896,11 @@
     "recurrence_rule": "",
     "parent_event_id": "num-tue-4",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "608d7d25-9e19-4f08-963f-ba6df320f4e6",
+    "event_id": "678cb92b-7dd8-4585-8212-90a70d7c05cf",
     "source_type": "university",
     "date": "2026-09-02",
     "start_time": "10:10",
@@ -1915,11 +1915,11 @@
     "recurrence_rule": "",
     "parent_event_id": "num-wed-1",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "abfe9f00-be75-40bd-990f-9f3e62629533",
+    "event_id": "1a78be61-3dea-4998-b368-892355bfe2b0",
     "source_type": "university",
     "date": "2026-09-16",
     "start_time": "10:10",
@@ -1934,11 +1934,11 @@
     "recurrence_rule": "",
     "parent_event_id": "num-wed-1",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "38953817-546e-4f17-8d1b-ab29b86f1dae",
+    "event_id": "e2e1b8e7-fc4e-4fc6-82ac-92b0840e79bb",
     "source_type": "university",
     "date": "2026-09-30",
     "start_time": "10:10",
@@ -1953,11 +1953,11 @@
     "recurrence_rule": "",
     "parent_event_id": "num-wed-1",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "060bea15-1b02-4372-8884-706382871158",
+    "event_id": "29411964-ea3b-4e8b-b0f6-2159db9bcba7",
     "source_type": "university",
     "date": "2026-10-14",
     "start_time": "10:10",
@@ -1972,11 +1972,11 @@
     "recurrence_rule": "",
     "parent_event_id": "num-wed-1",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "cf34f5f1-11c2-48bc-ba59-24e4a5e58590",
+    "event_id": "2863d66c-088f-4d59-8223-7ed1e1603db3",
     "source_type": "university",
     "date": "2026-10-28",
     "start_time": "10:10",
@@ -1991,11 +1991,11 @@
     "recurrence_rule": "",
     "parent_event_id": "num-wed-1",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "7e9e51b7-8fac-4998-943f-96c1993a0f78",
+    "event_id": "74b39342-6425-48d8-856b-a8df5ff55baa",
     "source_type": "university",
     "date": "2026-11-11",
     "start_time": "10:10",
@@ -2010,11 +2010,11 @@
     "recurrence_rule": "",
     "parent_event_id": "num-wed-1",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "fd344b99-bb2d-46a0-b593-bcded84ef8c7",
+    "event_id": "4139d6f9-0c34-4fa1-b40b-d984729fdfbf",
     "source_type": "university",
     "date": "2026-11-25",
     "start_time": "10:10",
@@ -2029,11 +2029,11 @@
     "recurrence_rule": "",
     "parent_event_id": "num-wed-1",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "1cb293ed-864e-40c3-886b-601d31323140",
+    "event_id": "187780de-513b-4344-a8e7-4558e484b406",
     "source_type": "university",
     "date": "2026-12-09",
     "start_time": "10:10",
@@ -2048,11 +2048,11 @@
     "recurrence_rule": "",
     "parent_event_id": "num-wed-1",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "0f3d86e1-2bbe-4eeb-baa8-38b1dc8f3263",
+    "event_id": "60b80439-5099-4ab9-9bdb-7b0c307af651",
     "source_type": "university",
     "date": "2026-12-23",
     "start_time": "10:10",
@@ -2067,11 +2067,11 @@
     "recurrence_rule": "",
     "parent_event_id": "num-wed-1",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "139f9c3d-b81a-44bb-9f80-0ebf1b336b67",
+    "event_id": "02c78535-2b82-4453-bad9-aca65f1e0bb3",
     "source_type": "university",
     "date": "2026-09-03",
     "start_time": "08:30",
@@ -2086,11 +2086,11 @@
     "recurrence_rule": "",
     "parent_event_id": "num-thu-1",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "20643cfa-9da6-4da9-93f0-33fdbeabef2e",
+    "event_id": "4c795a2a-2046-4cff-98b0-4bdb70ef1206",
     "source_type": "university",
     "date": "2026-09-17",
     "start_time": "08:30",
@@ -2105,11 +2105,11 @@
     "recurrence_rule": "",
     "parent_event_id": "num-thu-1",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "70c42739-99c0-41e3-8ae2-83bf3b7858ac",
+    "event_id": "4cbc256a-2f04-4070-a3a3-5fc8afaa4599",
     "source_type": "university",
     "date": "2026-10-01",
     "start_time": "08:30",
@@ -2124,11 +2124,11 @@
     "recurrence_rule": "",
     "parent_event_id": "num-thu-1",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "efd8ede5-71b4-4a79-abab-5747d806d520",
+    "event_id": "8e114d44-de44-4dd2-a3b7-5e5e1740115f",
     "source_type": "university",
     "date": "2026-10-15",
     "start_time": "08:30",
@@ -2143,11 +2143,11 @@
     "recurrence_rule": "",
     "parent_event_id": "num-thu-1",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "d908d653-4ebe-4dbb-a2ec-e30d96267204",
+    "event_id": "3824e382-9a3c-45c5-8819-7b2307751c2a",
     "source_type": "university",
     "date": "2026-10-29",
     "start_time": "08:30",
@@ -2162,11 +2162,11 @@
     "recurrence_rule": "",
     "parent_event_id": "num-thu-1",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "2a06297f-7233-41c1-9041-172362c42d7a",
+    "event_id": "3af2ecd6-76aa-4a07-b125-8a96db09b091",
     "source_type": "university",
     "date": "2026-11-12",
     "start_time": "08:30",
@@ -2181,11 +2181,11 @@
     "recurrence_rule": "",
     "parent_event_id": "num-thu-1",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "03291cba-40a9-4e88-ba4d-29d971e94407",
+    "event_id": "034e6918-ba9a-413b-93a6-82f78798bfd0",
     "source_type": "university",
     "date": "2026-11-26",
     "start_time": "08:30",
@@ -2200,11 +2200,11 @@
     "recurrence_rule": "",
     "parent_event_id": "num-thu-1",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "a950d657-446a-4650-9a45-fb307a170b98",
+    "event_id": "8d6dcdbb-b337-47f1-b3db-7531a00b5027",
     "source_type": "university",
     "date": "2026-12-10",
     "start_time": "08:30",
@@ -2219,11 +2219,11 @@
     "recurrence_rule": "",
     "parent_event_id": "num-thu-1",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "efb71214-2bc4-40ae-b776-c69ed5f3bcb1",
+    "event_id": "bf42ed97-6189-44b4-bac3-843d209dc545",
     "source_type": "university",
     "date": "2026-12-24",
     "start_time": "08:30",
@@ -2238,11 +2238,11 @@
     "recurrence_rule": "",
     "parent_event_id": "num-thu-1",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "0d5aee64-1ab2-49a2-ae0f-839ac63b6a3e",
+    "event_id": "9599e40e-be80-4207-9e4b-be8d64618285",
     "source_type": "university",
     "date": "2026-09-03",
     "start_time": "10:10",
@@ -2257,11 +2257,11 @@
     "recurrence_rule": "",
     "parent_event_id": "num-thu-2",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "48f9acec-22fe-409b-8e7e-5f6af74ad0a5",
+    "event_id": "00895bf6-3637-4e35-9e91-53ff0435b483",
     "source_type": "university",
     "date": "2026-09-17",
     "start_time": "10:10",
@@ -2276,11 +2276,11 @@
     "recurrence_rule": "",
     "parent_event_id": "num-thu-2",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "f9ab9fd2-ca9c-4650-87a9-a1aed4e14840",
+    "event_id": "ccfdb423-fd48-4017-b3c8-1cb1e1cf09f4",
     "source_type": "university",
     "date": "2026-10-01",
     "start_time": "10:10",
@@ -2295,11 +2295,11 @@
     "recurrence_rule": "",
     "parent_event_id": "num-thu-2",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "ffef54e8-0f27-4607-9aea-d39255dffd47",
+    "event_id": "d6bb59ed-8636-4bec-a287-0d9cab5ad849",
     "source_type": "university",
     "date": "2026-10-15",
     "start_time": "10:10",
@@ -2314,11 +2314,11 @@
     "recurrence_rule": "",
     "parent_event_id": "num-thu-2",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "9fa560a7-0e79-4972-ad9c-8d9cf839cf94",
+    "event_id": "14818603-a21f-4280-8294-5488aaac9b25",
     "source_type": "university",
     "date": "2026-10-29",
     "start_time": "10:10",
@@ -2333,11 +2333,11 @@
     "recurrence_rule": "",
     "parent_event_id": "num-thu-2",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "f98933cb-ffcb-4ab9-a975-8203193f48ff",
+    "event_id": "6b4cf766-5563-44ad-ac33-2601cbe3b149",
     "source_type": "university",
     "date": "2026-11-12",
     "start_time": "10:10",
@@ -2352,11 +2352,11 @@
     "recurrence_rule": "",
     "parent_event_id": "num-thu-2",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "ba928508-41a2-4afc-9462-1f8d96a46137",
+    "event_id": "8ffeb8ae-068a-4261-9c13-6786e87e3677",
     "source_type": "university",
     "date": "2026-11-26",
     "start_time": "10:10",
@@ -2371,11 +2371,11 @@
     "recurrence_rule": "",
     "parent_event_id": "num-thu-2",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "c0fce710-764b-439d-a878-3e91bfc5ae00",
+    "event_id": "3f0acbab-2603-4ee4-aefe-120bd992cff2",
     "source_type": "university",
     "date": "2026-12-10",
     "start_time": "10:10",
@@ -2390,11 +2390,11 @@
     "recurrence_rule": "",
     "parent_event_id": "num-thu-2",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "37fab5cf-d65e-41b4-b48f-4c25410f79f0",
+    "event_id": "fd31441a-7f27-4f76-9e8a-8e8558b57ba8",
     "source_type": "university",
     "date": "2026-12-24",
     "start_time": "10:10",
@@ -2409,11 +2409,11 @@
     "recurrence_rule": "",
     "parent_event_id": "num-thu-2",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "eee57316-954d-4280-9986-10b6c792bc45",
+    "event_id": "d9d44534-ead8-4957-ab79-c1d2052332b0",
     "source_type": "university",
     "date": "2026-09-03",
     "start_time": "11:50",
@@ -2428,11 +2428,11 @@
     "recurrence_rule": "",
     "parent_event_id": "num-thu-3",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "b632d120-4bcb-41a2-9595-6f0c4d43308a",
+    "event_id": "c5c2e5c1-be71-4896-9e20-23c401d707d0",
     "source_type": "university",
     "date": "2026-09-17",
     "start_time": "11:50",
@@ -2447,11 +2447,11 @@
     "recurrence_rule": "",
     "parent_event_id": "num-thu-3",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "866354e8-e70c-4d24-b908-2511db775216",
+    "event_id": "442b0995-4666-4ed2-b325-8b71a2270743",
     "source_type": "university",
     "date": "2026-10-01",
     "start_time": "11:50",
@@ -2466,11 +2466,11 @@
     "recurrence_rule": "",
     "parent_event_id": "num-thu-3",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "2b49d41e-ddab-4cf1-b2e2-ce36384fe858",
+    "event_id": "14a2f2d7-23a1-46c7-9a7e-e7aab629dc64",
     "source_type": "university",
     "date": "2026-10-15",
     "start_time": "11:50",
@@ -2485,11 +2485,11 @@
     "recurrence_rule": "",
     "parent_event_id": "num-thu-3",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "a9b2fe5f-9605-4be6-9ee6-776f2b1d915a",
+    "event_id": "6f979ad4-e8f0-45c5-b24a-2955dcdd157d",
     "source_type": "university",
     "date": "2026-10-29",
     "start_time": "11:50",
@@ -2504,11 +2504,11 @@
     "recurrence_rule": "",
     "parent_event_id": "num-thu-3",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "72c8a88a-e9f0-444e-9dcc-09407f996bab",
+    "event_id": "28e29ae1-e704-45ca-be85-1f5aee85085e",
     "source_type": "university",
     "date": "2026-11-12",
     "start_time": "11:50",
@@ -2523,11 +2523,11 @@
     "recurrence_rule": "",
     "parent_event_id": "num-thu-3",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "22126abd-bdc7-4bba-acab-94506f08cd78",
+    "event_id": "7fb9610b-8360-424f-af4e-261feb61a463",
     "source_type": "university",
     "date": "2026-11-26",
     "start_time": "11:50",
@@ -2542,11 +2542,11 @@
     "recurrence_rule": "",
     "parent_event_id": "num-thu-3",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "937e0a89-d5f1-41ca-b9ff-043e07dc0f56",
+    "event_id": "cb36e21c-c582-4df5-b12a-76bf2cb74d7b",
     "source_type": "university",
     "date": "2026-12-10",
     "start_time": "11:50",
@@ -2561,11 +2561,11 @@
     "recurrence_rule": "",
     "parent_event_id": "num-thu-3",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "059fed16-6aac-46da-8bcd-ba7b319e0ebe",
+    "event_id": "0bbc1a1e-f45a-4c57-84fd-71e7adcf9406",
     "source_type": "university",
     "date": "2026-12-24",
     "start_time": "11:50",
@@ -2580,11 +2580,11 @@
     "recurrence_rule": "",
     "parent_event_id": "num-thu-3",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "fcbe32c9-13ff-4bd1-b8e6-262b074817cf",
+    "event_id": "878eddcf-6101-4d15-bd33-6d3f2dc88016",
     "source_type": "university",
     "date": "2026-09-03",
     "start_time": "14:05",
@@ -2599,11 +2599,11 @@
     "recurrence_rule": "",
     "parent_event_id": "num-thu-4",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "c2e86fee-00ea-42a1-865b-16497a80adc5",
+    "event_id": "acaece5f-73db-4e38-8c26-ff8da841160f",
     "source_type": "university",
     "date": "2026-09-17",
     "start_time": "14:05",
@@ -2618,11 +2618,11 @@
     "recurrence_rule": "",
     "parent_event_id": "num-thu-4",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "a1ec6155-9c00-4035-9c23-9032b7d2ef02",
+    "event_id": "581892c8-5f1b-405b-b747-ce1cd4369303",
     "source_type": "university",
     "date": "2026-10-01",
     "start_time": "14:05",
@@ -2637,11 +2637,11 @@
     "recurrence_rule": "",
     "parent_event_id": "num-thu-4",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "b3aaf243-910f-4b16-bbcc-d109618eb728",
+    "event_id": "588de1d2-346a-45bd-80a8-6823025e1892",
     "source_type": "university",
     "date": "2026-10-15",
     "start_time": "14:05",
@@ -2656,11 +2656,11 @@
     "recurrence_rule": "",
     "parent_event_id": "num-thu-4",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "11ea13b9-c7da-4cbd-ae3d-2b5c5415c2ea",
+    "event_id": "a94d3ed1-2294-43b7-88b9-460d52999611",
     "source_type": "university",
     "date": "2026-10-29",
     "start_time": "14:05",
@@ -2675,11 +2675,11 @@
     "recurrence_rule": "",
     "parent_event_id": "num-thu-4",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "079f2d12-b325-456d-84fe-deff34401a32",
+    "event_id": "65f35eca-f5c1-4419-9375-37edf1daea44",
     "source_type": "university",
     "date": "2026-11-12",
     "start_time": "14:05",
@@ -2694,11 +2694,11 @@
     "recurrence_rule": "",
     "parent_event_id": "num-thu-4",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "b4c2d00d-1739-4b49-9b2f-aa3dee0fc1c7",
+    "event_id": "bb9ac599-7787-46cc-84eb-558158357ac9",
     "source_type": "university",
     "date": "2026-11-26",
     "start_time": "14:05",
@@ -2713,11 +2713,11 @@
     "recurrence_rule": "",
     "parent_event_id": "num-thu-4",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "673444f5-bcd0-4539-aa17-7855a153673b",
+    "event_id": "bb57343b-6878-4102-a224-eff4fc77c562",
     "source_type": "university",
     "date": "2026-12-10",
     "start_time": "14:05",
@@ -2732,11 +2732,11 @@
     "recurrence_rule": "",
     "parent_event_id": "num-thu-4",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "7dd533ac-e28b-4c5a-a976-8c7b77796389",
+    "event_id": "15f2b713-a2e8-49d4-8e94-7b4edd495782",
     "source_type": "university",
     "date": "2026-12-24",
     "start_time": "14:05",
@@ -2751,11 +2751,11 @@
     "recurrence_rule": "",
     "parent_event_id": "num-thu-4",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "a28cfd04-5e5c-4f34-80ea-e3b28dabc2af",
+    "event_id": "f57c83bf-e2f9-49d2-8fcb-de4568d16749",
     "source_type": "university",
     "date": "2026-09-04",
     "start_time": "09:50",
@@ -2770,11 +2770,11 @@
     "recurrence_rule": "",
     "parent_event_id": "num-fri-1",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "801d4206-2c8d-4e0a-b4db-e6c4378a27fd",
+    "event_id": "ed683c22-ae20-475a-95d4-cd1dfc23a63b",
     "source_type": "university",
     "date": "2026-09-18",
     "start_time": "09:50",
@@ -2789,11 +2789,11 @@
     "recurrence_rule": "",
     "parent_event_id": "num-fri-1",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "7be50106-28b5-49f5-8ca8-dc624c4e771c",
+    "event_id": "b9519871-6f6c-4ae5-8fd7-516b6d98f791",
     "source_type": "university",
     "date": "2026-10-02",
     "start_time": "09:50",
@@ -2808,11 +2808,11 @@
     "recurrence_rule": "",
     "parent_event_id": "num-fri-1",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "d2588d6f-930f-4430-a351-2783e41709aa",
+    "event_id": "49d97d81-144c-4219-8fce-ee9bbb508e87",
     "source_type": "university",
     "date": "2026-10-16",
     "start_time": "09:50",
@@ -2827,11 +2827,11 @@
     "recurrence_rule": "",
     "parent_event_id": "num-fri-1",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "a7e41159-af5c-43a3-bc50-9c998183d3a0",
+    "event_id": "6b1072ad-7f6d-4b4c-93f3-db560dcdf56d",
     "source_type": "university",
     "date": "2026-10-30",
     "start_time": "09:50",
@@ -2846,11 +2846,11 @@
     "recurrence_rule": "",
     "parent_event_id": "num-fri-1",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "d96d9789-3b56-4eac-8d95-3ce87c475d2d",
+    "event_id": "36e362a0-c685-4192-86af-e45e659f1be7",
     "source_type": "university",
     "date": "2026-11-13",
     "start_time": "09:50",
@@ -2865,11 +2865,11 @@
     "recurrence_rule": "",
     "parent_event_id": "num-fri-1",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "f14f7331-a0b4-46bf-9947-e1891a46f4b8",
+    "event_id": "a6a9c23e-da4f-45c7-9e6c-8b1fa5635835",
     "source_type": "university",
     "date": "2026-11-27",
     "start_time": "09:50",
@@ -2884,11 +2884,11 @@
     "recurrence_rule": "",
     "parent_event_id": "num-fri-1",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "5e4679cb-fc6b-4aa4-bf29-78ebc397a9b8",
+    "event_id": "cf6eabb9-8d27-48cd-8d8b-0be461afe2f3",
     "source_type": "university",
     "date": "2026-12-11",
     "start_time": "09:50",
@@ -2903,11 +2903,11 @@
     "recurrence_rule": "",
     "parent_event_id": "num-fri-1",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "3865351d-dbf6-4447-85b8-c02d11f18ee3",
+    "event_id": "9ee1c59d-53be-41a7-b602-4a509262100c",
     "source_type": "university",
     "date": "2026-12-25",
     "start_time": "09:50",
@@ -2922,11 +2922,11 @@
     "recurrence_rule": "",
     "parent_event_id": "num-fri-1",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "532a0439-dcc4-4089-8267-8325f7ce2182",
+    "event_id": "1636b5e9-b440-451d-b57a-30c4e1abcf89",
     "source_type": "university",
     "date": "2026-09-04",
     "start_time": "11:50",
@@ -2941,11 +2941,11 @@
     "recurrence_rule": "",
     "parent_event_id": "num-fri-2",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "4c87c9b8-2a7f-4b77-8627-174607a8c1f5",
+    "event_id": "490ea726-af39-46ac-b203-cde4d29ba98e",
     "source_type": "university",
     "date": "2026-09-18",
     "start_time": "11:50",
@@ -2960,11 +2960,11 @@
     "recurrence_rule": "",
     "parent_event_id": "num-fri-2",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "ec968749-d29d-470d-9a0d-77ae07ca5ea5",
+    "event_id": "4ca8972f-e6f4-458f-9538-ec0d302af42f",
     "source_type": "university",
     "date": "2026-10-02",
     "start_time": "11:50",
@@ -2979,11 +2979,11 @@
     "recurrence_rule": "",
     "parent_event_id": "num-fri-2",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "67cffaff-8dea-4478-9f03-6d0d0c2cb884",
+    "event_id": "f0b95554-043c-4ea6-8bbb-9995533c4859",
     "source_type": "university",
     "date": "2026-10-16",
     "start_time": "11:50",
@@ -2998,11 +2998,11 @@
     "recurrence_rule": "",
     "parent_event_id": "num-fri-2",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "c0631f3a-0c97-4417-810d-9440cf66f51e",
+    "event_id": "7a4a742e-b236-4865-935f-9e1c7355565b",
     "source_type": "university",
     "date": "2026-10-30",
     "start_time": "11:50",
@@ -3017,11 +3017,11 @@
     "recurrence_rule": "",
     "parent_event_id": "num-fri-2",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "7c3b0e9f-0d1f-478d-8880-640e0b447e07",
+    "event_id": "65217079-439e-4bd0-85a9-3e13e13cbcde",
     "source_type": "university",
     "date": "2026-11-13",
     "start_time": "11:50",
@@ -3036,11 +3036,11 @@
     "recurrence_rule": "",
     "parent_event_id": "num-fri-2",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "b31c73cd-e976-4d2c-bddd-e2ec0f911bbf",
+    "event_id": "3dfbb77f-ca35-4c51-bc02-d3c9c0a54acb",
     "source_type": "university",
     "date": "2026-11-27",
     "start_time": "11:50",
@@ -3055,11 +3055,11 @@
     "recurrence_rule": "",
     "parent_event_id": "num-fri-2",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "ad4e512a-4149-4d9b-9301-5a611d0f1f37",
+    "event_id": "f4d4b364-70b7-4c86-9d9f-4686e1c4e92a",
     "source_type": "university",
     "date": "2026-12-11",
     "start_time": "11:50",
@@ -3074,11 +3074,11 @@
     "recurrence_rule": "",
     "parent_event_id": "num-fri-2",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "1fee178a-8194-4349-9da1-7cfe01c23387",
+    "event_id": "fa1228d4-1c3d-4f4f-8472-66895e8ca131",
     "source_type": "university",
     "date": "2026-12-25",
     "start_time": "11:50",
@@ -3093,11 +3093,11 @@
     "recurrence_rule": "",
     "parent_event_id": "num-fri-2",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "a08b83de-e274-4b7e-ad78-59af10d3aa6c",
+    "event_id": "06d3c173-9c1b-43bd-b0e0-b69778a8132a",
     "source_type": "university",
     "date": "2026-09-04",
     "start_time": "14:05",
@@ -3112,11 +3112,11 @@
     "recurrence_rule": "",
     "parent_event_id": "num-fri-3",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "7512c7e3-f095-451d-b80d-4042c35c0de2",
+    "event_id": "030ee30f-14bb-487a-ade9-a53010f630b6",
     "source_type": "university",
     "date": "2026-09-18",
     "start_time": "14:05",
@@ -3131,11 +3131,11 @@
     "recurrence_rule": "",
     "parent_event_id": "num-fri-3",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "ac9715f2-d27f-4c48-b583-f1d8f360d563",
+    "event_id": "bb29426d-6733-45fd-8440-bdba938ba247",
     "source_type": "university",
     "date": "2026-10-02",
     "start_time": "14:05",
@@ -3150,11 +3150,11 @@
     "recurrence_rule": "",
     "parent_event_id": "num-fri-3",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "c0b3b637-d336-4384-9bad-55e50b992198",
+    "event_id": "57365f49-823d-4e5a-a57d-cf0319ed1962",
     "source_type": "university",
     "date": "2026-10-16",
     "start_time": "14:05",
@@ -3169,11 +3169,11 @@
     "recurrence_rule": "",
     "parent_event_id": "num-fri-3",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "f4fac0ef-b4b5-427e-abd8-a8f60b06bc1a",
+    "event_id": "30e61f22-4470-4ae0-bd6d-cee5305b687e",
     "source_type": "university",
     "date": "2026-10-30",
     "start_time": "14:05",
@@ -3188,11 +3188,11 @@
     "recurrence_rule": "",
     "parent_event_id": "num-fri-3",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "323c604a-8e7d-4ae4-9d2c-6ba283d4e415",
+    "event_id": "4152c1d3-95e1-4f06-ae2a-37ba4b8c9abf",
     "source_type": "university",
     "date": "2026-11-13",
     "start_time": "14:05",
@@ -3207,11 +3207,11 @@
     "recurrence_rule": "",
     "parent_event_id": "num-fri-3",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "8f963c9c-30b0-40f9-bc97-097ff570af88",
+    "event_id": "30b46513-ec58-4bea-844c-5447335df8df",
     "source_type": "university",
     "date": "2026-11-27",
     "start_time": "14:05",
@@ -3226,11 +3226,11 @@
     "recurrence_rule": "",
     "parent_event_id": "num-fri-3",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "9357b728-fa22-4060-81be-ab9aca589de4",
+    "event_id": "c4841a36-8ed4-4b45-b0ed-023cebc900f1",
     "source_type": "university",
     "date": "2026-12-11",
     "start_time": "14:05",
@@ -3245,11 +3245,11 @@
     "recurrence_rule": "",
     "parent_event_id": "num-fri-3",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "fea51d83-0b8c-42c6-8258-3e43ad27dac2",
+    "event_id": "4182bf16-38e4-4669-ba6f-00b14acc72ee",
     "source_type": "university",
     "date": "2026-12-25",
     "start_time": "14:05",
@@ -3264,11 +3264,11 @@
     "recurrence_rule": "",
     "parent_event_id": "num-fri-3",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "8879926b-9af6-4f59-a214-92c0c6b94645",
+    "event_id": "f5cf9a0e-dc25-453d-9915-0a615ff899b8",
     "source_type": "university",
     "date": "2026-09-21",
     "start_time": "10:10",
@@ -3283,11 +3283,11 @@
     "recurrence_rule": "",
     "parent_event_id": "den-mon-1",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "c43736d7-8068-4ec0-a88b-bead7ead843e",
+    "event_id": "3e569f42-254c-4594-8bf6-a6748cb0bb10",
     "source_type": "university",
     "date": "2026-10-05",
     "start_time": "10:10",
@@ -3302,11 +3302,11 @@
     "recurrence_rule": "",
     "parent_event_id": "den-mon-1",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "68cdcd76-5b5e-48a8-ad3d-9aedf9a5f84b",
+    "event_id": "142df13a-6d92-4377-9a77-498869e059b1",
     "source_type": "university",
     "date": "2026-10-19",
     "start_time": "10:10",
@@ -3321,11 +3321,11 @@
     "recurrence_rule": "",
     "parent_event_id": "den-mon-1",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "f29120aa-844c-4c74-9976-9f0fcbff40a7",
+    "event_id": "0cc16c8a-b52d-40f9-81a5-4a07d6308f3d",
     "source_type": "university",
     "date": "2026-11-02",
     "start_time": "10:10",
@@ -3340,11 +3340,11 @@
     "recurrence_rule": "",
     "parent_event_id": "den-mon-1",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "70bc4235-fbb6-4063-af90-e539a18d2fce",
+    "event_id": "763a7318-85c2-4280-bafb-a8cb7c93de42",
     "source_type": "university",
     "date": "2026-11-16",
     "start_time": "10:10",
@@ -3359,11 +3359,11 @@
     "recurrence_rule": "",
     "parent_event_id": "den-mon-1",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "1ec84b98-37f8-46fd-a671-896d8d9aa78b",
+    "event_id": "c4d642ef-dcbb-4679-823e-0c63c0e049c2",
     "source_type": "university",
     "date": "2026-11-30",
     "start_time": "10:10",
@@ -3378,11 +3378,11 @@
     "recurrence_rule": "",
     "parent_event_id": "den-mon-1",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "a0a684b7-6390-4c6b-a5c9-e22fb4cda189",
+    "event_id": "066993f6-42fa-496b-9761-075c548e3989",
     "source_type": "university",
     "date": "2026-12-14",
     "start_time": "10:10",
@@ -3397,11 +3397,11 @@
     "recurrence_rule": "",
     "parent_event_id": "den-mon-1",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "faba6b5f-f5e2-45bb-a01f-cdc8273ff9ff",
+    "event_id": "7d3e851a-b92c-4980-907f-e3fd91ae66a3",
     "source_type": "university",
     "date": "2026-12-28",
     "start_time": "10:10",
@@ -3416,11 +3416,11 @@
     "recurrence_rule": "",
     "parent_event_id": "den-mon-1",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "85b6bd93-2f25-4c5a-b8a8-cd00b5b64929",
+    "event_id": "4d3be232-edb8-4d52-84bc-d05e9e001ceb",
     "source_type": "university",
     "date": "2026-09-21",
     "start_time": "11:50",
@@ -3435,11 +3435,11 @@
     "recurrence_rule": "",
     "parent_event_id": "den-mon-2",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "cead546b-6886-4c7c-ab16-e953a7d3919b",
+    "event_id": "90b2e036-71f5-4271-9358-c42f1684d023",
     "source_type": "university",
     "date": "2026-10-05",
     "start_time": "11:50",
@@ -3454,11 +3454,11 @@
     "recurrence_rule": "",
     "parent_event_id": "den-mon-2",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "fd6db17c-e6a7-4c8e-b08f-7f64ecb6f925",
+    "event_id": "0ea79537-3bbb-4e47-89ea-3387274e1e25",
     "source_type": "university",
     "date": "2026-10-19",
     "start_time": "11:50",
@@ -3473,11 +3473,11 @@
     "recurrence_rule": "",
     "parent_event_id": "den-mon-2",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "506982e8-3064-40f2-8273-e5db8ef08e23",
+    "event_id": "ca53b809-f66d-40a3-845e-2d3383c52c51",
     "source_type": "university",
     "date": "2026-11-02",
     "start_time": "11:50",
@@ -3492,11 +3492,11 @@
     "recurrence_rule": "",
     "parent_event_id": "den-mon-2",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "0a278065-5a78-4224-ba20-e54ba6bedf17",
+    "event_id": "67f1a873-1288-478a-8d91-2967efb6ab0e",
     "source_type": "university",
     "date": "2026-11-16",
     "start_time": "11:50",
@@ -3511,11 +3511,11 @@
     "recurrence_rule": "",
     "parent_event_id": "den-mon-2",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "ad5b0c19-9b5b-4003-876a-e7b432c5bc6b",
+    "event_id": "6e0f069f-fcad-45ca-a5b0-66d3d93ede64",
     "source_type": "university",
     "date": "2026-11-30",
     "start_time": "11:50",
@@ -3530,11 +3530,11 @@
     "recurrence_rule": "",
     "parent_event_id": "den-mon-2",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "a72d7336-81d9-4e04-a476-08d4c21dd692",
+    "event_id": "881804a9-94fb-403e-9b62-5bbd62499884",
     "source_type": "university",
     "date": "2026-12-14",
     "start_time": "11:50",
@@ -3549,11 +3549,11 @@
     "recurrence_rule": "",
     "parent_event_id": "den-mon-2",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "f7d4637e-ddb8-4691-8645-38942ecbc3a0",
+    "event_id": "fa4c2695-b810-41c4-b72d-618e0bf92e80",
     "source_type": "university",
     "date": "2026-12-28",
     "start_time": "11:50",
@@ -3568,11 +3568,11 @@
     "recurrence_rule": "",
     "parent_event_id": "den-mon-2",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "d8610bbe-1128-4d6a-a7e7-0771520c31b8",
+    "event_id": "dbdd0b2b-f8a0-4f21-bca4-8d4a93e1f8ad",
     "source_type": "university",
     "date": "2026-09-21",
     "start_time": "14:05",
@@ -3587,11 +3587,11 @@
     "recurrence_rule": "",
     "parent_event_id": "den-mon-3",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "0b35fe9e-55df-456c-a813-8f0ba9679eec",
+    "event_id": "2f49d544-f1b8-4d76-bf3d-d3f753e792c4",
     "source_type": "university",
     "date": "2026-10-05",
     "start_time": "14:05",
@@ -3606,11 +3606,11 @@
     "recurrence_rule": "",
     "parent_event_id": "den-mon-3",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "e018e0bd-7939-4ae8-b5dc-55a048af0725",
+    "event_id": "2901f0f5-2e3d-4d6d-bd6c-0ee68d2565ba",
     "source_type": "university",
     "date": "2026-10-19",
     "start_time": "14:05",
@@ -3625,11 +3625,11 @@
     "recurrence_rule": "",
     "parent_event_id": "den-mon-3",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "52e831a8-e749-4142-8b32-943bb51af5f2",
+    "event_id": "09559ffe-4408-46f9-99d7-a59b27981792",
     "source_type": "university",
     "date": "2026-11-02",
     "start_time": "14:05",
@@ -3644,11 +3644,11 @@
     "recurrence_rule": "",
     "parent_event_id": "den-mon-3",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "128e2d04-21d8-4c24-b29a-13945cae136f",
+    "event_id": "49e8f4a7-ff14-476d-b17b-d59ae9efc1f0",
     "source_type": "university",
     "date": "2026-11-16",
     "start_time": "14:05",
@@ -3663,11 +3663,11 @@
     "recurrence_rule": "",
     "parent_event_id": "den-mon-3",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "751e80a0-d9ae-410a-b068-8653856d1145",
+    "event_id": "cda946c0-0610-4833-b556-0aa620611916",
     "source_type": "university",
     "date": "2026-11-30",
     "start_time": "14:05",
@@ -3682,11 +3682,11 @@
     "recurrence_rule": "",
     "parent_event_id": "den-mon-3",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "a7daae09-1b90-4f07-9f9b-804147094122",
+    "event_id": "9e9f465c-e06d-452e-acf6-f647c5ad4a6e",
     "source_type": "university",
     "date": "2026-12-14",
     "start_time": "14:05",
@@ -3701,11 +3701,11 @@
     "recurrence_rule": "",
     "parent_event_id": "den-mon-3",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "4f8de8bf-7f8d-4902-964c-8ebd096fc189",
+    "event_id": "2e9738ca-0724-4a2a-89b0-cecba7fde816",
     "source_type": "university",
     "date": "2026-12-28",
     "start_time": "14:05",
@@ -3720,11 +3720,11 @@
     "recurrence_rule": "",
     "parent_event_id": "den-mon-3",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "b21319c5-c126-4fb2-b8ad-8930bdea89bd",
+    "event_id": "16d4a339-1569-4424-96db-062b3ce51422",
     "source_type": "university",
     "date": "2026-09-22",
     "start_time": "09:50",
@@ -3739,11 +3739,11 @@
     "recurrence_rule": "",
     "parent_event_id": "den-tue-1",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "6250e823-0867-4dde-b8c2-d1e163fdc43c",
+    "event_id": "8042d640-6795-4622-aca5-cf4c755b3279",
     "source_type": "university",
     "date": "2026-10-06",
     "start_time": "09:50",
@@ -3758,11 +3758,11 @@
     "recurrence_rule": "",
     "parent_event_id": "den-tue-1",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "c54f720f-df60-4c1f-a2c1-9d7e9920cbb5",
+    "event_id": "de07e54c-e6cf-4c25-b5f0-7b3fcde0c621",
     "source_type": "university",
     "date": "2026-10-20",
     "start_time": "09:50",
@@ -3777,11 +3777,11 @@
     "recurrence_rule": "",
     "parent_event_id": "den-tue-1",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "eee15f8f-1638-4319-806f-616fa24fa946",
+    "event_id": "46af280f-f9d4-4301-95a1-5797ad36123f",
     "source_type": "university",
     "date": "2026-11-03",
     "start_time": "09:50",
@@ -3796,11 +3796,11 @@
     "recurrence_rule": "",
     "parent_event_id": "den-tue-1",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "81f5ff60-c90c-461f-8989-52ff5383aac9",
+    "event_id": "eba867bd-e913-4b35-a486-e840b7a8010a",
     "source_type": "university",
     "date": "2026-11-17",
     "start_time": "09:50",
@@ -3815,11 +3815,11 @@
     "recurrence_rule": "",
     "parent_event_id": "den-tue-1",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "2df089fa-ae7d-4a3c-b1d2-8d4977056f78",
+    "event_id": "02843252-a8c4-48d0-b39f-2f281ad9d1ca",
     "source_type": "university",
     "date": "2026-12-01",
     "start_time": "09:50",
@@ -3834,11 +3834,11 @@
     "recurrence_rule": "",
     "parent_event_id": "den-tue-1",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "41d1362f-59f0-4430-9ed1-0c67b8c21361",
+    "event_id": "22e671a4-7649-46c8-a55d-e335e596e23b",
     "source_type": "university",
     "date": "2026-12-15",
     "start_time": "09:50",
@@ -3853,11 +3853,11 @@
     "recurrence_rule": "",
     "parent_event_id": "den-tue-1",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "053159f7-724f-4b76-a087-8d3bac3ebd3d",
+    "event_id": "983b0c92-879e-434e-8d39-80e00b1c27bc",
     "source_type": "university",
     "date": "2026-12-29",
     "start_time": "09:50",
@@ -3872,11 +3872,11 @@
     "recurrence_rule": "",
     "parent_event_id": "den-tue-1",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "f0ee4003-3fa3-4137-8d17-7ee69aaa74ee",
+    "event_id": "b49945cc-c063-4d13-83c0-99cf1c239a24",
     "source_type": "university",
     "date": "2026-09-22",
     "start_time": "11:50",
@@ -3891,11 +3891,11 @@
     "recurrence_rule": "",
     "parent_event_id": "den-tue-2",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "8590c692-9731-42b5-a03c-a726623c667b",
+    "event_id": "9d1ecc86-c93d-4a4e-9451-64b6ff0fdc4e",
     "source_type": "university",
     "date": "2026-10-06",
     "start_time": "11:50",
@@ -3910,11 +3910,11 @@
     "recurrence_rule": "",
     "parent_event_id": "den-tue-2",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "3bdef9aa-73b8-46ec-bbcd-83822247890f",
+    "event_id": "2fd631bd-47b7-4ad9-b043-ca1b37ce7c1c",
     "source_type": "university",
     "date": "2026-10-20",
     "start_time": "11:50",
@@ -3929,11 +3929,11 @@
     "recurrence_rule": "",
     "parent_event_id": "den-tue-2",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "340a9224-5637-4e89-9d3a-0e20cc95ba61",
+    "event_id": "603dc64c-d972-4b0b-bfb8-77cf65e1f67a",
     "source_type": "university",
     "date": "2026-11-03",
     "start_time": "11:50",
@@ -3948,11 +3948,11 @@
     "recurrence_rule": "",
     "parent_event_id": "den-tue-2",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "761c3d5c-9e93-4d41-8b9c-76b1675dec29",
+    "event_id": "9f8eae1b-a466-44e2-9ab3-60d7b755d54a",
     "source_type": "university",
     "date": "2026-11-17",
     "start_time": "11:50",
@@ -3967,11 +3967,11 @@
     "recurrence_rule": "",
     "parent_event_id": "den-tue-2",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "e6edd3da-7f18-4b9b-9b6e-7edca1689f7d",
+    "event_id": "7a6ab83c-7905-4f84-a5c4-10fcb05322cf",
     "source_type": "university",
     "date": "2026-12-01",
     "start_time": "11:50",
@@ -3986,11 +3986,11 @@
     "recurrence_rule": "",
     "parent_event_id": "den-tue-2",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "be3bb478-f02d-43f6-9a79-5b6bc44a8ea9",
+    "event_id": "937494fa-55a5-49b8-ba9e-e0937204611c",
     "source_type": "university",
     "date": "2026-12-15",
     "start_time": "11:50",
@@ -4005,11 +4005,11 @@
     "recurrence_rule": "",
     "parent_event_id": "den-tue-2",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "f87bec16-b970-4e4a-8e7e-04fee71ea820",
+    "event_id": "2806a8c9-3832-4a54-b0b1-735e0159ae86",
     "source_type": "university",
     "date": "2026-12-29",
     "start_time": "11:50",
@@ -4024,11 +4024,11 @@
     "recurrence_rule": "",
     "parent_event_id": "den-tue-2",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "34530933-dadf-4ce0-b282-16bcb8f211fd",
+    "event_id": "e0327220-a550-4620-aa54-881dc7641d7a",
     "source_type": "university",
     "date": "2026-09-22",
     "start_time": "14:05",
@@ -4043,11 +4043,11 @@
     "recurrence_rule": "",
     "parent_event_id": "den-tue-3",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "548c5e42-bdf0-4bd3-a8a5-0850490c167e",
+    "event_id": "68dcac7e-729a-4557-84d6-0436eb14a62d",
     "source_type": "university",
     "date": "2026-10-06",
     "start_time": "14:05",
@@ -4062,11 +4062,11 @@
     "recurrence_rule": "",
     "parent_event_id": "den-tue-3",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "ad8cf4c0-9d89-4d4d-9e7f-20f50db18c0e",
+    "event_id": "da1a4552-39e6-4fb0-8541-acf41f240fd7",
     "source_type": "university",
     "date": "2026-10-20",
     "start_time": "14:05",
@@ -4081,11 +4081,11 @@
     "recurrence_rule": "",
     "parent_event_id": "den-tue-3",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "09ec53b9-e23b-4eae-97ea-d0a09758a4e8",
+    "event_id": "86cb8ed4-b8e5-4a0f-ace5-fa96e8dc1cca",
     "source_type": "university",
     "date": "2026-11-03",
     "start_time": "14:05",
@@ -4100,11 +4100,11 @@
     "recurrence_rule": "",
     "parent_event_id": "den-tue-3",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "196ffdd5-5b52-4c1a-b676-5040f856fbe1",
+    "event_id": "4a418d06-a44a-46fe-88b7-e31e5fba3887",
     "source_type": "university",
     "date": "2026-11-17",
     "start_time": "14:05",
@@ -4119,11 +4119,11 @@
     "recurrence_rule": "",
     "parent_event_id": "den-tue-3",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "ab79c405-d08e-41f3-920a-e4d2fb500695",
+    "event_id": "563b72f6-13d7-4b9c-bbb3-bebcc29649b8",
     "source_type": "university",
     "date": "2026-12-01",
     "start_time": "14:05",
@@ -4138,11 +4138,11 @@
     "recurrence_rule": "",
     "parent_event_id": "den-tue-3",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "8ecc4343-3ca5-4a2d-983f-fe0d6decda96",
+    "event_id": "235aa5d2-c968-4aa9-82b5-ad3e5d9275d3",
     "source_type": "university",
     "date": "2026-12-15",
     "start_time": "14:05",
@@ -4157,11 +4157,11 @@
     "recurrence_rule": "",
     "parent_event_id": "den-tue-3",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "1e682671-354d-440d-9575-933edd486dbb",
+    "event_id": "bb30d232-9744-46e8-b41c-28869bd61fc9",
     "source_type": "university",
     "date": "2026-12-29",
     "start_time": "14:05",
@@ -4176,11 +4176,11 @@
     "recurrence_rule": "",
     "parent_event_id": "den-tue-3",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "2b65ff4b-2a79-4a6b-a276-e085d6afb3b7",
+    "event_id": "8d3c166a-621f-4ea0-a2e6-9bc28624d47d",
     "source_type": "university",
     "date": "2026-09-22",
     "start_time": "15:55",
@@ -4195,11 +4195,11 @@
     "recurrence_rule": "",
     "parent_event_id": "den-tue-4",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "d0f6b300-8ea2-4af6-97d6-576e86f177da",
+    "event_id": "b9eb1a0b-baee-44aa-98db-7db0247d98d7",
     "source_type": "university",
     "date": "2026-10-06",
     "start_time": "15:55",
@@ -4214,11 +4214,11 @@
     "recurrence_rule": "",
     "parent_event_id": "den-tue-4",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "4012f620-284f-4e94-ba61-06ae8ece3c7e",
+    "event_id": "52693a91-2bae-41aa-8cbb-e7e75c3500d6",
     "source_type": "university",
     "date": "2026-10-20",
     "start_time": "15:55",
@@ -4233,11 +4233,11 @@
     "recurrence_rule": "",
     "parent_event_id": "den-tue-4",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "dc0b0193-a008-4364-962b-24ff9d23a765",
+    "event_id": "47b6fefe-e136-44a7-9cfd-ab11e353cb78",
     "source_type": "university",
     "date": "2026-11-03",
     "start_time": "15:55",
@@ -4252,11 +4252,11 @@
     "recurrence_rule": "",
     "parent_event_id": "den-tue-4",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "4b2361cb-cfb7-4705-8c84-caddd333139c",
+    "event_id": "7b773bb5-bce1-4de7-a71c-c101010138f4",
     "source_type": "university",
     "date": "2026-11-17",
     "start_time": "15:55",
@@ -4271,11 +4271,11 @@
     "recurrence_rule": "",
     "parent_event_id": "den-tue-4",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "daa7c911-2034-4904-b4a2-8e8c1063ff76",
+    "event_id": "c7cd8ba6-aed8-4a8d-afa7-84a6ee36b5fe",
     "source_type": "university",
     "date": "2026-12-01",
     "start_time": "15:55",
@@ -4290,11 +4290,11 @@
     "recurrence_rule": "",
     "parent_event_id": "den-tue-4",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "4f935712-1a38-41ca-abdf-c64a04043bd7",
+    "event_id": "6eeba653-0340-4a64-b027-865684079c2a",
     "source_type": "university",
     "date": "2026-12-15",
     "start_time": "15:55",
@@ -4309,11 +4309,11 @@
     "recurrence_rule": "",
     "parent_event_id": "den-tue-4",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "fd4f222a-1f03-4bc7-a8d0-de681efc6bac",
+    "event_id": "a0c5750b-826b-4e21-96ea-30201681f6cb",
     "source_type": "university",
     "date": "2026-12-29",
     "start_time": "15:55",
@@ -4328,11 +4328,11 @@
     "recurrence_rule": "",
     "parent_event_id": "den-tue-4",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "a017e89c-fc21-49da-b009-67c641101029",
+    "event_id": "2cd38d75-1702-49fe-82f9-73a312a15ff4",
     "source_type": "university",
     "date": "2026-09-23",
     "start_time": "10:10",
@@ -4347,11 +4347,11 @@
     "recurrence_rule": "",
     "parent_event_id": "den-wed-1",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "6d09adc1-93d6-4075-85c0-01d2850e8474",
+    "event_id": "c2ba3f9b-a0a5-4606-9bb1-1649a5e8152e",
     "source_type": "university",
     "date": "2026-10-07",
     "start_time": "10:10",
@@ -4366,11 +4366,11 @@
     "recurrence_rule": "",
     "parent_event_id": "den-wed-1",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "caca733e-59cc-4316-b862-cf53730cba3e",
+    "event_id": "f73cf5c9-7115-433e-968b-45b41bd012fe",
     "source_type": "university",
     "date": "2026-10-21",
     "start_time": "10:10",
@@ -4385,11 +4385,11 @@
     "recurrence_rule": "",
     "parent_event_id": "den-wed-1",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "eb4db1bf-2719-44b9-9c25-6dab50f8a74f",
+    "event_id": "73503ba8-64b8-4c35-a732-f4b00b4459fa",
     "source_type": "university",
     "date": "2026-11-04",
     "start_time": "10:10",
@@ -4404,11 +4404,11 @@
     "recurrence_rule": "",
     "parent_event_id": "den-wed-1",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "5140082e-9ffd-4eba-8530-e477906dd9df",
+    "event_id": "39b9d40d-e191-4117-8ca3-3274f8b363a4",
     "source_type": "university",
     "date": "2026-11-18",
     "start_time": "10:10",
@@ -4423,11 +4423,11 @@
     "recurrence_rule": "",
     "parent_event_id": "den-wed-1",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "701565fb-8377-434f-8121-865213b91a01",
+    "event_id": "67e2d990-dacb-4fe9-a63c-44477888e766",
     "source_type": "university",
     "date": "2026-12-02",
     "start_time": "10:10",
@@ -4442,11 +4442,11 @@
     "recurrence_rule": "",
     "parent_event_id": "den-wed-1",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "51c17158-8926-4447-9186-35e98d8ab482",
+    "event_id": "f8939b0d-91d0-4944-add6-98b2226f2724",
     "source_type": "university",
     "date": "2026-12-16",
     "start_time": "10:10",
@@ -4461,11 +4461,11 @@
     "recurrence_rule": "",
     "parent_event_id": "den-wed-1",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "4e60f277-c650-4052-951c-a41fbb4a803b",
+    "event_id": "3220bb83-b2dc-4eea-ad4f-8e816c3c4a61",
     "source_type": "university",
     "date": "2026-12-30",
     "start_time": "10:10",
@@ -4480,11 +4480,11 @@
     "recurrence_rule": "",
     "parent_event_id": "den-wed-1",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "25a43223-1161-4876-8fb9-21950a458d9f",
+    "event_id": "0dd113e5-3b7c-4f16-920b-dba2199640c5",
     "source_type": "university",
     "date": "2026-09-24",
     "start_time": "08:30",
@@ -4499,11 +4499,11 @@
     "recurrence_rule": "",
     "parent_event_id": "den-thu-1",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "9d3d7bf5-e3fe-4858-a4b9-9f6687c397a9",
+    "event_id": "7060a67c-60c1-4552-9b13-73e679426c7b",
     "source_type": "university",
     "date": "2026-10-08",
     "start_time": "08:30",
@@ -4518,11 +4518,11 @@
     "recurrence_rule": "",
     "parent_event_id": "den-thu-1",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "4ab4b4ff-af1b-4e30-90db-5700bfad7ba9",
+    "event_id": "f686915f-b409-441e-9172-b97513a5ade1",
     "source_type": "university",
     "date": "2026-10-22",
     "start_time": "08:30",
@@ -4537,11 +4537,11 @@
     "recurrence_rule": "",
     "parent_event_id": "den-thu-1",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "2aff6695-0056-4118-b9d3-b5f323099d8d",
+    "event_id": "1f5fc82c-14ee-4e39-a835-a821a62d6b7a",
     "source_type": "university",
     "date": "2026-11-05",
     "start_time": "08:30",
@@ -4556,11 +4556,11 @@
     "recurrence_rule": "",
     "parent_event_id": "den-thu-1",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "9682b9d7-45fe-413b-b9c6-23fad048f15d",
+    "event_id": "dce16cc7-9667-448b-a2fd-98f552e2f2d5",
     "source_type": "university",
     "date": "2026-11-19",
     "start_time": "08:30",
@@ -4575,11 +4575,11 @@
     "recurrence_rule": "",
     "parent_event_id": "den-thu-1",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "c3857e24-7d89-4c82-a7fc-7cc54ceaf5c4",
+    "event_id": "6b83c112-d844-4b25-81f0-bb4d2030bd76",
     "source_type": "university",
     "date": "2026-12-03",
     "start_time": "08:30",
@@ -4594,11 +4594,11 @@
     "recurrence_rule": "",
     "parent_event_id": "den-thu-1",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "4e6674ed-ba12-4c93-99e7-3aee73d6f010",
+    "event_id": "f1996794-907b-46dd-930e-676ce1ff5ba4",
     "source_type": "university",
     "date": "2026-12-17",
     "start_time": "08:30",
@@ -4613,11 +4613,11 @@
     "recurrence_rule": "",
     "parent_event_id": "den-thu-1",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "beaef6d0-efa8-464f-8b09-7db6be69ea53",
+    "event_id": "c4c85e80-157b-4e03-aa60-e4b3fbfb8be6",
     "source_type": "university",
     "date": "2026-12-31",
     "start_time": "08:30",
@@ -4632,11 +4632,11 @@
     "recurrence_rule": "",
     "parent_event_id": "den-thu-1",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "f2256437-6fbb-49a9-b133-ec3c53971d06",
+    "event_id": "cbd15951-cc5f-40ce-9cd2-b43814d9c403",
     "source_type": "university",
     "date": "2026-09-24",
     "start_time": "10:10",
@@ -4651,11 +4651,11 @@
     "recurrence_rule": "",
     "parent_event_id": "den-thu-2",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "9ee24132-9d83-4cf6-affe-aafe653b6320",
+    "event_id": "db07dfa3-e665-4c39-8a66-637604be7d0f",
     "source_type": "university",
     "date": "2026-10-08",
     "start_time": "10:10",
@@ -4670,11 +4670,11 @@
     "recurrence_rule": "",
     "parent_event_id": "den-thu-2",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "e63f49d7-9975-470b-b7c6-a94b12415b9b",
+    "event_id": "f5127a86-535b-4d64-a5fb-30aff0c19b84",
     "source_type": "university",
     "date": "2026-10-22",
     "start_time": "10:10",
@@ -4689,11 +4689,11 @@
     "recurrence_rule": "",
     "parent_event_id": "den-thu-2",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "31143267-9a51-4db7-8746-352fdb385301",
+    "event_id": "b321cb13-ab6f-4c3a-9cef-c72e4b0654fb",
     "source_type": "university",
     "date": "2026-11-05",
     "start_time": "10:10",
@@ -4708,11 +4708,11 @@
     "recurrence_rule": "",
     "parent_event_id": "den-thu-2",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "4eb3fea7-42bc-473e-a790-9a95f44e9eab",
+    "event_id": "41c31e70-5a9c-4a50-800c-793a98f293c8",
     "source_type": "university",
     "date": "2026-11-19",
     "start_time": "10:10",
@@ -4727,11 +4727,11 @@
     "recurrence_rule": "",
     "parent_event_id": "den-thu-2",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "307ab7ad-4483-40ce-9068-58062e23dbc6",
+    "event_id": "164eb9c4-7300-4f0c-9dc6-7a0af851287d",
     "source_type": "university",
     "date": "2026-12-03",
     "start_time": "10:10",
@@ -4746,11 +4746,11 @@
     "recurrence_rule": "",
     "parent_event_id": "den-thu-2",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "239d83b0-dcc3-45ad-9f32-39c9c8cd12b6",
+    "event_id": "fa6ebc59-8e3b-447b-8c1e-f06ff71b9a3d",
     "source_type": "university",
     "date": "2026-12-17",
     "start_time": "10:10",
@@ -4765,11 +4765,11 @@
     "recurrence_rule": "",
     "parent_event_id": "den-thu-2",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "5fc6523d-9870-4d6d-b012-c6cca9f4a89c",
+    "event_id": "46839db3-1e39-42f7-8e41-a88788bb3d6f",
     "source_type": "university",
     "date": "2026-12-31",
     "start_time": "10:10",
@@ -4784,11 +4784,11 @@
     "recurrence_rule": "",
     "parent_event_id": "den-thu-2",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "6f3c4664-c8a2-4414-96e7-170a5cbb004b",
+    "event_id": "1e496368-347e-4bc1-ab7b-cc0db8ed7d9f",
     "source_type": "university",
     "date": "2026-09-24",
     "start_time": "11:50",
@@ -4803,11 +4803,11 @@
     "recurrence_rule": "",
     "parent_event_id": "den-thu-3",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "28b18aa5-33f6-4ed8-bc85-ef58adbc6027",
+    "event_id": "50056845-2a3d-443e-93ab-ba663b46aad4",
     "source_type": "university",
     "date": "2026-10-08",
     "start_time": "11:50",
@@ -4822,11 +4822,11 @@
     "recurrence_rule": "",
     "parent_event_id": "den-thu-3",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "dcd7deb9-5bec-49c6-8e2d-7f8c4bbe1066",
+    "event_id": "20cd1149-5edd-4447-a6dc-c343a060996e",
     "source_type": "university",
     "date": "2026-10-22",
     "start_time": "11:50",
@@ -4841,11 +4841,11 @@
     "recurrence_rule": "",
     "parent_event_id": "den-thu-3",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "6b1ef594-d3d5-47bb-bb83-a460ee1385b2",
+    "event_id": "f10947c3-0cf8-4f54-a1f4-53ee39718326",
     "source_type": "university",
     "date": "2026-11-05",
     "start_time": "11:50",
@@ -4860,11 +4860,11 @@
     "recurrence_rule": "",
     "parent_event_id": "den-thu-3",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "c2f1a3fe-bc55-4a17-9d59-1ae31a6d3c1c",
+    "event_id": "2aacea24-c2bd-42cb-bca4-2271620e206b",
     "source_type": "university",
     "date": "2026-11-19",
     "start_time": "11:50",
@@ -4879,11 +4879,11 @@
     "recurrence_rule": "",
     "parent_event_id": "den-thu-3",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "2d4755a6-5c10-4fee-bf94-24b57d23e148",
+    "event_id": "9a7f4f8a-2ca4-4f65-8b7d-806e681392b2",
     "source_type": "university",
     "date": "2026-12-03",
     "start_time": "11:50",
@@ -4898,11 +4898,11 @@
     "recurrence_rule": "",
     "parent_event_id": "den-thu-3",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "9d4e1bec-6450-449c-a348-474a100af670",
+    "event_id": "caa3812d-b355-4e06-8440-766263dd702a",
     "source_type": "university",
     "date": "2026-12-17",
     "start_time": "11:50",
@@ -4917,11 +4917,11 @@
     "recurrence_rule": "",
     "parent_event_id": "den-thu-3",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "b9096d08-99ad-453a-b723-3d4c145a0077",
+    "event_id": "c7c4f028-041c-469b-aa7b-600d306b4f77",
     "source_type": "university",
     "date": "2026-12-31",
     "start_time": "11:50",
@@ -4936,11 +4936,11 @@
     "recurrence_rule": "",
     "parent_event_id": "den-thu-3",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "f85b3f97-05fc-4ad9-914f-5d01854c41bd",
+    "event_id": "afd7e506-4e0b-411b-a664-ff61fabd7420",
     "source_type": "university",
     "date": "2026-09-24",
     "start_time": "14:05",
@@ -4955,11 +4955,11 @@
     "recurrence_rule": "",
     "parent_event_id": "den-thu-4",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "eb3c6dd3-e9e5-46e4-96f6-cad0402293b8",
+    "event_id": "aeb6b7ac-f12e-4589-9b98-fb4b66f69b79",
     "source_type": "university",
     "date": "2026-10-08",
     "start_time": "14:05",
@@ -4974,11 +4974,11 @@
     "recurrence_rule": "",
     "parent_event_id": "den-thu-4",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "23147704-c46e-405d-a4a6-22e9c6696477",
+    "event_id": "f2af6f83-3a2e-42c5-b626-01dccdbfed6b",
     "source_type": "university",
     "date": "2026-10-22",
     "start_time": "14:05",
@@ -4993,11 +4993,11 @@
     "recurrence_rule": "",
     "parent_event_id": "den-thu-4",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "72f904ff-23b5-46da-9dd5-2451ebde5dd7",
+    "event_id": "7e34d4a5-6f59-4eeb-a503-4d73c9b826ad",
     "source_type": "university",
     "date": "2026-11-05",
     "start_time": "14:05",
@@ -5012,11 +5012,11 @@
     "recurrence_rule": "",
     "parent_event_id": "den-thu-4",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "7ce40962-ef82-4da8-b689-1c7ae172c442",
+    "event_id": "4f7b4c7d-c945-41e0-b34c-2c48ea5c60bf",
     "source_type": "university",
     "date": "2026-11-19",
     "start_time": "14:05",
@@ -5031,11 +5031,11 @@
     "recurrence_rule": "",
     "parent_event_id": "den-thu-4",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "4b87660a-28f4-49ad-8ad7-b9d58e159768",
+    "event_id": "6ce99820-c5f7-4dc4-ac6c-f44f66cc8ce9",
     "source_type": "university",
     "date": "2026-12-03",
     "start_time": "14:05",
@@ -5050,11 +5050,11 @@
     "recurrence_rule": "",
     "parent_event_id": "den-thu-4",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "5f61001a-5854-40b4-aa0a-1b2a6496757b",
+    "event_id": "9e426387-d939-44b2-8325-447bf0755460",
     "source_type": "university",
     "date": "2026-12-17",
     "start_time": "14:05",
@@ -5069,11 +5069,11 @@
     "recurrence_rule": "",
     "parent_event_id": "den-thu-4",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "c68d1f9f-cb50-4688-a894-47ac8124829d",
+    "event_id": "828f391c-1e53-444a-a723-9da8331f4f45",
     "source_type": "university",
     "date": "2026-12-31",
     "start_time": "14:05",
@@ -5088,11 +5088,11 @@
     "recurrence_rule": "",
     "parent_event_id": "den-thu-4",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "7537b5f2-f88b-4e25-9aca-4ce361d72529",
+    "event_id": "c3423982-0f97-4f70-8846-4267ce608427",
     "source_type": "university",
     "date": "2026-09-25",
     "start_time": "09:50",
@@ -5107,11 +5107,11 @@
     "recurrence_rule": "",
     "parent_event_id": "den-fri-1",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "d485b3ec-8ba5-49fc-9d2c-abe02c8ee2f0",
+    "event_id": "3bfbc45f-c888-4b67-912b-4ae658299903",
     "source_type": "university",
     "date": "2026-10-09",
     "start_time": "09:50",
@@ -5126,11 +5126,11 @@
     "recurrence_rule": "",
     "parent_event_id": "den-fri-1",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "347f2333-6ea9-4bd6-9030-e623aa85fbc5",
+    "event_id": "c087150d-b60a-4780-8f9f-e1c2dfe9e5f4",
     "source_type": "university",
     "date": "2026-10-23",
     "start_time": "09:50",
@@ -5145,11 +5145,11 @@
     "recurrence_rule": "",
     "parent_event_id": "den-fri-1",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "f631e20f-4e25-47a8-abda-8398dcf041fb",
+    "event_id": "30855320-a179-4b13-bd3b-a11dc960abc3",
     "source_type": "university",
     "date": "2026-11-06",
     "start_time": "09:50",
@@ -5164,11 +5164,11 @@
     "recurrence_rule": "",
     "parent_event_id": "den-fri-1",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "b90f35d9-ab6f-463b-a79d-054707b2fe61",
+    "event_id": "7431e36b-d3f3-496c-9c79-53b9b68998fd",
     "source_type": "university",
     "date": "2026-11-20",
     "start_time": "09:50",
@@ -5183,11 +5183,11 @@
     "recurrence_rule": "",
     "parent_event_id": "den-fri-1",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "c1588d38-7ea3-4ebe-b454-b8c2bfa3b988",
+    "event_id": "905eaefd-0895-478a-92fd-a3edd2cdc232",
     "source_type": "university",
     "date": "2026-12-04",
     "start_time": "09:50",
@@ -5202,11 +5202,11 @@
     "recurrence_rule": "",
     "parent_event_id": "den-fri-1",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "42432796-a037-45d5-80c5-9e0e32148276",
+    "event_id": "dc9bdeda-82f6-4db5-bae1-0497029acd7a",
     "source_type": "university",
     "date": "2026-12-18",
     "start_time": "09:50",
@@ -5221,11 +5221,11 @@
     "recurrence_rule": "",
     "parent_event_id": "den-fri-1",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "444ebb90-b56b-4160-8b32-9ec4c93dde7a",
+    "event_id": "93cae15a-a4f4-4f45-92a0-2474e1030346",
     "source_type": "university",
     "date": "2026-09-25",
     "start_time": "12:25",
@@ -5240,11 +5240,11 @@
     "recurrence_rule": "",
     "parent_event_id": "den-fri-2",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "6d962fe1-b2e6-4ba0-8cae-e05fec345cc6",
+    "event_id": "279f14cb-a9fc-4fb5-a300-79b140eca57f",
     "source_type": "university",
     "date": "2026-10-09",
     "start_time": "12:25",
@@ -5259,11 +5259,11 @@
     "recurrence_rule": "",
     "parent_event_id": "den-fri-2",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "ffb7583a-a4a5-450f-968c-17b57d0e94dd",
+    "event_id": "59b563fe-a0f8-4783-9b2d-ae78b371932d",
     "source_type": "university",
     "date": "2026-10-23",
     "start_time": "12:25",
@@ -5278,11 +5278,11 @@
     "recurrence_rule": "",
     "parent_event_id": "den-fri-2",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "c933cea9-a206-40f0-961e-4a771fbe8ad6",
+    "event_id": "b9fcb49c-b455-46c2-b241-f90cce395a1b",
     "source_type": "university",
     "date": "2026-11-06",
     "start_time": "12:25",
@@ -5297,11 +5297,11 @@
     "recurrence_rule": "",
     "parent_event_id": "den-fri-2",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "e157a8c3-2758-4899-83cf-0d001a81d9ce",
+    "event_id": "486969db-472e-43f8-994b-64f0da76ac3d",
     "source_type": "university",
     "date": "2026-11-20",
     "start_time": "12:25",
@@ -5316,11 +5316,11 @@
     "recurrence_rule": "",
     "parent_event_id": "den-fri-2",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "14bdd2b6-7197-40d4-a476-fe51ea721aa8",
+    "event_id": "cfc12c76-926a-45ea-90ec-1596eeb143e3",
     "source_type": "university",
     "date": "2026-12-04",
     "start_time": "12:25",
@@ -5335,11 +5335,11 @@
     "recurrence_rule": "",
     "parent_event_id": "den-fri-2",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "c6a254b4-77bb-4188-a977-908592f217f2",
+    "event_id": "1f3a2eab-409e-420e-ad63-48a6c9041445",
     "source_type": "university",
     "date": "2026-12-18",
     "start_time": "12:25",
@@ -5354,11 +5354,11 @@
     "recurrence_rule": "",
     "parent_event_id": "den-fri-2",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "385b72b3-a50a-4882-9a81-b0f15da5a9e7",
+    "event_id": "832fe849-7c9f-4c7c-ad62-77da9f703ce2",
     "source_type": "university",
     "date": "2026-09-25",
     "start_time": "14:05",
@@ -5373,11 +5373,11 @@
     "recurrence_rule": "",
     "parent_event_id": "den-fri-3",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "7e0aa672-fbec-49a5-8882-583508964815",
+    "event_id": "7367ffb8-55f9-4322-82a9-8a95f4fabe44",
     "source_type": "university",
     "date": "2026-10-09",
     "start_time": "14:05",
@@ -5392,11 +5392,11 @@
     "recurrence_rule": "",
     "parent_event_id": "den-fri-3",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "60bd7f74-0ac2-4040-b35d-e5b876fd2395",
+    "event_id": "5befc45a-428b-4cbc-a1c0-ce42febaedb9",
     "source_type": "university",
     "date": "2026-10-23",
     "start_time": "14:05",
@@ -5411,11 +5411,11 @@
     "recurrence_rule": "",
     "parent_event_id": "den-fri-3",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "bfb9d54c-78f9-4509-b878-952b1ab00042",
+    "event_id": "6337f745-3d7f-41c5-a61e-2a19a0c5b2cc",
     "source_type": "university",
     "date": "2026-11-06",
     "start_time": "14:05",
@@ -5430,11 +5430,11 @@
     "recurrence_rule": "",
     "parent_event_id": "den-fri-3",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "5c82117a-467d-453c-a503-55cdc251e18c",
+    "event_id": "179fced1-89a8-46c2-a0be-a93c60dbf32e",
     "source_type": "university",
     "date": "2026-11-20",
     "start_time": "14:05",
@@ -5449,11 +5449,11 @@
     "recurrence_rule": "",
     "parent_event_id": "den-fri-3",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "4c330567-e3b2-41e7-8c57-8229abd3b51a",
+    "event_id": "42a79257-7fcb-48ba-8b58-be0367fa4282",
     "source_type": "university",
     "date": "2026-12-04",
     "start_time": "14:05",
@@ -5468,11 +5468,11 @@
     "recurrence_rule": "",
     "parent_event_id": "den-fri-3",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "e35ab5ce-4eb0-4243-99fa-56e9c4c989f4",
+    "event_id": "2b83e198-4f4d-413d-a221-9aae3b5d3cf7",
     "source_type": "university",
     "date": "2026-12-18",
     "start_time": "14:05",
@@ -5487,11 +5487,11 @@
     "recurrence_rule": "",
     "parent_event_id": "den-fri-3",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "f2c8b97b-c43d-4a98-8199-d9d9e7ad9f16",
+    "event_id": "26bb5821-a4b6-432b-ab80-1e09f96c63f0",
     "source_type": "university",
     "date": "2026-09-26",
     "start_time": "10:10",
@@ -5506,11 +5506,11 @@
     "recurrence_rule": "",
     "parent_event_id": "den-sat-1",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "d813ee80-a8fd-48c5-b9a0-9753ea6bf780",
+    "event_id": "7b6099c0-1f7d-49a4-ad87-d852dd986da6",
     "source_type": "university",
     "date": "2026-10-10",
     "start_time": "10:10",
@@ -5525,11 +5525,11 @@
     "recurrence_rule": "",
     "parent_event_id": "den-sat-1",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "b3ba18b3-6b77-4175-a79f-4a8335e2058a",
+    "event_id": "a9ab8191-d7bc-4c8a-9886-2c433027117e",
     "source_type": "university",
     "date": "2026-10-24",
     "start_time": "10:10",
@@ -5544,11 +5544,11 @@
     "recurrence_rule": "",
     "parent_event_id": "den-sat-1",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "d8b161d4-d7e6-4aaa-bfb6-9e38e01215bf",
+    "event_id": "bd045752-f704-47d3-a2aa-ced41ab4acd7",
     "source_type": "university",
     "date": "2026-11-07",
     "start_time": "10:10",
@@ -5563,11 +5563,11 @@
     "recurrence_rule": "",
     "parent_event_id": "den-sat-1",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "421131c2-4021-4449-85dc-3702d3735b58",
+    "event_id": "74d75885-63a1-4c78-b5d8-f55375311fbc",
     "source_type": "university",
     "date": "2026-11-21",
     "start_time": "10:10",
@@ -5582,11 +5582,11 @@
     "recurrence_rule": "",
     "parent_event_id": "den-sat-1",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "1e61c448-e963-4063-abe6-beb6a06fea74",
+    "event_id": "a2c2546c-7591-484a-8bb9-ba4c3a9bca43",
     "source_type": "university",
     "date": "2026-12-05",
     "start_time": "10:10",
@@ -5601,11 +5601,11 @@
     "recurrence_rule": "",
     "parent_event_id": "den-sat-1",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "c511f4e2-98bd-4761-939d-39eeb60471b5",
+    "event_id": "7480b3d7-b365-46d2-9f3b-5da32e993b1b",
     "source_type": "university",
     "date": "2026-12-19",
     "start_time": "10:10",
@@ -5620,11 +5620,11 @@
     "recurrence_rule": "",
     "parent_event_id": "den-sat-1",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "46436d04-67dc-4ea2-80c9-73f0feac526f",
+    "event_id": "a6b789e3-bb1d-4083-a4e2-c507295c8bb0",
     "source_type": "university",
     "date": "2026-09-26",
     "start_time": "11:50",
@@ -5639,11 +5639,11 @@
     "recurrence_rule": "",
     "parent_event_id": "den-sat-2",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "427a87c7-4f21-4900-b813-a7cfca636d08",
+    "event_id": "1d7427c6-d89c-459d-8b1e-3c35c1f66194",
     "source_type": "university",
     "date": "2026-10-10",
     "start_time": "11:50",
@@ -5658,11 +5658,11 @@
     "recurrence_rule": "",
     "parent_event_id": "den-sat-2",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "6e0459f3-cb1b-458a-aaf3-7b3419dfc627",
+    "event_id": "8d98c6a2-079f-41c3-9ccc-44c0852713c8",
     "source_type": "university",
     "date": "2026-10-24",
     "start_time": "11:50",
@@ -5677,11 +5677,11 @@
     "recurrence_rule": "",
     "parent_event_id": "den-sat-2",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "c949dc95-a11b-4b94-87d2-b71d73522c67",
+    "event_id": "17e43cc9-0d81-4643-b70f-393bef6f2cda",
     "source_type": "university",
     "date": "2026-11-07",
     "start_time": "11:50",
@@ -5696,11 +5696,11 @@
     "recurrence_rule": "",
     "parent_event_id": "den-sat-2",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "a428661e-3b38-43d7-9890-3b2a29f6ccc2",
+    "event_id": "15c86c4d-a29b-444c-97e6-214d08199c77",
     "source_type": "university",
     "date": "2026-11-21",
     "start_time": "11:50",
@@ -5715,11 +5715,11 @@
     "recurrence_rule": "",
     "parent_event_id": "den-sat-2",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "29db87f3-58ce-487f-a6c5-5f71ade24a64",
+    "event_id": "6bcf4c95-dc0e-4d42-b2dc-1fee85679fd9",
     "source_type": "university",
     "date": "2026-12-05",
     "start_time": "11:50",
@@ -5734,11 +5734,11 @@
     "recurrence_rule": "",
     "parent_event_id": "den-sat-2",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "7d203bcd-3699-4a81-a39c-47ccf3547711",
+    "event_id": "9c003bc0-591e-41e2-bcad-eee38112315c",
     "source_type": "university",
     "date": "2026-12-19",
     "start_time": "11:50",
@@ -5753,11 +5753,11 @@
     "recurrence_rule": "",
     "parent_event_id": "den-sat-2",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "d01e92e1-b8f5-459b-94ec-5a21f25d8460",
+    "event_id": "2e57473a-07fb-438a-9eb4-2cb0c550612f",
     "source_type": "recurring",
     "date": "2026-09-01",
     "start_time": "18:00",
@@ -5772,11 +5772,11 @@
     "recurrence_rule": "",
     "parent_event_id": "weekly-tutoring-tue",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "2e8fa6a4-efa8-4172-bf85-3d845b4d354f",
+    "event_id": "6b712efb-d0b7-43e7-8dc8-3515deccd014",
     "source_type": "recurring",
     "date": "2026-09-08",
     "start_time": "18:00",
@@ -5791,11 +5791,11 @@
     "recurrence_rule": "",
     "parent_event_id": "weekly-tutoring-tue",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "15e6d514-9496-471c-b508-a3ad93774487",
+    "event_id": "380a18c4-dcb5-450d-a0f0-4be8f3376355",
     "source_type": "recurring",
     "date": "2026-09-15",
     "start_time": "18:00",
@@ -5810,11 +5810,11 @@
     "recurrence_rule": "",
     "parent_event_id": "weekly-tutoring-tue",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "f0f9df8a-2aa0-4ac0-84d1-078fb723a0f7",
+    "event_id": "8af5e8bd-7c8e-4489-b9cf-17d3a0522afb",
     "source_type": "recurring",
     "date": "2026-09-22",
     "start_time": "18:00",
@@ -5829,11 +5829,11 @@
     "recurrence_rule": "",
     "parent_event_id": "weekly-tutoring-tue",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "43f4d367-c3ba-458f-ba7b-2635c23b55d2",
+    "event_id": "1e5ebfee-aa77-4fa6-a8d0-06e534da4719",
     "source_type": "recurring",
     "date": "2026-09-29",
     "start_time": "18:00",
@@ -5848,11 +5848,11 @@
     "recurrence_rule": "",
     "parent_event_id": "weekly-tutoring-tue",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "9e474a7d-d891-4daf-a3b4-d617ded54019",
+    "event_id": "911668f5-a45a-4bf6-989d-f7caf386d5cc",
     "source_type": "recurring",
     "date": "2026-10-06",
     "start_time": "18:00",
@@ -5867,11 +5867,11 @@
     "recurrence_rule": "",
     "parent_event_id": "weekly-tutoring-tue",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "5817c861-3c00-4c3b-9422-fe6cbb05f1c7",
+    "event_id": "156f2b9d-bdfc-4ff5-8177-20cdd7db8fe5",
     "source_type": "recurring",
     "date": "2026-10-13",
     "start_time": "18:00",
@@ -5886,11 +5886,11 @@
     "recurrence_rule": "",
     "parent_event_id": "weekly-tutoring-tue",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "52f8c706-4f87-4db5-8960-0c837f0b8eca",
+    "event_id": "30af4fb2-496c-4079-8096-661bf91348cd",
     "source_type": "recurring",
     "date": "2026-10-20",
     "start_time": "18:00",
@@ -5905,11 +5905,11 @@
     "recurrence_rule": "",
     "parent_event_id": "weekly-tutoring-tue",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "eeb1a440-6da5-4b22-9cc5-812f7b4c5342",
+    "event_id": "6f81f719-c772-41de-a42b-9f7094502291",
     "source_type": "recurring",
     "date": "2026-10-27",
     "start_time": "18:00",
@@ -5924,11 +5924,11 @@
     "recurrence_rule": "",
     "parent_event_id": "weekly-tutoring-tue",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "8f7eb31a-d2b1-42ad-92b0-1da8c16d0dac",
+    "event_id": "48139dfe-23ae-4c1a-852b-007b7913939d",
     "source_type": "recurring",
     "date": "2026-11-03",
     "start_time": "18:00",
@@ -5943,11 +5943,11 @@
     "recurrence_rule": "",
     "parent_event_id": "weekly-tutoring-tue",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "8607ce52-ae35-42b1-ba3e-c9537e38e08a",
+    "event_id": "2df7cb36-0d3d-4136-b3fd-aeebccf0297d",
     "source_type": "recurring",
     "date": "2026-11-10",
     "start_time": "18:00",
@@ -5962,11 +5962,11 @@
     "recurrence_rule": "",
     "parent_event_id": "weekly-tutoring-tue",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "0c406396-dd96-4903-b203-201fb4418692",
+    "event_id": "cc9d83ae-c719-4809-a0a3-c055dc2766d0",
     "source_type": "recurring",
     "date": "2026-11-17",
     "start_time": "18:00",
@@ -5981,11 +5981,11 @@
     "recurrence_rule": "",
     "parent_event_id": "weekly-tutoring-tue",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "dd4c12a1-ee30-4722-84dc-2d3dd6bacdfa",
+    "event_id": "3ffe2564-6624-46a5-a34a-cb201f790149",
     "source_type": "recurring",
     "date": "2026-11-24",
     "start_time": "18:00",
@@ -6000,11 +6000,11 @@
     "recurrence_rule": "",
     "parent_event_id": "weekly-tutoring-tue",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "d3d682b2-0a6c-4820-b15e-53e2c1b7346a",
+    "event_id": "3b9dc081-d3ba-4ca2-9542-b161e94f54b5",
     "source_type": "recurring",
     "date": "2026-12-01",
     "start_time": "18:00",
@@ -6019,11 +6019,11 @@
     "recurrence_rule": "",
     "parent_event_id": "weekly-tutoring-tue",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "31427208-59dc-4351-aaad-7a3e629eed38",
+    "event_id": "588ede0b-d42c-49f8-9ba4-31a98ec1eaa5",
     "source_type": "recurring",
     "date": "2026-12-08",
     "start_time": "18:00",
@@ -6038,11 +6038,11 @@
     "recurrence_rule": "",
     "parent_event_id": "weekly-tutoring-tue",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "2be5c9ab-d87d-408c-9e8a-163c5d89eb42",
+    "event_id": "1c60b604-49f9-403f-a81a-7199f99d1622",
     "source_type": "recurring",
     "date": "2026-12-15",
     "start_time": "18:00",
@@ -6057,11 +6057,11 @@
     "recurrence_rule": "",
     "parent_event_id": "weekly-tutoring-tue",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "a009b73a-9133-461d-b8c7-43bde835026a",
+    "event_id": "f820ab34-606e-4b77-b3c3-a4ab1e26e04a",
     "source_type": "recurring",
     "date": "2026-12-22",
     "start_time": "18:00",
@@ -6076,11 +6076,11 @@
     "recurrence_rule": "",
     "parent_event_id": "weekly-tutoring-tue",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "c477f903-9243-4c9e-a758-9e55224a5c3b",
+    "event_id": "ff88b933-e535-437b-bd54-73c92e59eeed",
     "source_type": "recurring",
     "date": "2026-12-29",
     "start_time": "18:00",
@@ -6095,11 +6095,11 @@
     "recurrence_rule": "",
     "parent_event_id": "weekly-tutoring-tue",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "a85831e3-32a6-4659-b92d-0ca259a763e2",
+    "event_id": "e2795d9b-1b65-4a09-9aad-a76535fce99c",
     "source_type": "recurring",
     "date": "2026-09-04",
     "start_time": "18:00",
@@ -6114,11 +6114,11 @@
     "recurrence_rule": "",
     "parent_event_id": "weekly-tutoring-fri",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "94461db6-0f5e-4f01-a9b7-db2c2df95382",
+    "event_id": "9e789c13-7353-47ad-98fe-1cc81eeaafa3",
     "source_type": "recurring",
     "date": "2026-09-11",
     "start_time": "18:00",
@@ -6133,11 +6133,11 @@
     "recurrence_rule": "",
     "parent_event_id": "weekly-tutoring-fri",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "b7b7a767-17e5-40fc-998c-9bddeb908c8e",
+    "event_id": "91025a60-4f07-40aa-8275-4e8d02cb0cc5",
     "source_type": "recurring",
     "date": "2026-09-18",
     "start_time": "18:00",
@@ -6152,11 +6152,11 @@
     "recurrence_rule": "",
     "parent_event_id": "weekly-tutoring-fri",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "d6fefd73-26d5-427f-9420-4ebf71eb9b45",
+    "event_id": "ae6b5269-e149-4968-9eed-10e1c0c5be35",
     "source_type": "recurring",
     "date": "2026-09-25",
     "start_time": "18:00",
@@ -6171,11 +6171,11 @@
     "recurrence_rule": "",
     "parent_event_id": "weekly-tutoring-fri",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "9881295c-704a-4c9a-9282-7c47e44b035b",
+    "event_id": "f56475d6-74e1-45a4-8ad9-0eac7d37dff1",
     "source_type": "recurring",
     "date": "2026-10-02",
     "start_time": "18:00",
@@ -6190,11 +6190,11 @@
     "recurrence_rule": "",
     "parent_event_id": "weekly-tutoring-fri",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "987e3385-f897-470b-addb-2882b2acdfc8",
+    "event_id": "90c30bd3-ef18-4e5c-9c7b-053cebe67af5",
     "source_type": "recurring",
     "date": "2026-10-09",
     "start_time": "18:00",
@@ -6209,11 +6209,11 @@
     "recurrence_rule": "",
     "parent_event_id": "weekly-tutoring-fri",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "d30a90c6-12f8-4aef-ab66-e637e33bb9bc",
+    "event_id": "6124146c-1580-4363-a08f-7c25e571ce5a",
     "source_type": "recurring",
     "date": "2026-10-16",
     "start_time": "18:00",
@@ -6228,11 +6228,11 @@
     "recurrence_rule": "",
     "parent_event_id": "weekly-tutoring-fri",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "c04661c2-5368-4f9a-a082-75b543052301",
+    "event_id": "e0744ac3-9e44-4feb-ad88-ab65510508d9",
     "source_type": "recurring",
     "date": "2026-10-23",
     "start_time": "18:00",
@@ -6247,11 +6247,11 @@
     "recurrence_rule": "",
     "parent_event_id": "weekly-tutoring-fri",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "68fec9a1-ec33-4c22-b406-4f72ac1b276d",
+    "event_id": "f5e657f7-6fc2-4a0d-9a45-573ecb11afc0",
     "source_type": "recurring",
     "date": "2026-10-30",
     "start_time": "18:00",
@@ -6266,11 +6266,11 @@
     "recurrence_rule": "",
     "parent_event_id": "weekly-tutoring-fri",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "0bb22d5b-9172-4d0f-b3c2-1e55682538ec",
+    "event_id": "8678ead7-05c7-4468-9641-feb818939db7",
     "source_type": "recurring",
     "date": "2026-11-06",
     "start_time": "18:00",
@@ -6285,11 +6285,11 @@
     "recurrence_rule": "",
     "parent_event_id": "weekly-tutoring-fri",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "f8f9518a-e3d1-4263-a660-ad51ea56d72b",
+    "event_id": "5f73143a-de04-4817-a000-bb18431d8574",
     "source_type": "recurring",
     "date": "2026-11-13",
     "start_time": "18:00",
@@ -6304,11 +6304,11 @@
     "recurrence_rule": "",
     "parent_event_id": "weekly-tutoring-fri",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "2b372bb6-34e4-4738-b53c-4b610d017b78",
+    "event_id": "06610448-518b-41da-ae84-99389d9b847f",
     "source_type": "recurring",
     "date": "2026-11-20",
     "start_time": "18:00",
@@ -6323,11 +6323,11 @@
     "recurrence_rule": "",
     "parent_event_id": "weekly-tutoring-fri",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "a4f9051c-e359-4dca-a2d8-290996fabd0a",
+    "event_id": "17931e51-9830-4992-b948-158198e8fd33",
     "source_type": "recurring",
     "date": "2026-11-27",
     "start_time": "18:00",
@@ -6342,11 +6342,11 @@
     "recurrence_rule": "",
     "parent_event_id": "weekly-tutoring-fri",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "bf1e62d2-2bd6-412e-a628-c1aa6482268e",
+    "event_id": "c2719a81-5005-4652-ac6f-2fe800059ef5",
     "source_type": "recurring",
     "date": "2026-12-04",
     "start_time": "18:00",
@@ -6361,11 +6361,11 @@
     "recurrence_rule": "",
     "parent_event_id": "weekly-tutoring-fri",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "9e8670d2-85b9-476c-a42d-fc38a5faf52b",
+    "event_id": "8a4d88b0-5584-4b6f-9c60-51f5271081da",
     "source_type": "recurring",
     "date": "2026-12-11",
     "start_time": "18:00",
@@ -6380,11 +6380,11 @@
     "recurrence_rule": "",
     "parent_event_id": "weekly-tutoring-fri",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "75a2159d-84d0-4bab-9fbc-08f7c79099c6",
+    "event_id": "e82c7d79-4f23-45d5-8407-31a6552bbce1",
     "source_type": "recurring",
     "date": "2026-12-18",
     "start_time": "18:00",
@@ -6399,11 +6399,11 @@
     "recurrence_rule": "",
     "parent_event_id": "weekly-tutoring-fri",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "78a07af5-d745-432e-88fe-3cb7b9109e46",
+    "event_id": "7383fa87-dc72-437e-9487-1237844592f4",
     "source_type": "recurring",
     "date": "2026-12-25",
     "start_time": "18:00",
@@ -6418,11 +6418,11 @@
     "recurrence_rule": "",
     "parent_event_id": "weekly-tutoring-fri",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "e5484004-9f3a-4274-83ce-ba3b40e5aa67",
+    "event_id": "33dbae10-d360-4ba0-8c2f-c213af5afe7e",
     "source_type": "recurring",
     "date": "2026-09-04",
     "start_time": "16:00",
@@ -6437,11 +6437,11 @@
     "recurrence_rule": "",
     "parent_event_id": "weekly-consultation-fri",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "06d3018f-5c27-4c09-847a-dd9da81bf910",
+    "event_id": "9406e47a-77d7-486e-8d20-9a67e6da7fa6",
     "source_type": "recurring",
     "date": "2026-09-11",
     "start_time": "16:00",
@@ -6456,11 +6456,11 @@
     "recurrence_rule": "",
     "parent_event_id": "weekly-consultation-fri",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "bec96545-de07-46ab-bf48-252ea170f2b8",
+    "event_id": "439b6984-d47a-46c5-89c1-37eb5f99efd8",
     "source_type": "recurring",
     "date": "2026-09-18",
     "start_time": "16:00",
@@ -6475,11 +6475,11 @@
     "recurrence_rule": "",
     "parent_event_id": "weekly-consultation-fri",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "e0b00cf5-2214-402b-9bf4-ed6911a7a74a",
+    "event_id": "60642d05-fb4a-4432-a836-4f7f399f7463",
     "source_type": "recurring",
     "date": "2026-09-25",
     "start_time": "16:00",
@@ -6494,11 +6494,11 @@
     "recurrence_rule": "",
     "parent_event_id": "weekly-consultation-fri",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "023ef056-47b4-4d61-8983-6fe68573c7b6",
+    "event_id": "27c0e1f9-7747-4806-839d-9a7f0da50642",
     "source_type": "recurring",
     "date": "2026-10-02",
     "start_time": "16:00",
@@ -6513,11 +6513,11 @@
     "recurrence_rule": "",
     "parent_event_id": "weekly-consultation-fri",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "227ceb86-8402-415d-938f-b3b32f245e13",
+    "event_id": "e24d2c4b-30a2-4aad-a27b-5d9b74a30ec4",
     "source_type": "recurring",
     "date": "2026-10-09",
     "start_time": "16:00",
@@ -6532,11 +6532,11 @@
     "recurrence_rule": "",
     "parent_event_id": "weekly-consultation-fri",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "195e21b1-dbc2-4f99-9456-46643311eeda",
+    "event_id": "5b7a9407-2e24-4d68-b8a7-10101ba60a03",
     "source_type": "recurring",
     "date": "2026-10-16",
     "start_time": "16:00",
@@ -6551,11 +6551,11 @@
     "recurrence_rule": "",
     "parent_event_id": "weekly-consultation-fri",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "043addb2-4539-4302-a316-ebb2cd347029",
+    "event_id": "56a029b9-99fd-43f3-bfc3-2c6978cfb392",
     "source_type": "recurring",
     "date": "2026-10-23",
     "start_time": "16:00",
@@ -6570,11 +6570,11 @@
     "recurrence_rule": "",
     "parent_event_id": "weekly-consultation-fri",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "87032582-275a-4763-a970-4a396870e8b5",
+    "event_id": "b46f6a0c-12f8-448f-8a57-72550207d4f9",
     "source_type": "recurring",
     "date": "2026-10-30",
     "start_time": "16:00",
@@ -6589,11 +6589,11 @@
     "recurrence_rule": "",
     "parent_event_id": "weekly-consultation-fri",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "2609c13b-208f-4818-b6cd-70bafb0f7569",
+    "event_id": "e841241b-225e-4963-8408-215fd2243ff3",
     "source_type": "recurring",
     "date": "2026-11-06",
     "start_time": "16:00",
@@ -6608,11 +6608,11 @@
     "recurrence_rule": "",
     "parent_event_id": "weekly-consultation-fri",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "08d9bc0b-fc06-4fd0-b79d-3dcdf20c3542",
+    "event_id": "95fff7d0-08f8-4436-b8bc-c67bf393828d",
     "source_type": "recurring",
     "date": "2026-11-13",
     "start_time": "16:00",
@@ -6627,11 +6627,11 @@
     "recurrence_rule": "",
     "parent_event_id": "weekly-consultation-fri",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "401c56e2-8138-4131-ad49-6b3edd130501",
+    "event_id": "f56dc87f-8e57-4429-9b5e-be5ad0a9b282",
     "source_type": "recurring",
     "date": "2026-11-20",
     "start_time": "16:00",
@@ -6646,11 +6646,11 @@
     "recurrence_rule": "",
     "parent_event_id": "weekly-consultation-fri",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "a6e1ba19-54eb-4e2c-a92f-aae2e9b230ce",
+    "event_id": "d808774a-d7c3-49a4-8122-3ab64853aa56",
     "source_type": "recurring",
     "date": "2026-11-27",
     "start_time": "16:00",
@@ -6665,11 +6665,11 @@
     "recurrence_rule": "",
     "parent_event_id": "weekly-consultation-fri",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "f68e2ba7-123e-451a-97b9-15ec8c567262",
+    "event_id": "07d795ec-2e17-4dea-84d1-067adaf12e8f",
     "source_type": "recurring",
     "date": "2026-12-04",
     "start_time": "16:00",
@@ -6684,11 +6684,11 @@
     "recurrence_rule": "",
     "parent_event_id": "weekly-consultation-fri",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "875b69a4-8261-4402-98ac-a7cb9f6b91ad",
+    "event_id": "d881eaaf-a6ed-4ae3-abbd-1d668586748a",
     "source_type": "recurring",
     "date": "2026-12-11",
     "start_time": "16:00",
@@ -6703,11 +6703,11 @@
     "recurrence_rule": "",
     "parent_event_id": "weekly-consultation-fri",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "c557ecfc-b793-400e-b99e-3445943f64bb",
+    "event_id": "cb1e57b8-7cf1-4aef-8869-ef8509cd1c57",
     "source_type": "recurring",
     "date": "2026-12-18",
     "start_time": "16:00",
@@ -6722,11 +6722,11 @@
     "recurrence_rule": "",
     "parent_event_id": "weekly-consultation-fri",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   },
   {
-    "event_id": "9d0a2ddb-2228-49dd-9ab0-fd3f4a147a2d",
+    "event_id": "109acb81-d432-4def-9f11-0ca96111e5d2",
     "source_type": "recurring",
     "date": "2026-12-25",
     "start_time": "16:00",
@@ -6741,7 +6741,7 @@
     "recurrence_rule": "",
     "parent_event_id": "weekly-consultation-fri",
     "notes": "",
-    "created_at": "2026-09-15T13:10:29.342Z",
-    "updated_at": "2026-09-15T13:10:29.342Z"
+    "created_at": "2026-09-15T13:14:57.285Z",
+    "updated_at": "2026-09-15T13:14:57.285Z"
   }
 ]
