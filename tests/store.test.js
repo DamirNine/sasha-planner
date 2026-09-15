@@ -57,6 +57,41 @@ test('load() expands missing recurrences and marks the store dirty so they persi
   assert.equal(writes.length, 1, 'generated instances get autosaved like any other change');
 });
 
+test('addEvent adds a one-off event and marks the store dirty', async (t) => {
+  t.mock.timers.enable({ apis: ['setTimeout'] });
+  const store = createStore({
+    readEvents: async () => [],
+    readSettings: async () => settings,
+    writeEvents: async () => {},
+  });
+  await store.load();
+  const created = store.addEvent({ title: 'Сходить в магазин', date: '2026-09-20', progress_group: 'task' });
+  const { events, dirty } = store.getState();
+  assert.equal(events.length, 1);
+  assert.equal(events[0].event_id, created.event_id);
+  assert.equal(events[0].title, 'Сходить в магазин');
+  assert.equal(dirty, true);
+});
+
+test('addEvent with a recurrence_rule immediately expands into instances too', async (t) => {
+  t.mock.timers.enable({ apis: ['setTimeout'] });
+  const store = createStore({
+    readEvents: async () => [],
+    readSettings: async () => settings,
+    writeEvents: async () => {},
+  });
+  await store.load();
+  store.addEvent({
+    title: 'Бег по утрам',
+    date: '2026-09-01',
+    progress_group: 'task',
+    recurrence_rule: 'FREQ=WEEKLY;BYDAY=TU,TH',
+  });
+  const { events } = store.getState();
+  assert.ok(events.length > 1, 'the template plus its generated instances should both be present');
+  assert.ok(events.some((e) => e.parent_event_id && e.title === 'Бег по утрам'));
+});
+
 test('subscribe() is notified after load and after each change', async () => {
   const store = createStore({
     readEvents: async () => [],
