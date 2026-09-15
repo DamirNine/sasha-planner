@@ -28,11 +28,27 @@ const store = createStore({
 });
 
 const statusEl = document.getElementById('save-status');
+let referenceDate = new Date();
 
 function render() {
   const { events, settings, dirty } = store.getState();
   renderDashboard(document.getElementById('app'), events, settings, {
     onToggle: (id, completed) => store.setEventCompleted(id, completed),
+    referenceDate,
+    onPrevWeek: () => {
+      referenceDate = new Date(referenceDate);
+      referenceDate.setDate(referenceDate.getDate() - 7);
+      render();
+    },
+    onNextWeek: () => {
+      referenceDate = new Date(referenceDate);
+      referenceDate.setDate(referenceDate.getDate() + 7);
+      render();
+    },
+    onToday: () => {
+      referenceDate = new Date();
+      render();
+    },
   });
   statusEl.textContent = dirty ? 'Есть несохранённые изменения…' : 'Всё сохранено';
 }
