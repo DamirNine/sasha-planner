@@ -10,6 +10,7 @@
   <div id="app"></div>
 
   <div class="toolbar">
+    <button id="add-button" type="button">＋ Добавить</button>
     <button id="save-button" type="button">Сохранить</button>
     <span id="save-status"></span>
     <form id="token-form">
@@ -17,6 +18,86 @@
       <button type="submit">Сохранить токен</button>
     </form>
   </div>
+
+  <dialog id="add-dialog">
+    <form id="add-form" method="dialog">
+      <h2>Новое событие / задача</h2>
+
+      <label>Название
+        <input id="add-title" type="text" required />
+      </label>
+
+      <label>Тип
+        <select id="add-type">
+          <option value="task">Личная задача</option>
+          <option value="lecture">Лекция</option>
+          <option value="seminar">Семинар</option>
+          <option value="lab">Лабораторная</option>
+          <option value="sport">Спорт</option>
+          <option value="vuc">ВУЦ</option>
+          <option value="consultation">Консультация</option>
+          <option value="tutoring">Репетиторство</option>
+          <option value="selfstudy">Самостоятельная работа</option>
+          <option value="trip">Поездка</option>
+          <option value="other">Другое</option>
+        </select>
+      </label>
+
+      <label>Категория прогресса
+        <select id="add-progress-group">
+          <option value="task">Личная задача (30%)</option>
+          <option value="required">Обязательное (70%)</option>
+        </select>
+      </label>
+
+      <label>Дата
+        <input id="add-date" type="date" required />
+      </label>
+
+      <label class="checkbox-line">
+        <input id="add-has-time" type="checkbox" />
+        Указать время
+      </label>
+
+      <div id="add-time-fields" hidden>
+        <label>Начало <input id="add-start-time" type="time" /></label>
+        <label>Конец <input id="add-end-time" type="time" /></label>
+      </div>
+
+      <label>Аудитория / место
+        <input id="add-place" type="text" />
+      </label>
+
+      <label>Приоритет
+        <select id="add-priority">
+          <option value="">—</option>
+          <option value="high">Высокий</option>
+          <option value="medium">Средний</option>
+          <option value="low">Низкий</option>
+        </select>
+      </label>
+
+      <fieldset>
+        <legend>Повторять по дням недели (оставь пустым для разового события)</legend>
+        <label class="checkbox-line"><input type="checkbox" class="add-repeat-day" value="MO" /> Пн</label>
+        <label class="checkbox-line"><input type="checkbox" class="add-repeat-day" value="TU" /> Вт</label>
+        <label class="checkbox-line"><input type="checkbox" class="add-repeat-day" value="WE" /> Ср</label>
+        <label class="checkbox-line"><input type="checkbox" class="add-repeat-day" value="TH" /> Чт</label>
+        <label class="checkbox-line"><input type="checkbox" class="add-repeat-day" value="FR" /> Пт</label>
+        <label class="checkbox-line"><input type="checkbox" class="add-repeat-day" value="SA" /> Сб</label>
+        <label class="checkbox-line"><input type="checkbox" class="add-repeat-day" value="SU" /> Вс</label>
+      </fieldset>
+
+      <label>Заметка
+        <textarea id="add-notes"></textarea>
+      </label>
+
+      <div class="dialog-buttons">
+        <button type="button" id="add-cancel">Отмена</button>
+        <button type="submit" id="add-submit">Добавить</button>
+      </div>
+    </form>
+  </dialog>
 
   <script type="module" src="js/main.js"></script>
 </body>
