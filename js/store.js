@@ -43,6 +43,36 @@ export function createStore({ readEvents, readSettings, writeEvents, autosaveDel
     markDirty();
   }
 
+  function addEvent(fields) {
+    const now = new Date().toISOString();
+    const newEvent = {
+      event_id: crypto.randomUUID(),
+      source_type: 'manual',
+      date: '',
+      start_time: '',
+      end_time: '',
+      title: '',
+      event_type: 'other',
+      place: '',
+      teacher: '',
+      progress_group: 'task',
+      priority: '',
+      completed: false,
+      recurrence_rule: '',
+      parent_event_id: '',
+      notes: '',
+      created_at: now,
+      updated_at: now,
+      ...fields,
+    };
+    events.push(newEvent);
+    if (newEvent.recurrence_rule) {
+      events = events.concat(generateAllRecurrences(events, settings));
+    }
+    markDirty();
+    return newEvent;
+  }
+
   async function save() {
     if (autosaveTimer) { clearTimeout(autosaveTimer); autosaveTimer = null; }
     if (!dirty) return;
@@ -63,5 +93,5 @@ export function createStore({ readEvents, readSettings, writeEvents, autosaveDel
     return { events, settings, dirty };
   }
 
-  return { load, setEventCompleted, save, subscribe, getState };
+  return { load, setEventCompleted, addEvent, save, subscribe, getState };
 }
