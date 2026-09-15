@@ -17,7 +17,18 @@ body {
 }
 
 .planner-header h1 { font-size: 1.1rem; margin: 0 0 4px; }
-.planner-week { font-style: italic; color: var(--muted); margin-bottom: 12px; }
+.planner-week { font-style: italic; color: var(--muted); margin-bottom: 8px; }
+
+.week-nav { display: flex; gap: 8px; margin-bottom: 12px; }
+.week-nav button {
+  padding: 4px 10px;
+  border: 1px solid #E4E4E0;
+  border-radius: 4px;
+  background: #fff;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+.week-nav button:hover { background: #F3F3F0; }
 
 .week-stats {
   display: flex;
