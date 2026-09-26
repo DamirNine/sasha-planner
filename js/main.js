@@ -6,10 +6,12 @@ import { occurrenceDates } from './recurrence.js';
 import { renderEditor } from './render/editor.js';
 import { openAddSheet } from './render/addForm.js';
 import { openDeleteSheet } from './render/deleteSheet.js';
-import { eventsForRange, rangeForMode, shiftAnchor, weekLabel, weekDaysOf } from './planner.js';
+import { eventsForRange, rangeForMode, shiftAnchor, weekLabel, weekRangeLabel, weekDaysOf } from './planner.js';
 import { dateKey, toDateOnly } from './dateUtils.js';
 import { consumeSetupHash, extractToken } from './setup.js';
-import { attachSwipe, attachPullToRefresh } from './gestures.js';
+import { attachPullToRefresh } from './gestures.js';
+import { attachPinchZoom } from './zoom.js';
+import { createPager } from './render/pager.js';
 import { h } from './render/dom.js';
 import { showToast } from './render/toast.js';
 import { registerServiceWorker, checkForUpdate, isStandalone, isIOS, listenForInstallPrompt, promptInstall } from './pwa.js';
@@ -25,6 +27,7 @@ const state = {
   screen: 'schedule',
   anchor: toDateOnly(new Date()),
   mode: local.getViewMode(),
+  zoom: 1,
   shared: cache?.events || [],
   settings: cache?.settings || null,
   sha: cache?.sha || null,
@@ -48,6 +51,20 @@ const els = {
     editor: document.getElementById('screen-editor'),
   },
 };
+
+state.zoom = local.getZoom(state.mode);
+
+const pager = createPager(els.schedule, {
+  renderPage: renderPageAt,
+  onCommit: (direction) => swipe(direction),
+  canSwipe: () => !(state.mode === 'week_grid' && state.zoom > 1),
+});
+
+function applyZoom() {
+  els.schedule.style.setProperty('--z', String(state.zoom));
+  els.schedule.style.setProperty('--zf', String(Math.round(Math.sqrt(state.zoom) * 100) / 100));
+  els.screens.schedule.classList.toggle('pan-free', state.mode === 'week_grid' && state.zoom > 1);
+}
 
 function toast(text) {
   showToast(els.toast, text);
@@ -74,14 +91,9 @@ function openOccurrence(occ) {
   openDetails(els.sheet, occ, { onToggle: toggleDone });
 }
 
-function renderScheduleScreen() {
-  if (!state.settings) {
-    els.weekLabel.textContent = '';
-    els.strip.replaceChildren();
-    els.schedule.replaceChildren(h('p', { class: 'empty' }, 'Загрузка расписания…'));
-    return;
-  }
-  const range = rangeForMode(state.mode, state.anchor);
+function renderPageAt(el, offset) {
+  const anchor = shiftAnchor(state.mode, state.anchor, offset);
+  const range = rangeForMode(state.mode, anchor);
   const occurrences = eventsForRange({
     shared: state.shared,
     personal: state.personal,
@@ -90,12 +102,28 @@ function renderScheduleScreen() {
     from: range.from,
     to: range.to,
   });
-  els.weekLabel.textContent = weekLabel(state.anchor, state.settings);
-  renderDateStrip(els.strip, { weekDays: weekDaysOf(state.anchor), highlight: range.highlight, today: dateKey(new Date()), onPick: pickDay });
-  renderSchedule(els.schedule, { mode: state.mode, days: range.days, occurrences, onToggle: toggleDone, onOpen: openOccurrence, today: dateKey(new Date()) });
+  renderSchedule(el, { mode: state.mode, days: range.days, occurrences, onToggle: toggleDone, onOpen: openOccurrence, today: dateKey(new Date()) });
+}
+
+function renderScheduleScreen() {
+  if (!state.settings) {
+    els.weekLabel.textContent = '';
+    els.strip.replaceChildren();
+    pager.message(h('p', { class: 'empty' }, 'Загрузка расписания…'));
+    return;
+  }
+  const range = rangeForMode(state.mode, state.anchor);
+  const isGrid = state.mode === 'week_grid';
+  els.weekLabel.textContent = isGrid
+    ? `${weekLabel(state.anchor, state.settings)} · ${weekRangeLabel(range.days)}`
+    : weekLabel(state.anchor, state.settings);
+  els.strip.hidden = isGrid;
+  if (!isGrid) renderDateStrip(els.strip, { weekDays: weekDaysOf(state.anchor), highlight: range.highlight, today: dateKey(new Date()), onPick: pickDay });
+  applyZoom();
+  pager.render();
   if (state.mode === 'week_list') {
     if (state.pendingScroll) scrollToDay(state.pendingScroll);
-    observeVisibleDay(els.schedule, headOffset(), (key) => {
+    observeVisibleDay(pager.current(), headOffset(), (key) => {
       state.anchor = toDateOnly(key);
       highlightStripDay(els.strip, key);
     });
@@ -220,7 +248,7 @@ async function refreshShared({ silent }) {
     }
   } catch (err) {
     if (!state.settings) {
-      els.schedule.replaceChildren(h('p', { class: 'empty' }, 'Не удалось загрузить расписание. Проверьте интернет и потяните экран вниз.'));
+      pager.message(h('p', { class: 'empty' }, 'Не удалось загрузить расписание. Проверьте интернет и потяните экран вниз.'));
       toast(errorText(err));
     } else if (!silent) {
       toast(`${errorText(err)} — показана сохранённая копия`);
@@ -233,7 +261,20 @@ if (consumeSetupHash()) toast('Токен установлен');
 if (location.hash) history.replaceState(null, '', location.pathname + location.search);
 navigator.storage?.persist?.().catch(() => {});
 
-attachSwipe(els.screens.schedule, swipe);
+attachPinchZoom(els.schedule, {
+  getZoom: () => state.zoom,
+  onZoom: (z) => {
+    state.zoom = z;
+    applyZoom();
+  },
+  onZoomEnd: () => local.setZoom(state.mode, state.zoom),
+  onDoubleTap: () => {
+    if (state.zoom === 1) return;
+    state.zoom = 1;
+    applyZoom();
+    local.setZoom(state.mode, 1);
+  },
+});
 attachPullToRefresh(els.screens.schedule, () => refreshShared({ silent: false }));
 let lastSeenDay = dateKey(new Date());
 
@@ -337,6 +378,7 @@ function renderSettingsScreen() {
     onBack: () => history.back(),
     onMode: (mode) => {
       state.mode = mode;
+      state.zoom = local.getZoom(mode);
       local.setViewMode(mode);
       state.pendingScroll = dateKey(state.anchor);
       render();

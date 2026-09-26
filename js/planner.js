@@ -1,6 +1,6 @@
 import { occurrenceDates, parseRecurrenceRule } from './recurrence.js';
 import { toDateOnly, dateKey, addDays, getWeekMonday, getAcademicWeekNumber, getWeekParity, formatDateDDMM } from './dateUtils.js';
-import { WEEKDAY_ORDER, WEEKDAY_SHORT_RU } from './config.js';
+import { WEEKDAY_ORDER, WEEKDAY_SHORT_RU, MONTHS_SHORT_RU } from './config.js';
 
 export const MODE_STEP = { day1: 1, day2: 2, week_grid: 7, week_list: 7 };
 
@@ -45,6 +45,14 @@ export function shiftAnchor(mode, anchor, direction) {
 export function weekLabel(date, settings) {
   const parity = getWeekParity(date, settings) === 'numerator' ? 'числитель' : 'знаменатель';
   return `${getAcademicWeekNumber(date, settings)} неделя, ${parity}`;
+}
+
+export function weekRangeLabel(days) {
+  const first = toDateOnly(days[0]);
+  const last = toDateOnly(days[days.length - 1]);
+  const month = (d) => MONTHS_SHORT_RU[d.getMonth()];
+  if (first.getMonth() === last.getMonth()) return `${first.getDate()} – ${last.getDate()} ${month(last)}`;
+  return `${first.getDate()} ${month(first)} – ${last.getDate()} ${month(last)}`;
 }
 
 function capitalize(s) {

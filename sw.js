@@ -1,4 +1,4 @@
-const VERSION = '2.0.0';
+const VERSION = '2.1.0';
 const CACHE = `sp-code-${VERSION}`;
 const FILES = [
   './',
@@ -31,6 +31,9 @@ const FILES = [
   './js/render/addForm.js',
   './js/render/deleteSheet.js',
   './js/render/settings.js',
+  './js/zoom.js',
+  './js/render/pager.js',
+  './js/hyphenate.js',
 ];
 
 self.addEventListener('install', (event) => {

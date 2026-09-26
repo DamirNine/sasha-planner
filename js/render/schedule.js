@@ -2,6 +2,7 @@ import { h } from './dom.js';
 import { EVENT_TYPES, WEEKDAY_SHORT_RU, MONTHS_GENITIVE_RU } from '../config.js';
 import { toDateOnly } from '../dateUtils.js';
 import { gridBounds, assignLanes, toMinutes } from '../layout.js';
+import { hyphenate } from '../hyphenate.js';
 
 const PX_PER_MIN = 0.9;
 
@@ -47,8 +48,8 @@ export function fullCard(occ, onToggle) {
   const meta = [EVENT_TYPES[occ.event_type]?.label, occ.teacher].filter(Boolean);
   return h('div', { class: `card${occ.isDone ? ' done' : ''}`, style: { borderLeftColor: typeColor(occ.event_type) } },
     occ.place ? h('div', { class: 'place' }, occ.place) : null,
-    ...meta.map((m) => h('div', { class: 'meta' }, m)),
-    h('div', { class: 'title' }, occ.title),
+    ...meta.map((m) => h('div', { class: 'meta' }, hyphenate(m))),
+    h('div', { class: 'title' }, hyphenate(occ.title)),
     occ.notes ? h('div', { class: 'notes' }, occ.notes) : null,
     occ.isPersonal ? h('span', { class: 'badge' }, 'личное') : null,
     checkButton(occ, onToggle));
@@ -84,7 +85,7 @@ function compactCard(occ, { onToggle, onOpen }) {
     onclick: () => onOpen(occ),
   },
   h('div', { class: 'time' }, timeRange(occ) || 'Без времени'),
-  h('div', { class: 'title' }, occ.title),
+  h('div', { class: 'title' }, hyphenate(occ.title)),
   occ.place ? h('div', { class: 'place' }, occ.place) : null,
   checkButton(occ, onToggle));
 }
@@ -103,7 +104,7 @@ function weekGrid(days, occurrences, { onOpen }, today) {
   const height = (bounds.end - bounds.start) * PX_PER_MIN;
   const hours = [];
   for (let m = bounds.start; m <= bounds.end; m += 60) {
-    hours.push(h('span', { style: { top: `${(m - bounds.start) * PX_PER_MIN}px` } }, String(m / 60)));
+    hours.push(h('span', { style: { top: `calc(${(m - bounds.start) * PX_PER_MIN}px * var(--z))` } }, String(m / 60)));
   }
   const head = h('div', { class: 'grid grid-head' }, h('div'),
     ...days.map((key) => h('div', { class: `grid-day${key === today ? ' today' : ''}` }, `${weekdayShort(key)} ${toDateOnly(key).getDate()}`)));
@@ -112,9 +113,9 @@ function weekGrid(days, occurrences, { onOpen }, today) {
     ? h('div', { class: 'grid grid-untimed' }, h('div'), ...days.map((key) => h('div', {},
       ...untimed.filter((o) => o.date === key).map((o) => h('button', {
         type: 'button', class: `grid-chip${o.isDone ? ' done' : ''}`, onclick: () => onOpen(o),
-      }, o.title)))))
+      }, hyphenate(o.title))))))
     : null;
-  const body = h('div', { class: 'grid', style: { height: `${height}px` } },
+  const body = h('div', { class: 'grid grid-body', style: { height: `calc(${height}px * var(--z))` } },
     h('div', { class: 'grid-hours' }, ...hours),
     ...days.map((key) => {
       const items = occurrences
@@ -127,16 +128,16 @@ function weekGrid(days, occurrences, { onOpen }, today) {
         type: 'button',
         class: `grid-item${it.occ.isDone ? ' done' : ''}`,
         style: {
-          top: `${(it.start - bounds.start) * PX_PER_MIN}px`,
-          height: `${Math.max(18, (it.end - it.start) * PX_PER_MIN)}px`,
+          top: `calc(${(it.start - bounds.start) * PX_PER_MIN}px * var(--z))`,
+          height: `calc(${Math.max(18, (it.end - it.start) * PX_PER_MIN)}px * var(--z))`,
           left: `${(it.lane / it.laneCount) * 100}%`,
           width: `${100 / it.laneCount}%`,
           borderLeftColor: typeColor(it.occ.event_type),
         },
         onclick: () => onOpen(it.occ),
-      }, h('b', {}, it.occ.title), it.occ.place ? h('div', {}, it.occ.place) : null)));
+      }, h('span', { class: 'gi-title' }, hyphenate(it.occ.title)), it.occ.place ? h('span', { class: 'gi-place' }, it.occ.place) : null)));
     }));
-  return h('div', { class: 'week-grid' }, head, untimedRow, body);
+  return h('div', { class: 'grid-scroll' }, h('div', { class: 'week-grid' }, head, untimedRow, body));
 }
 
 export function openDetails(sheetEl, occ, { onToggle }) {
