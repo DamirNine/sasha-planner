@@ -1,4 +1,4 @@
-const VERSION = '2.2.0';
+const VERSION = '2.3.0';
 const CACHE = `sp-code-${VERSION}`;
 const FILES = [
   './',
@@ -34,6 +34,7 @@ const FILES = [
   './js/render/pager.js',
   './js/hyphenate.js',
   './js/render/menu.js',
+  './js/fitText.js',
 ];
 
 self.addEventListener('install', (event) => {
