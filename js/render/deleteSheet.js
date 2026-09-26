@@ -3,7 +3,7 @@ import { dayHeading } from './schedule.js';
 import { describeSeries } from '../planner.js';
 import { buildDeleteOp } from '../forms.js';
 
-export function openDeleteSheet(sheetEl, { event, upcoming, onConfirm }) {
+export function openDeleteSheet(sheetEl, { event, upcoming, date = null, onConfirm }) {
   const close = () => { sheetEl.hidden = true; sheetEl.replaceChildren(); };
   const body = h('div', { class: 'sheet-body', onclick: (e) => e.stopPropagation() });
   const error = h('p', { class: 'error' });
@@ -34,7 +34,9 @@ export function openDeleteSheet(sheetEl, { event, upcoming, onConfirm }) {
     error.textContent = '';
     const actions = event.recurrence_rule
       ? [
-        h('button', { type: 'button', class: 'settings-row', onclick: () => showPicker(false) }, 'Только один день', h('span', { class: 'muted' }, '›')),
+        date
+          ? h('button', { type: 'button', class: 'settings-row', onclick: () => confirm('dates', [date]) }, `Только ${dayHeading(date).toLowerCase()}`)
+          : h('button', { type: 'button', class: 'settings-row', onclick: () => showPicker(false) }, 'Только один день', h('span', { class: 'muted' }, '›')),
         h('button', { type: 'button', class: 'settings-row', onclick: () => showPicker(true) }, 'Выбрать дни', h('span', { class: 'muted' }, '›')),
         h('button', { type: 'button', class: 'settings-row danger', onclick: () => confirm('all') }, 'Все повторы'),
       ]

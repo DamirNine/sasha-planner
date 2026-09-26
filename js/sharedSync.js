@@ -6,6 +6,8 @@ const COMMIT_MESSAGES = {
   add: 'Добавлено общее событие',
   exclude: 'Удалены дни общего события',
   delete: 'Удалено общее событие',
+  update: 'Изменено общее событие',
+  batch: 'Изменено общее событие',
 };
 
 function coded(message, code) {

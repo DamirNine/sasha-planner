@@ -1,9 +1,14 @@
 export function decideSwipe({ dx, dy, dt, width }) {
   if (Math.abs(dx) <= Math.abs(dy)) return null;
   const far = Math.abs(dx) > width * 0.25;
-  const flick = Math.abs(dx) > 30 && Math.abs(dx) / Math.max(dt, 1) > 0.5;
+  const flick = Math.abs(dx) > 20 && Math.abs(dx) / Math.max(dt, 1) > 0.3;
   if (!far && !flick) return null;
   return dx < 0 ? 'next' : 'prev';
+}
+
+export function lockDirection(dx, dy, slop = 6) {
+  if (Math.hypot(dx, dy) < slop) return null;
+  return Math.abs(dx) > Math.abs(dy) ? 'h' : 'v';
 }
 
 export function classifyPull(dx, dy, atTop, threshold = 80) {

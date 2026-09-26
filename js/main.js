@@ -6,18 +6,19 @@ import { occurrenceDates } from './recurrence.js';
 import { renderEditor } from './render/editor.js';
 import { openAddSheet } from './render/addForm.js';
 import { openDeleteSheet } from './render/deleteSheet.js';
+import { openMenu, openDayPicker } from './render/menu.js';
+import { buildEventFields, eventToFormValues, buildEditOp } from './forms.js';
 import { eventsForRange, rangeForMode, shiftAnchor, weekLabel, weekRangeLabel, weekDaysOf } from './planner.js';
 import { dateKey, toDateOnly } from './dateUtils.js';
 import { consumeSetupHash, extractToken } from './setup.js';
 import { attachPullToRefresh } from './gestures.js';
-import { attachPinchZoom } from './zoom.js';
 import { createPager } from './render/pager.js';
 import { h } from './render/dom.js';
 import { showToast } from './render/toast.js';
 import { registerServiceWorker, checkForUpdate, isStandalone, isIOS, listenForInstallPrompt, promptInstall } from './pwa.js';
 import { APP_VERSION } from './version.js';
 import { renderSettings } from './render/settings.js';
-import { renderDateStrip, highlightStripDay, renderSchedule, observeVisibleDay, stopObservingDays, openDetails } from './render/schedule.js';
+import { renderDateStrip, highlightStripDay, renderSchedule, observeVisibleDay, stopObservingDays, openDetails, dayHeading } from './render/schedule.js';
 
 const LOCAL_DEV = ['localhost', '127.0.0.1'].includes(location.hostname);
 const local = createLocalStore();
@@ -27,7 +28,6 @@ const state = {
   screen: 'schedule',
   anchor: toDateOnly(new Date()),
   mode: local.getViewMode(),
-  zoom: 1,
   shared: cache?.events || [],
   settings: cache?.settings || null,
   sha: cache?.sha || null,
@@ -52,19 +52,19 @@ const els = {
   },
 };
 
-state.zoom = local.getZoom(state.mode);
-
 const pager = createPager(els.schedule, {
   renderPage: renderPageAt,
   onCommit: (direction) => swipe(direction),
-  canSwipe: () => !(state.mode === 'week_grid' && state.zoom > 1),
+  canSwipe: () => !isPinchZoomed(),
 });
 
-function applyZoom() {
-  els.schedule.style.setProperty('--z', String(state.zoom));
-  els.schedule.style.setProperty('--zf', String(Math.round(Math.sqrt(state.zoom) * 100) / 100));
-  els.screens.schedule.classList.toggle('pan-free', state.mode === 'week_grid' && state.zoom > 1);
+function isPinchZoomed() {
+  return (window.visualViewport?.scale || 1) > 1.01;
 }
+
+window.visualViewport?.addEventListener('resize', () => {
+  els.screens.schedule.classList.toggle('zoomed', isPinchZoomed());
+});
 
 function toast(text) {
   showToast(els.toast, text);
@@ -88,7 +88,103 @@ function scrollToDay(key, behavior = 'auto') {
 }
 
 function openOccurrence(occ) {
-  openDetails(els.sheet, occ, { onToggle: toggleDone });
+  openDetails(els.sheet, occ, { onToggle: toggleDone, onMenu: openEventMenu });
+}
+
+function canEditShared() {
+  return LOCAL_DEV || Boolean(getToken());
+}
+
+function findSeries(eventId, isPersonal) {
+  return (isPersonal ? state.personal : state.shared).find((e) => e.event_id === eventId);
+}
+
+function upcomingFor(event) {
+  return state.settings ? occurrenceDates(event, state.settings, new Date(), state.settings.semester_end_date) : [];
+}
+
+function openAddForDate(date) {
+  openAddSheet(els.sheet, {
+    initial: { date },
+    canEditShared: canEditShared(),
+    onSubmit: ({ scope, values }) => {
+      const fields = buildEventFields(values);
+      const isPersonal = scope === 'personal';
+      const event = makeEvent({ ...fields, source_type: isPersonal ? 'personal' : 'manual' });
+      return applyChange({ type: 'add', event }, isPersonal);
+    },
+  });
+}
+
+function openEditForm(series, isPersonal, { scope, dates = [] }) {
+  if (!isPersonal && !canEditShared()) {
+    toast('Общие события можно менять после установки токена');
+    return;
+  }
+  openAddSheet(els.sheet, {
+    title: 'Изменить событие',
+    submitLabel: 'Сохранить',
+    initial: eventToFormValues(series, scope === 'days' ? { date: dates[0] } : {}),
+    showScope: false,
+    showDate: scope === 'series' || dates.length === 1,
+    showRepeat: scope === 'series',
+    onSubmit: ({ values }) => {
+      const fields = buildEventFields(values, { baseRule: series.recurrence_rule });
+      return applyChange(buildEditOp(series, fields, { scope, dates }), isPersonal);
+    },
+  });
+}
+
+function chooseEditScope(series, isPersonal, date) {
+  const items = [];
+  if (date) items.push({ label: `Только ${dayHeading(date).toLowerCase()}`, onSelect: () => openEditForm(series, isPersonal, { scope: 'days', dates: [date] }) });
+  items.push(
+    {
+      label: 'Выбрать дни',
+      chevron: true,
+      onSelect: () => openDayPicker(els.sheet, {
+        title: 'Какие дни изменить?',
+        days: upcomingFor(series),
+        confirmLabel: 'Дальше',
+        onConfirm: (dates) => openEditForm(series, isPersonal, { scope: 'days', dates }),
+      }),
+    },
+    { label: 'Все повторы', onSelect: () => openEditForm(series, isPersonal, { scope: 'series' }) },
+  );
+  openMenu(els.sheet, { title: 'Что изменить?', subtitle: series.title, items });
+}
+
+function openSeriesMenu(series, isPersonal, date = null) {
+  const when = date ? dayHeading(date) : '';
+  openMenu(els.sheet, {
+    title: series.title,
+    subtitle: when,
+    items: [
+      {
+        label: 'Редактировать',
+        chevron: true,
+        onSelect: () => (series.recurrence_rule
+          ? chooseEditScope(series, isPersonal, date)
+          : openEditForm(series, isPersonal, { scope: 'series' })),
+      },
+      {
+        label: 'Удалить',
+        danger: true,
+        chevron: true,
+        onSelect: () => openDeleteSheet(els.sheet, {
+          event: series,
+          date,
+          upcoming: upcomingFor(series),
+          onConfirm: (op) => applyChange(op, isPersonal),
+        }),
+      },
+    ],
+  });
+}
+
+function openEventMenu(occ) {
+  const series = findSeries(occ.event_id, occ.isPersonal);
+  if (series) openSeriesMenu(series, occ.isPersonal, occ.date);
 }
 
 function renderPageAt(el, offset) {
@@ -102,7 +198,7 @@ function renderPageAt(el, offset) {
     from: range.from,
     to: range.to,
   });
-  renderSchedule(el, { mode: state.mode, days: range.days, occurrences, onToggle: toggleDone, onOpen: openOccurrence, today: dateKey(new Date()) });
+  renderSchedule(el, { mode: state.mode, days: range.days, occurrences, onToggle: toggleDone, onOpen: openOccurrence, onMenu: openEventMenu, onAdd: openAddForDate, today: dateKey(new Date()) });
 }
 
 function renderScheduleScreen() {
@@ -119,7 +215,6 @@ function renderScheduleScreen() {
     : weekLabel(state.anchor, state.settings);
   els.strip.hidden = isGrid;
   if (!isGrid) renderDateStrip(els.strip, { weekDays: weekDaysOf(state.anchor), highlight: range.highlight, today: dateKey(new Date()), onPick: pickDay });
-  applyZoom();
   pager.render();
   if (state.mode === 'week_list') {
     if (state.pendingScroll) scrollToDay(state.pendingScroll);
@@ -191,20 +286,8 @@ function renderEditorScreen() {
     shared: state.shared,
     personal: state.personal,
     onBack: () => history.back(),
-    onAdd: () => openAddSheet(els.sheet, {
-      defaultDate: dateKey(state.anchor),
-      canEditShared: LOCAL_DEV || Boolean(getToken()),
-      onSubmit: ({ scope, fields }) => {
-        const isPersonal = scope === 'personal';
-        const event = makeEvent({ ...fields, source_type: isPersonal ? 'personal' : 'manual' });
-        return applyChange({ type: 'add', event }, isPersonal);
-      },
-    }),
-    onPick: (event, isPersonal) => openDeleteSheet(els.sheet, {
-      event,
-      upcoming: state.settings ? occurrenceDates(event, state.settings, new Date(), state.settings.semester_end_date) : [],
-      onConfirm: (op) => applyChange(op, isPersonal),
-    }),
+    onAdd: () => openAddForDate(dateKey(state.anchor)),
+    onPick: (event, isPersonal) => openSeriesMenu(event, isPersonal),
   });
 }
 
@@ -261,20 +344,6 @@ if (consumeSetupHash()) toast('Токен установлен');
 if (location.hash) history.replaceState(null, '', location.pathname + location.search);
 navigator.storage?.persist?.().catch(() => {});
 
-attachPinchZoom(els.schedule, {
-  getZoom: () => state.zoom,
-  onZoom: (z) => {
-    state.zoom = z;
-    applyZoom();
-  },
-  onZoomEnd: () => local.setZoom(state.mode, state.zoom),
-  onDoubleTap: () => {
-    if (state.zoom === 1) return;
-    state.zoom = 1;
-    applyZoom();
-    local.setZoom(state.mode, 1);
-  },
-});
 attachPullToRefresh(els.screens.schedule, () => refreshShared({ silent: false }));
 let lastSeenDay = dateKey(new Date());
 
@@ -378,7 +447,6 @@ function renderSettingsScreen() {
     onBack: () => history.back(),
     onMode: (mode) => {
       state.mode = mode;
-      state.zoom = local.getZoom(mode);
       local.setViewMode(mode);
       state.pendingScroll = dateKey(state.anchor);
       render();

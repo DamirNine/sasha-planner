@@ -1,7 +1,7 @@
 import { h } from './dom.js';
-import { decideSwipe } from '../gestures.js';
+import { decideSwipe, lockDirection } from '../gestures.js';
 
-const SETTLE_MS = 280;
+const SETTLE_MS = 170;
 
 export function createPager(host, { renderPage, onCommit, canSwipe = () => true }) {
   const pages = [
@@ -11,7 +11,7 @@ export function createPager(host, { renderPage, onCommit, canSwipe = () => true 
   ];
   const track = h('div', { class: 'pager-track' }, ...pages);
   let drag = null;
-  let busy = false;
+  let pending = null;
   let suppressClick = false;
 
   const width = () => host.clientWidth || 1;
@@ -28,56 +28,89 @@ export function createPager(host, { renderPage, onCommit, canSwipe = () => true 
     setOffset(0, false);
   }
 
-  function settle(direction) {
-    busy = true;
-    const target = direction === 'next' ? -width() : direction === 'prev' ? width() : 0;
-    setOffset(target, true);
-    setTimeout(() => {
-      busy = false;
-      if (direction) onCommit(direction);
-      else track.classList.remove('dragging');
-    }, SETTLE_MS);
+  function completePending() {
+    if (!pending) return;
+    const { direction, timer } = pending;
+    pending = null;
+    clearTimeout(timer);
+    if (direction) onCommit(direction);
+    else track.classList.remove('dragging');
   }
 
-  host.addEventListener('pointerdown', (e) => {
-    if (!e.isPrimary) {
-      if (drag?.locked === 'h') settle(null);
-      drag = null;
-      return;
-    }
-    if (busy || !canSwipe()) return;
-    drag = { id: e.pointerId, x0: e.clientX, y0: e.clientY, t0: e.timeStamp, dx: 0, dy: 0, locked: null };
-  });
+  function settle(direction) {
+    const target = direction === 'next' ? -width() : direction === 'prev' ? width() : 0;
+    setOffset(target, true);
+    pending = { direction, timer: setTimeout(completePending, SETTLE_MS) };
+  }
 
-  host.addEventListener('pointermove', (e) => {
-    if (!drag || e.pointerId !== drag.id) return;
-    drag.dx = e.clientX - drag.x0;
-    drag.dy = e.clientY - drag.y0;
-    if (!drag.locked && Math.hypot(drag.dx, drag.dy) > 8) {
-      drag.locked = Math.abs(drag.dx) > Math.abs(drag.dy) ? 'h' : 'v';
-      if (drag.locked === 'v') {
+  function begin(x, y, t) {
+    completePending();
+    if (!canSwipe()) return;
+    drag = { x0: x, y0: y, t0: t, dx: 0, dy: 0, locked: null };
+  }
+
+  function follow(x, y, event) {
+    if (!drag) return;
+    drag.dx = x - drag.x0;
+    drag.dy = y - drag.y0;
+    if (!drag.locked) {
+      const dir = lockDirection(drag.dx, drag.dy);
+      if (!dir) return;
+      if (dir === 'v') {
         drag = null;
         return;
       }
+      drag.locked = 'h';
       track.classList.add('dragging');
-      host.setPointerCapture?.(e.pointerId);
     }
-    if (drag.locked === 'h') setOffset(drag.dx, false);
-  });
+    if (event.cancelable) event.preventDefault();
+    setOffset(drag.dx, false);
+  }
 
-  host.addEventListener('pointerup', (e) => {
-    if (!drag || e.pointerId !== drag.id) return;
+  function finish(t) {
+    if (!drag) return;
     const d = drag;
     drag = null;
     if (d.locked !== 'h') return;
     suppressClick = true;
     setTimeout(() => { suppressClick = false; }, 0);
-    settle(decideSwipe({ dx: d.dx, dy: d.dy, dt: e.timeStamp - d.t0, width: width() }));
-  });
+    settle(decideSwipe({ dx: d.dx, dy: d.dy, dt: t - d.t0, width: width() }));
+  }
 
-  host.addEventListener('pointercancel', () => {
+  function abort() {
     if (drag?.locked === 'h') settle(null);
     drag = null;
+  }
+
+  host.addEventListener('touchstart', (e) => {
+    if (e.touches.length !== 1) {
+      abort();
+      return;
+    }
+    begin(e.touches[0].clientX, e.touches[0].clientY, e.timeStamp);
+  }, { passive: true });
+  host.addEventListener('touchmove', (e) => {
+    if (e.touches.length !== 1) {
+      abort();
+      return;
+    }
+    follow(e.touches[0].clientX, e.touches[0].clientY, e);
+  }, { passive: false });
+  host.addEventListener('touchend', (e) => finish(e.timeStamp), { passive: true });
+  host.addEventListener('touchcancel', abort, { passive: true });
+
+  host.addEventListener('pointerdown', (e) => {
+    if (e.pointerType !== 'mouse') return;
+    begin(e.clientX, e.clientY, e.timeStamp);
+  });
+  host.addEventListener('pointermove', (e) => {
+    if (e.pointerType !== 'mouse' || !drag) return;
+    const wasLocked = drag.locked;
+    follow(e.clientX, e.clientY, e);
+    if (!wasLocked && drag?.locked) host.setPointerCapture?.(e.pointerId);
+  });
+  host.addEventListener('pointerup', (e) => {
+    if (e.pointerType === 'mouse') finish(e.timeStamp);
   });
 
   host.addEventListener('click', (e) => {
@@ -88,7 +121,7 @@ export function createPager(host, { renderPage, onCommit, canSwipe = () => true 
   }, true);
 
   window.addEventListener('resize', () => {
-    if (!drag && !busy) setOffset(0, false);
+    if (!drag && !pending) setOffset(0, false);
   });
 
   return {

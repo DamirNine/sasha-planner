@@ -37,6 +37,10 @@ export function applyOp(events, op, now = new Date().toISOString()) {
       });
     case 'delete':
       return events.filter((e) => e.event_id !== op.id);
+    case 'update':
+      return events.map((e) => (e.event_id === op.id ? { ...e, ...op.fields, updated_at: now } : e));
+    case 'batch':
+      return op.ops.reduce((acc, inner) => applyOp(acc, inner, now), events);
     default:
       throw new Error(`Неизвестная операция: ${op.type}`);
   }

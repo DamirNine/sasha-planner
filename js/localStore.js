@@ -6,7 +6,6 @@ const KEYS = {
   cache: 'sp_shared_cache',
   view: 'sp_view_mode',
   banner: 'sp_banner_dismissed',
-  zoom: 'sp_zoom',
 };
 const EXPORT_FORMAT = 'sasha-planner-personal';
 
@@ -68,17 +67,6 @@ export function createLocalStore(storage = globalThis.localStorage) {
       return VIEW_MODES.includes(v) ? v : 'day1';
     },
     setViewMode: (mode) => safeSet(storage, KEYS.view, mode),
-    getZoom(mode) {
-      const map = readJson(storage, KEYS.zoom);
-      const z = map && typeof map === 'object' ? Number(map[mode]) : NaN;
-      return Number.isFinite(z) && z >= 1 && z <= 3 ? z : 1;
-    },
-    setZoom(mode, z) {
-      const stored = readJson(storage, KEYS.zoom);
-      const map = stored && typeof stored === 'object' && !Array.isArray(stored) ? stored : {};
-      map[mode] = z;
-      safeSet(storage, KEYS.zoom, JSON.stringify(map));
-    },
     isBannerDismissed: () => safeGet(storage, KEYS.banner) === '1',
     dismissBanner: () => safeSet(storage, KEYS.banner, '1'),
     exportPersonal() {

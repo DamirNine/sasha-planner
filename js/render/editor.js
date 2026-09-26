@@ -24,7 +24,7 @@ export function renderEditor(el, { shared, personal, onBack, onAdd, onPick }) {
     h('button', { type: 'button', class: 'back-button', onclick: onBack }, '‹ Назад'),
     h('h1', {}, 'Редактирование'),
     h('button', { type: 'button', class: 'primary', onclick: onAdd }, '＋ Добавить событие'),
-    h('p', { class: 'muted small' }, 'Нажмите на событие, чтобы удалить его целиком или отдельные дни.'),
+    h('p', { class: 'muted small' }, 'Нажмите на событие, чтобы изменить или удалить его.'),
     ...group('Личные — только на этом телефоне', personal, true, onPick, 'Личных событий пока нет'),
     ...group('Общие — видны на обоих телефонах', shared, false, onPick, 'Общих событий нет'),
   );
