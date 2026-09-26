@@ -1,7 +1,7 @@
 // tests/dateUtils.test.js
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { toDateOnly, dateKey, formatDateDDMM, getWeekMonday, getWeekRange, getAcademicWeekNumber, getWeekParity } from '../js/dateUtils.js';
+import { toDateOnly, dateKey, formatDateDDMM, getWeekMonday, getWeekRange, getAcademicWeekNumber, getWeekParity, addDays } from '../js/dateUtils.js';
 
 const settings = { reference_monday: '2026-08-31', reference_parity: 'numerator' };
 
@@ -51,4 +51,10 @@ test('toDateOnly parses a bare date string as a local date, not UTC-then-shifted
   // Regression test: new Date('2026-09-14') parses as UTC midnight; reading it back
   // in a negative-UTC-offset timezone previously rolled the date back to 2026-09-13.
   assert.equal(dateKey(toDateOnly('2026-09-14')), '2026-09-14');
+});
+
+test('addDays crosses month boundaries and returns local midnight', () => {
+  assert.equal(dateKey(addDays('2026-09-28', 5)), '2026-10-03');
+  assert.equal(dateKey(addDays('2026-09-01', -1)), '2026-08-31');
+  assert.equal(addDays('2026-09-28', 1).getHours(), 0);
 });
