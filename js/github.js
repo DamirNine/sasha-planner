@@ -25,6 +25,33 @@ function toBase64(str) {
   return btoa(binary);
 }
 
+function fromBase64(b64) {
+  const binary = atob(b64.replace(/\s/g, ''));
+  const bytes = Uint8Array.from(binary, (c) => c.charCodeAt(0));
+  return new TextDecoder().decode(bytes);
+}
+
+function authError() {
+  const err = new Error('Токен не подходит');
+  err.code = 'auth';
+  return err;
+}
+
+export async function readFile(owner, repo, path, { token, fetchFn = fetch }) {
+  const headers = { Accept: 'application/vnd.github+json' };
+  if (token) headers.Authorization = `Bearer ${token}`;
+  const res = await fetchFn(`${API_BASE}/repos/${owner}/${repo}/contents/${path}`, { headers, cache: 'no-store' });
+  if (res.status === 403 && res.headers?.get?.('x-ratelimit-remaining') === '0') {
+    const err = new Error('GitHub временно ограничил запросы — попробуйте позже');
+    err.code = 'ratelimit';
+    throw err;
+  }
+  if (res.status === 401 || res.status === 403) throw authError();
+  if (!res.ok) throw new Error(`GitHub API error ${res.status} reading ${path}`);
+  const json = await res.json();
+  return { sha: json.sha, data: JSON.parse(fromBase64(json.content)) };
+}
+
 export async function getFileSha(owner, repo, path, token, fetchFn = fetch) {
   const headers = token ? { Authorization: `Bearer ${token}` } : {};
   const res = await fetchFn(`${API_BASE}/repos/${owner}/${repo}/contents/${path}`, { headers });
@@ -50,6 +77,7 @@ export async function writeFile(owner, repo, path, dataObj, { token, sha, messag
     err.conflict = true;
     throw err;
   }
+  if (res.status === 401 || res.status === 403) throw authError();
   if (!res.ok) throw new Error(`GitHub API error ${res.status} writing ${path}`);
   const json = await res.json();
   return json.content.sha;

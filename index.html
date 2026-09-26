@@ -2,102 +2,43 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Мой планер — Саша</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#F4F4F4" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="apple-mobile-web-app-title" content="Расписание" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="icon" href="icon-192.png" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+  <title>Расписание</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div id="app"></div>
+  <div id="install-banner" class="install-banner" hidden></div>
 
-  <div class="toolbar">
-    <button id="add-button" type="button">＋ Добавить</button>
-    <button id="save-button" type="button">Сохранить</button>
-    <span id="save-status"></span>
-    <form id="token-form">
-      <input id="token-input" type="password" placeholder="GitHub токен (fine-grained, только этот репозиторий)" />
-      <button type="submit">Сохранить токен</button>
-    </form>
-  </div>
+  <main id="screen-schedule" class="screen">
+    <div id="sticky-head" class="sticky-head">
+      <header class="topbar">
+        <h1>Расписание</h1>
+        <button id="open-settings" class="icon-button" type="button" aria-label="Настройки">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="12" cy="12" r="3"></circle>
+            <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+          </svg>
+        </button>
+      </header>
+      <p id="week-label" class="week-label"></p>
+      <nav id="date-strip" class="date-strip" aria-label="Дни недели"></nav>
+    </div>
+    <section id="schedule" class="schedule"></section>
+  </main>
 
-  <dialog id="add-dialog">
-    <form id="add-form" method="dialog">
-      <h2>Новое событие / задача</h2>
+  <section id="screen-settings" class="screen" hidden></section>
+  <section id="screen-editor" class="screen" hidden></section>
 
-      <label>Название
-        <input id="add-title" type="text" required />
-      </label>
-
-      <label>Тип
-        <select id="add-type">
-          <option value="task">Личная задача</option>
-          <option value="lecture">Лекция</option>
-          <option value="seminar">Семинар</option>
-          <option value="lab">Лабораторная</option>
-          <option value="sport">Спорт</option>
-          <option value="vuc">ВУЦ</option>
-          <option value="consultation">Консультация</option>
-          <option value="tutoring">Репетиторство</option>
-          <option value="selfstudy">Самостоятельная работа</option>
-          <option value="trip">Поездка</option>
-          <option value="other">Другое</option>
-        </select>
-      </label>
-
-      <label>Категория прогресса
-        <select id="add-progress-group">
-          <option value="task">Личная задача (30%)</option>
-          <option value="required">Обязательное (70%)</option>
-        </select>
-      </label>
-
-      <label>Дата
-        <input id="add-date" type="date" required />
-      </label>
-
-      <label class="checkbox-line">
-        <input id="add-has-time" type="checkbox" />
-        Указать время
-      </label>
-
-      <div id="add-time-fields" hidden>
-        <label>Начало <input id="add-start-time" type="time" /></label>
-        <label>Конец <input id="add-end-time" type="time" /></label>
-      </div>
-
-      <label>Аудитория / место
-        <input id="add-place" type="text" />
-      </label>
-
-      <label>Приоритет
-        <select id="add-priority">
-          <option value="">—</option>
-          <option value="high">Высокий</option>
-          <option value="medium">Средний</option>
-          <option value="low">Низкий</option>
-        </select>
-      </label>
-
-      <fieldset>
-        <legend>Повторять по дням недели (оставь пустым для разового события)</legend>
-        <label class="checkbox-line"><input type="checkbox" class="add-repeat-day" value="MO" /> Пн</label>
-        <label class="checkbox-line"><input type="checkbox" class="add-repeat-day" value="TU" /> Вт</label>
-        <label class="checkbox-line"><input type="checkbox" class="add-repeat-day" value="WE" /> Ср</label>
-        <label class="checkbox-line"><input type="checkbox" class="add-repeat-day" value="TH" /> Чт</label>
-        <label class="checkbox-line"><input type="checkbox" class="add-repeat-day" value="FR" /> Пт</label>
-        <label class="checkbox-line"><input type="checkbox" class="add-repeat-day" value="SA" /> Сб</label>
-        <label class="checkbox-line"><input type="checkbox" class="add-repeat-day" value="SU" /> Вс</label>
-      </fieldset>
-
-      <label>Заметка
-        <textarea id="add-notes"></textarea>
-      </label>
-
-      <div class="dialog-buttons">
-        <button type="button" id="add-cancel">Отмена</button>
-        <button type="submit" id="add-submit">Добавить</button>
-      </div>
-    </form>
-  </dialog>
+  <div id="sheet" class="sheet" hidden></div>
+  <div id="toast" class="toast" role="status" hidden></div>
 
   <script type="module" src="js/main.js"></script>
 </body>

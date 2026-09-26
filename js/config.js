@@ -6,16 +6,6 @@ export const TOKEN_STORAGE_KEY = 'sasha_planner_gh_token';
 
 export const WEEKDAY_ORDER = ['MO', 'TU', 'WE', 'TH', 'FR', 'SA', 'SU'];
 
-export const WEEKDAY_LABELS_RU = {
-  MO: 'ПОНЕДЕЛЬНИК',
-  TU: 'ВТОРНИК',
-  WE: 'СРЕДА',
-  TH: 'ЧЕТВЕРГ',
-  FR: 'ПЯТНИЦА',
-  SA: 'СУББОТА',
-  SU: 'ВОСКРЕСЕНЬЕ',
-};
-
 export const EVENT_TYPES = {
   lecture: { label: 'Лекция', color: '#D6E9F8' },
   seminar: { label: 'Семинар', color: '#FBE3D4' },
@@ -29,3 +19,10 @@ export const EVENT_TYPES = {
   task: { label: 'Личная задача', color: '#E4EFE0' },
   other: { label: 'Другое', color: '#F0EAD9' },
 };
+
+export const WEEKDAY_SHORT_RU = ['пн', 'вт', 'ср', 'чт', 'пт', 'сб', 'вс'];
+
+export const MONTHS_GENITIVE_RU = [
+  'января', 'февраля', 'марта', 'апреля', 'мая', 'июня',
+  'июля', 'августа', 'сентября', 'октября', 'ноября', 'декабря',
+];

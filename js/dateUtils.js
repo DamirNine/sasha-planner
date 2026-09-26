@@ -57,3 +57,9 @@ export function getWeekParity(d, settings) {
   if (isRefParityWeek) return refParity;
   return refParity === 'numerator' ? 'denominator' : 'numerator';
 }
+
+export function addDays(d, n) {
+  const date = toDateOnly(d);
+  date.setDate(date.getDate() + n);
+  return date;
+}
