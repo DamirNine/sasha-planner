@@ -77,3 +77,7 @@ export function reminderMessage(event, date, offset) {
   const body = [`через ${offsetPhrase(offset)}`, formatDateDDMM(date), event.start_time, event.place].filter(Boolean).join(' · ');
   return { title: event.title, body, url: `./?date=${date}` };
 }
+
+export function remindersChanged(before, after) {
+  return Object.entries(after).some(([id, offsets]) => String(before[id] || '') !== String(offsets));
+}

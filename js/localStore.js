@@ -10,6 +10,7 @@ const KEYS = {
   banner: 'sp_banner_dismissed',
   reminders: 'sp_reminders',
   device: 'sp_device_id',
+  hidden: 'sp_hidden_shared',
 };
 const EXPORT_FORMAT = 'sasha-planner-personal';
 
@@ -101,6 +102,20 @@ export function createLocalStore(storage = globalThis.localStorage) {
       delete map[id];
       saveReminders(map);
     },
+    getHidden() {
+      const v = readJson(storage, KEYS.hidden);
+      if (!v || typeof v !== 'object' || Array.isArray(v)) return {};
+      const out = {};
+      for (const [id, value] of Object.entries(v)) {
+        if (value === 'all') out[id] = 'all';
+        else if (Array.isArray(value)) {
+          const dates = value.filter((d) => typeof d === 'string');
+          if (dates.length) out[id] = dates;
+        }
+      }
+      return out;
+    },
+    setHidden: (map) => safeSet(storage, KEYS.hidden, JSON.stringify(map)),
     getDeviceId() {
       let id = safeGet(storage, KEYS.device);
       if (!id) {

@@ -21,6 +21,8 @@ import { APP_VERSION } from './version.js';
 import { renderSettings } from './render/settings.js';
 import { openRemindersSheet } from './render/remindersField.js';
 import { notificationSupport, syncReminders, sendTestPush } from './push.js';
+import { remindersChanged } from './reminders.js';
+import { applyHidden, addHidden, localOnlyChange, convertedEvent, hiddenSummary } from './localOverrides.js';
 import { renderDateStrip, highlightStripDay, renderSchedule, observeVisibleDay, stopObservingDays, openDetails, dayHeading } from './render/schedule.js';
 
 const LOCAL_DEV = ['localhost', '127.0.0.1'].includes(location.hostname);
@@ -37,6 +39,7 @@ const state = {
   personal: local.getPersonal(),
   done: local.getDone(),
   reminders: local.getReminders(),
+  hidden: local.getHidden(),
   pendingScroll: dateKey(new Date()),
   tokenInvalid: false,
   tokenWarned: false,
@@ -101,8 +104,12 @@ function canEditShared() {
   return LOCAL_DEV || Boolean(getToken());
 }
 
+function visibleShared() {
+  return applyHidden(state.shared, state.hidden);
+}
+
 function findSeries(eventId, isPersonal) {
-  return (isPersonal ? state.personal : state.shared).find((e) => e.event_id === eventId);
+  return (isPersonal ? state.personal : visibleShared()).find((e) => e.event_id === eventId);
 }
 
 function upcomingFor(event) {
@@ -122,28 +129,33 @@ function openAddForDate(date) {
   });
 }
 
-function openEditForm(series, isPersonal, { scope, dates = [] }) {
-  if (!isPersonal && !canEditShared()) {
-    toast('Общие события можно менять после установки токена');
+function openEditForm(series, isPersonal, { scope, dates = [], localOnly = false }) {
+  if (!isPersonal && !localOnly && !canEditShared()) {
+    toast('Общие события можно менять у всех после установки токена');
     return;
   }
+  const current = isPersonal ? 'personal' : 'shared';
   openAddSheet(els.sheet, {
-    title: 'Изменить событие',
+    title: localOnly ? 'Изменить только у себя' : 'Изменить событие',
     submitLabel: 'Сохранить',
     initial: { ...eventToFormValues(series, scope === 'days' ? { date: dates[0] } : {}), reminders: state.reminders[series.event_id] || [] },
-    showScope: false,
+    showScope: scope === 'series' && !localOnly,
+    initialScope: current,
+    canEditShared: canEditShared(),
     showDate: scope === 'series' || dates.length === 1,
     showRepeat: scope === 'series',
-    onSubmit: ({ values }) => {
+    onSubmit: ({ scope: target, values }) => {
       const fields = buildEventFields(values, { baseRule: series.recurrence_rule });
+      if (localOnly) return applyLocalOnly(buildEditOp(series, fields, { scope, dates }), series, values.reminders);
+      if (scope === 'series' && target !== current) return convertSeries(series, isPersonal, fields, values.reminders);
       return applyChange(buildEditOp(series, fields, { scope, dates }), isPersonal, { reminders: values.reminders });
     },
   });
 }
 
-function chooseEditScope(series, isPersonal, date) {
+function chooseEditScope(series, isPersonal, date, localOnly = false) {
   const items = [];
-  if (date) items.push({ label: `Только ${dayHeading(date).toLowerCase()}`, onSelect: () => openEditForm(series, isPersonal, { scope: 'days', dates: [date] }) });
+  if (date) items.push({ label: `Только ${dayHeading(date).toLowerCase()}`, onSelect: () => openEditForm(series, isPersonal, { scope: 'days', dates: [date], localOnly }) });
   items.push(
     {
       label: 'Выбрать дни',
@@ -152,54 +164,75 @@ function chooseEditScope(series, isPersonal, date) {
         title: 'Какие дни изменить?',
         days: upcomingFor(series),
         confirmLabel: 'Дальше',
-        onConfirm: (dates) => openEditForm(series, isPersonal, { scope: 'days', dates }),
+        onConfirm: (dates) => openEditForm(series, isPersonal, { scope: 'days', dates, localOnly }),
       }),
     },
-    { label: 'Все повторы', onSelect: () => openEditForm(series, isPersonal, { scope: 'series' }) },
+    { label: 'Все повторы', onSelect: () => openEditForm(series, isPersonal, { scope: 'series', localOnly }) },
   );
   openMenu(els.sheet, { title: 'Что изменить?', subtitle: series.title, items });
 }
 
+function editItem(label, series, isPersonal, date, localOnly) {
+  return {
+    label,
+    chevron: true,
+    onSelect: () => {
+      if (!isPersonal && !localOnly && !canEditShared()) {
+        toast('Менять общее у всех можно после установки токена');
+        return;
+      }
+      if (series.recurrence_rule) chooseEditScope(series, isPersonal, date, localOnly);
+      else openEditForm(series, isPersonal, { scope: 'series', localOnly });
+    },
+  };
+}
+
+function deleteItem(label, series, isPersonal, date, localOnly) {
+  return {
+    label,
+    danger: true,
+    chevron: true,
+    onSelect: () => {
+      if (!isPersonal && !localOnly && !canEditShared()) {
+        toast('Удалять общее у всех можно после установки токена');
+        return;
+      }
+      openDeleteSheet(els.sheet, {
+        event: series,
+        date,
+        upcoming: upcomingFor(series),
+        onConfirm: (op) => (localOnly ? applyLocalOnly(op, series) : applyChange(op, isPersonal)),
+      });
+    },
+  };
+}
+
 function openSeriesMenu(series, isPersonal, date = null) {
   const when = date ? dayHeading(date) : '';
-  openMenu(els.sheet, {
-    title: series.title,
-    subtitle: when,
-    items: [
-      {
-        label: 'Редактировать',
-        chevron: true,
-        onSelect: () => (series.recurrence_rule
-          ? chooseEditScope(series, isPersonal, date)
-          : openEditForm(series, isPersonal, { scope: 'series' })),
+  const reminders = {
+    label: state.reminders[series.event_id] ? 'Напоминания 🔔' : 'Напоминания',
+    chevron: true,
+    onSelect: () => openRemindersSheet(els.sheet, {
+      title: series.title,
+      initial: state.reminders[series.event_id] || [],
+      onSave: (offsets) => {
+        local.setReminders(series.event_id, offsets);
+        state.reminders = local.getReminders();
+        render();
+        syncPush({ interactive: offsets.length > 0, announce: true });
       },
-      {
-        label: state.reminders[series.event_id] ? 'Напоминания 🔔' : 'Напоминания',
-        chevron: true,
-        onSelect: () => openRemindersSheet(els.sheet, {
-          title: series.title,
-          initial: state.reminders[series.event_id] || [],
-          onSave: (offsets) => {
-            local.setReminders(series.event_id, offsets);
-            state.reminders = local.getReminders();
-            render();
-            syncPush({ interactive: offsets.length > 0, announce: true });
-          },
-        }),
-      },
-      {
-        label: 'Удалить',
-        danger: true,
-        chevron: true,
-        onSelect: () => openDeleteSheet(els.sheet, {
-          event: series,
-          date,
-          upcoming: upcomingFor(series),
-          onConfirm: (op) => applyChange(op, isPersonal),
-        }),
-      },
-    ],
-  });
+    }),
+  };
+  const items = isPersonal
+    ? [editItem('Редактировать', series, true, date, false), reminders, deleteItem('Удалить', series, true, date, false)]
+    : [
+      editItem('Изменить у всех', series, false, date, false),
+      editItem('Изменить только у себя', series, false, date, true),
+      reminders,
+      deleteItem('Удалить у всех', series, false, date, false),
+      deleteItem('Удалить только у себя', series, false, date, true),
+    ];
+  openMenu(els.sheet, { title: series.title, subtitle: when, items });
 }
 
 function openEventMenu(occ) {
@@ -211,7 +244,7 @@ function renderPageAt(el, offset) {
   const anchor = shiftAnchor(state.mode, state.anchor, offset);
   const range = rangeForMode(state.mode, anchor);
   const occurrences = eventsForRange({
-    shared: state.shared,
+    shared: visibleShared(),
     personal: state.personal,
     done: state.done,
     settings: state.settings,
@@ -287,31 +320,22 @@ function idsWithNewReminders(op) {
   return [];
 }
 
-function afterChange(op, reminders) {
-  const hadReminders = Object.keys(state.reminders).length > 0;
+function afterChange(op, reminders, { drop = [] } = {}) {
+  const before = state.reminders;
   if (op.type === 'delete') local.deleteReminders(op.id);
+  drop.forEach((id) => local.deleteReminders(id));
   if (reminders) idsWithNewReminders(op).forEach((id) => local.setReminders(id, reminders));
   state.reminders = local.getReminders();
-  if (hadReminders || Object.keys(state.reminders).length) {
-    syncPush({ interactive: Boolean(reminders?.length), announce: Boolean(reminders?.length) });
+  if (Object.keys(before).length || Object.keys(state.reminders).length) {
+    const added = remindersChanged(before, state.reminders);
+    syncPush({ interactive: added, announce: added });
   }
 }
 
-async function applyChange(op, isPersonal, { reminders } = {}) {
-  if (isPersonal) {
-    state.personal = applyOp(state.personal, op);
-    local.setPersonal(state.personal);
-    afterChange(op, reminders);
-    render();
-    toast('Сохранено на этом телефоне');
-    return true;
-  }
+async function commitShared(op) {
   if (LOCAL_DEV) {
     state.shared = applyOp(state.shared, op);
     local.setSharedCache({ sha: state.sha, events: state.shared, settings: state.settings, fetched_at: new Date().toISOString() });
-    afterChange(op, reminders);
-    render();
-    toast('Сохранено (локальный режим, без GitHub)');
     return true;
   }
   toast('Сохраняю…');
@@ -320,14 +344,78 @@ async function applyChange(op, isPersonal, { reminders } = {}) {
     state.shared = events;
     state.sha = sha;
     local.setSharedCache({ sha, events, settings: state.settings, fetched_at: new Date().toISOString() });
-    afterChange(op, reminders);
-    render();
-    toast('Сохранено для обоих телефонов');
     return true;
   } catch (err) {
     toast(err.code === 'offline' ? 'Нет сети — общее событие не сохранено' : errorText(err));
     return false;
   }
+}
+
+const SHARED_SAVED = LOCAL_DEV ? 'Сохранено (локальный режим, без GitHub)' : 'Сохранено для обоих телефонов';
+
+function savePersonal(op) {
+  state.personal = applyOp(state.personal, op);
+  local.setPersonal(state.personal);
+}
+
+function saveHidden(hidden) {
+  state.hidden = hidden;
+  local.setHidden(hidden);
+}
+
+async function applyChange(op, isPersonal, { reminders } = {}) {
+  if (isPersonal) {
+    savePersonal(op);
+    afterChange(op, reminders);
+    render();
+    toast('Сохранено на этом телефоне');
+    return true;
+  }
+  if (!(await commitShared(op))) return false;
+  afterChange(op, reminders);
+  render();
+  toast(SHARED_SAVED);
+  return true;
+}
+
+function applyLocalOnly(op, series, reminders) {
+  const { hideOp, personalOps } = localOnlyChange(op, series);
+  saveHidden(addHidden(state.hidden, hideOp));
+  const personalOp = { type: 'batch', ops: personalOps };
+  savePersonal(personalOp);
+  afterChange(personalOp, reminders, { drop: hideOp.type === 'delete' ? [series.event_id] : [] });
+  render();
+  toast(personalOps.length ? 'Изменено только на этом телефоне' : 'Скрыто только на этом телефоне');
+  return true;
+}
+
+async function convertSeries(series, isPersonal, fields, reminders) {
+  const id = series.event_id;
+  const keepReminders = { type: 'update', id };
+  if (isPersonal) {
+    if (!(await commitShared({ type: 'add', event: convertedEvent(series, fields, 'shared') }))) return false;
+    savePersonal({ type: 'delete', id });
+    afterChange(keepReminders, reminders);
+    render();
+    toast('Теперь это общее событие');
+    return true;
+  }
+  if (!(await commitShared({ type: 'delete', id }))) return false;
+  const { [id]: ignored, ...restHidden } = state.hidden;
+  saveHidden(restHidden);
+  savePersonal({ type: 'add', event: convertedEvent(series, fields, 'personal') });
+  afterChange(keepReminders, reminders);
+  render();
+  toast('Теперь это личное событие — у второго телефона его больше нет');
+  return true;
+}
+
+function restoreHidden(event) {
+  const { [event.event_id]: ignored, ...rest } = state.hidden;
+  saveHidden(rest);
+  render();
+  toast(`«${event.title}» снова видно`);
+  if (Object.keys(state.reminders).length) syncPush();
 }
 
 const PUSH_MESSAGES = {
@@ -345,13 +433,16 @@ function pushProblemText(result) {
 }
 
 function pushArgs() {
+  const shared = visibleShared();
+  // Shared events with days hidden on this phone travel like personal ones, so the server skips those days too.
+  const partlyHidden = shared.filter((e) => Array.isArray(state.hidden[e.event_id]));
   return {
     registration,
     token: getToken(),
     deviceId: local.getDeviceId(),
     reminders: state.reminders,
-    personal: state.personal,
-    shared: state.shared,
+    personal: [...state.personal, ...partlyHidden],
+    shared,
   };
 }
 
@@ -375,11 +466,15 @@ async function testPush() {
 
 function renderEditorScreen() {
   renderEditor(els.screens.editor, {
-    shared: state.shared,
+    shared: visibleShared(),
     personal: state.personal,
+    hidden: state.shared
+      .filter((e) => state.hidden[e.event_id])
+      .map((event) => ({ event, summary: hiddenSummary(state.hidden[event.event_id]) })),
     onBack: () => history.back(),
     onAdd: () => openAddForDate(dateKey(state.anchor)),
     onPick: (event, isPersonal) => openSeriesMenu(event, isPersonal),
+    onRestore: restoreHidden,
   });
 }
 

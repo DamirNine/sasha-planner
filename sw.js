@@ -1,4 +1,4 @@
-const VERSION = '2.4.2';
+const VERSION = '2.5.0';
 const CACHE = `sp-code-${VERSION}`;
 const FILES = [
   './',
@@ -38,6 +38,7 @@ const FILES = [
   './js/reminders.js',
   './js/push.js',
   './js/render/remindersField.js',
+  './js/localOverrides.js',
 ];
 
 self.addEventListener('install', (event) => {

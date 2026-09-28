@@ -15,15 +15,16 @@ export function openAddSheet(sheetEl, {
   showDate = true,
   showRepeat = true,
   canEditShared,
+  initialScope = 'personal',
   onSubmit,
 }) {
   const v = { ...EMPTY, ...initial };
-  let scope = 'personal';
+  let scope = initialScope;
   const close = () => { sheetEl.hidden = true; sheetEl.replaceChildren(); };
 
   const scopeButtons = {
-    personal: h('button', { type: 'button', class: 'active', onclick: () => setScope('personal') }, 'Личное'),
-    shared: h('button', { type: 'button', disabled: !canEditShared, onclick: () => setScope('shared') }, 'Общее'),
+    personal: h('button', { type: 'button', class: scope === 'personal' ? 'active' : '', onclick: () => setScope('personal') }, 'Личное'),
+    shared: h('button', { type: 'button', class: scope === 'shared' ? 'active' : '', disabled: !canEditShared, onclick: () => setScope('shared') }, 'Общее'),
   };
   function setScope(next) {
     scope = next;
