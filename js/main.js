@@ -13,7 +13,7 @@ import { dateKey, toDateOnly } from './dateUtils.js';
 import { consumeSetupHash, extractToken } from './setup.js';
 import { attachPullToRefresh } from './gestures.js';
 import { createPager } from './render/pager.js';
-import { fitTextIn } from './fitText.js';
+import { clampTitlesIn } from './fitText.js';
 import { h } from './render/dom.js';
 import { showToast } from './render/toast.js';
 import { registerServiceWorker, checkForUpdate, isStandalone, isIOS, listenForInstallPrompt, promptInstall } from './pwa.js';
@@ -251,8 +251,7 @@ function renderScheduleScreen() {
 }
 
 function fitGridText() {
-  fitTextIn(els.schedule, '.grid-item', { min: 7, max: 13, step: 0.5 });
-  fitTextIn(els.schedule, '.grid-chip', { min: 7, max: 12, step: 0.5 });
+  clampTitlesIn(els.schedule, '.grid-item', '.gi-title');
 }
 
 window.addEventListener('resize', () => {
