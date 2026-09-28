@@ -1,9 +1,10 @@
 import { h } from './dom.js';
 import { EVENT_TYPES, WEEKDAY_ORDER, WEEKDAY_SHORT_RU } from '../config.js';
+import { remindersField } from './remindersField.js';
 
 const EMPTY = {
   title: '', event_type: 'task', date: '', hasTime: false, start_time: '', end_time: '',
-  place: '', teacher: '', notes: '', repeatDays: [], parity: '',
+  place: '', teacher: '', notes: '', repeatDays: [], parity: '', reminders: [],
 };
 
 export function openAddSheet(sheetEl, {
@@ -46,6 +47,7 @@ export function openAddSheet(sheetEl, {
       h('option', { value: 'NUM' }, 'Только числитель'),
       h('option', { value: 'DEN' }, 'Только знаменатель')),
   };
+  const reminders = remindersField(v.reminders);
   f.type.value = v.event_type;
   f.parity.value = v.parity;
   const timeFields = h('div', { class: 'time-fields', hidden: !v.hasTime },
@@ -77,6 +79,7 @@ export function openAddSheet(sheetEl, {
             notes: f.notes.value,
             repeatDays: showRepeat ? f.days.filter((d) => d.checked).map((d) => d.value) : [],
             parity: showRepeat ? f.parity.value : '',
+            reminders: reminders.getOffsets(),
           },
         });
         if (ok) close();
@@ -101,6 +104,7 @@ export function openAddSheet(sheetEl, {
   showRepeat ? h('div', { class: 'days-picker' }, ...f.days.map((input, i) => h('label', {}, input, WEEKDAY_SHORT_RU[i]))) : null,
   showRepeat ? h('label', {}, 'Какие недели', f.parity) : null,
   h('label', {}, 'Заметка', f.notes),
+  reminders.element,
   error,
   h('div', { class: 'sheet-buttons' },
     h('button', { type: 'button', class: 'secondary', onclick: close }, 'Отмена'),

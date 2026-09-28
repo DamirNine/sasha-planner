@@ -28,3 +28,6 @@ export const MONTHS_GENITIVE_RU = [
 ];
 
 export const MONTHS_SHORT_RU = ['янв', 'фев', 'мар', 'апр', 'мая', 'июн', 'июл', 'авг', 'сен', 'окт', 'ноя', 'дек'];
+
+export const WORKER_URL = 'https://sasha-planner-reminders.sasha-planner-reminders.workers.dev';
+export const VAPID_PUBLIC_KEY = 'BMe8X4lYzTsWIuP8EdTORgvsnGif43NFA3jQ8xy3c_TR5rIWZsRC8FQwCHRKCYHh1PP2wW1LHiXMmneLL-yloH4';

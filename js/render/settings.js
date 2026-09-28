@@ -3,9 +3,17 @@ import { VIEW_MODES } from '../localStore.js';
 
 const TOKEN_LABELS = { ok: 'установлен ✓', missing: 'не установлен', invalid: 'не подходит ✗' };
 
+const NOTIFY_LABELS = {
+  ok: 'включены ✓',
+  ask: 'не включены',
+  denied: 'запрещены в телефоне',
+  unsupported: 'недоступны',
+  'ios-not-installed': 'только в установленном приложении',
+};
+
 const MODE_LABELS = { day1: '1 день', day2: '2 дня', week_grid: 'Неделя', week_list: 'Неделя списком' };
 
-export function renderSettings(el, { mode, tokenStatus, version, onBack, onMode, onSaveToken, onEdit, onUpdate, onExport, onImport }) {
+export function renderSettings(el, { mode, tokenStatus, notifyStatus, version, onBack, onMode, onSaveToken, onEdit, onUpdate, onExport, onImport, onTestPush }) {
   const tokenInput = h('input', { type: 'password', placeholder: 'Вставьте ссылку настройки или токен', autocomplete: 'off' });
   const tokenForm = h('form', {
     class: 'token-form',
@@ -44,6 +52,9 @@ export function renderSettings(el, { mode, tokenStatus, version, onBack, onMode,
         h('span', {}, 'Токен GitHub'),
         h('span', { class: tokenStatus === 'invalid' ? 'danger-text' : 'muted' }, TOKEN_LABELS[tokenStatus])),
       tokenForm),
+    h('div', { class: 'settings-group' },
+      h('div', { class: 'settings-row' }, h('span', {}, 'Уведомления'), h('span', { class: 'muted' }, NOTIFY_LABELS[notifyStatus] || '')),
+      h('button', { type: 'button', class: 'settings-row', onclick: onTestPush }, h('span', {}, 'Прислать тестовое уведомление'), h('span', { class: 'muted' }, '🔔'))),
     h('div', { class: 'settings-group' },
       h('button', { type: 'button', class: 'settings-row', onclick: onUpdate }, h('span', {}, 'Обновить приложение'), h('span', { class: 'muted' }, `версия ${version}`))),
     h('div', { class: 'section-title' }, 'Резервная копия личного'),

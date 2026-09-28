@@ -19,6 +19,8 @@ import { showToast } from './render/toast.js';
 import { registerServiceWorker, checkForUpdate, isStandalone, isIOS, listenForInstallPrompt, promptInstall } from './pwa.js';
 import { APP_VERSION } from './version.js';
 import { renderSettings } from './render/settings.js';
+import { openRemindersSheet } from './render/remindersField.js';
+import { notificationSupport, syncReminders, sendTestPush } from './push.js';
 import { renderDateStrip, highlightStripDay, renderSchedule, observeVisibleDay, stopObservingDays, openDetails, dayHeading } from './render/schedule.js';
 
 const LOCAL_DEV = ['localhost', '127.0.0.1'].includes(location.hostname);
@@ -34,10 +36,13 @@ const state = {
   sha: cache?.sha || null,
   personal: local.getPersonal(),
   done: local.getDone(),
+  reminders: local.getReminders(),
   pendingScroll: dateKey(new Date()),
   tokenInvalid: false,
   tokenWarned: false,
 };
+
+let registration = null;
 
 const els = {
   stickyHead: document.getElementById('sticky-head'),
@@ -112,7 +117,7 @@ function openAddForDate(date) {
       const fields = buildEventFields(values);
       const isPersonal = scope === 'personal';
       const event = makeEvent({ ...fields, source_type: isPersonal ? 'personal' : 'manual' });
-      return applyChange({ type: 'add', event }, isPersonal);
+      return applyChange({ type: 'add', event }, isPersonal, { reminders: values.reminders });
     },
   });
 }
@@ -125,13 +130,13 @@ function openEditForm(series, isPersonal, { scope, dates = [] }) {
   openAddSheet(els.sheet, {
     title: 'Изменить событие',
     submitLabel: 'Сохранить',
-    initial: eventToFormValues(series, scope === 'days' ? { date: dates[0] } : {}),
+    initial: { ...eventToFormValues(series, scope === 'days' ? { date: dates[0] } : {}), reminders: state.reminders[series.event_id] || [] },
     showScope: false,
     showDate: scope === 'series' || dates.length === 1,
     showRepeat: scope === 'series',
     onSubmit: ({ values }) => {
       const fields = buildEventFields(values, { baseRule: series.recurrence_rule });
-      return applyChange(buildEditOp(series, fields, { scope, dates }), isPersonal);
+      return applyChange(buildEditOp(series, fields, { scope, dates }), isPersonal, { reminders: values.reminders });
     },
   });
 }
@@ -169,6 +174,20 @@ function openSeriesMenu(series, isPersonal, date = null) {
           : openEditForm(series, isPersonal, { scope: 'series' })),
       },
       {
+        label: state.reminders[series.event_id] ? 'Напоминания 🔔' : 'Напоминания',
+        chevron: true,
+        onSelect: () => openRemindersSheet(els.sheet, {
+          title: series.title,
+          initial: state.reminders[series.event_id] || [],
+          onSave: (offsets) => {
+            local.setReminders(series.event_id, offsets);
+            state.reminders = local.getReminders();
+            render();
+            syncPush({ interactive: offsets.length > 0, announce: true });
+          },
+        }),
+      },
+      {
         label: 'Удалить',
         danger: true,
         chevron: true,
@@ -198,7 +217,7 @@ function renderPageAt(el, offset) {
     settings: state.settings,
     from: range.from,
     to: range.to,
-  });
+  }).map((occ) => (state.reminders[occ.event_id] ? { ...occ, hasReminder: true } : occ));
   renderSchedule(el, { mode: state.mode, days: range.days, occurrences, onToggle: toggleDone, onOpen: openOccurrence, onMenu: openEventMenu, onAdd: openAddForDate, today: dateKey(new Date()) });
 }
 
@@ -262,10 +281,28 @@ function showScreen(name, { push = true } = {}) {
 
 window.addEventListener('popstate', (e) => showScreen(e.state?.screen || 'schedule', { push: false }));
 
-async function applyChange(op, isPersonal) {
+function idsWithNewReminders(op) {
+  if (op.type === 'add') return [op.event.event_id];
+  if (op.type === 'update') return [op.id];
+  if (op.type === 'batch') return op.ops.filter((o) => o.type === 'add').map((o) => o.event.event_id);
+  return [];
+}
+
+function afterChange(op, reminders) {
+  const hadReminders = Object.keys(state.reminders).length > 0;
+  if (op.type === 'delete') local.deleteReminders(op.id);
+  if (reminders) idsWithNewReminders(op).forEach((id) => local.setReminders(id, reminders));
+  state.reminders = local.getReminders();
+  if (hadReminders || Object.keys(state.reminders).length) {
+    syncPush({ interactive: Boolean(reminders?.length), announce: Boolean(reminders?.length) });
+  }
+}
+
+async function applyChange(op, isPersonal, { reminders } = {}) {
   if (isPersonal) {
     state.personal = applyOp(state.personal, op);
     local.setPersonal(state.personal);
+    afterChange(op, reminders);
     render();
     toast('Сохранено на этом телефоне');
     return true;
@@ -273,6 +310,7 @@ async function applyChange(op, isPersonal) {
   if (LOCAL_DEV) {
     state.shared = applyOp(state.shared, op);
     local.setSharedCache({ sha: state.sha, events: state.shared, settings: state.settings, fetched_at: new Date().toISOString() });
+    afterChange(op, reminders);
     render();
     toast('Сохранено (локальный режим, без GitHub)');
     return true;
@@ -283,6 +321,7 @@ async function applyChange(op, isPersonal) {
     state.shared = events;
     state.sha = sha;
     local.setSharedCache({ sha, events, settings: state.settings, fetched_at: new Date().toISOString() });
+    afterChange(op, reminders);
     render();
     toast('Сохранено для обоих телефонов');
     return true;
@@ -290,6 +329,49 @@ async function applyChange(op, isPersonal) {
     toast(err.code === 'offline' ? 'Нет сети — общее событие не сохранено' : errorText(err));
     return false;
   }
+}
+
+const PUSH_MESSAGES = {
+  auth: 'Для напоминаний нужен токен (Настройки → Токен)',
+  denied: 'Уведомления не разрешены — включите их для приложения в настройках телефона',
+  offline: 'Нет сети — напоминания отправятся на сервер позже',
+  error: 'Сервер напоминаний не ответил — попробуйте позже',
+};
+
+function pushProblemText(result) {
+  const support = notificationSupport();
+  if (result === 'denied' && support === 'ios-not-installed') return 'На iPhone уведомления работают только в установленном приложении';
+  if (result === 'denied' && support === 'unsupported') return 'Этот браузер не поддерживает уведомления';
+  return PUSH_MESSAGES[result] || 'Ошибка';
+}
+
+function pushArgs() {
+  return {
+    registration,
+    token: getToken(),
+    deviceId: local.getDeviceId(),
+    reminders: state.reminders,
+    personal: state.personal,
+    shared: state.shared,
+  };
+}
+
+async function syncPush({ interactive = false, announce = false } = {}) {
+  const result = await syncReminders({ ...pushArgs(), interactive }).catch(() => 'error');
+  if (result === 'ok') {
+    if (announce) toast('Напоминания сохранены 🔔');
+  } else if (announce) {
+    toast(pushProblemText(result));
+  }
+  if (state.screen === 'settings') render();
+  return result;
+}
+
+async function testPush() {
+  toast('Отправляю тестовое уведомление…');
+  const result = await sendTestPush(pushArgs()).catch(() => 'error');
+  toast(result === 'ok' ? 'Отправлено — уведомление придёт через пару секунд' : pushProblemText(result));
+  if (state.screen === 'settings') render();
 }
 
 function renderEditorScreen() {
@@ -351,6 +433,12 @@ async function refreshShared({ silent }) {
 }
 
 history.scrollRestoration = 'manual';
+const openDate = new URLSearchParams(location.search).get('date');
+if (/^\d{4}-\d{2}-\d{2}$/.test(openDate || '')) {
+  state.anchor = toDateOnly(openDate);
+  state.pendingScroll = openDate;
+}
+if (openDate !== null) history.replaceState(null, '', location.pathname + location.hash);
 if (consumeSetupHash()) toast('Токен установлен');
 if (location.hash) history.replaceState(null, '', location.pathname + location.search);
 navigator.storage?.persist?.().catch(() => {});
@@ -373,9 +461,13 @@ document.addEventListener('visibilitychange', () => {
   refreshShared({ silent: true });
 });
 
-let registration = null;
 const SW_ENABLED = !LOCAL_DEV || new URLSearchParams(location.search).has('sw');
-if (SW_ENABLED) registerServiceWorker().then((r) => { registration = r; }).catch(() => {});
+if (SW_ENABLED) {
+  registerServiceWorker().then((r) => {
+    registration = r;
+    if (Object.keys(state.reminders).length) syncPush();
+  }).catch(() => {});
+}
 
 function setupInstallBanner() {
   const banner = document.getElementById('install-banner');
@@ -454,8 +546,10 @@ function renderSettingsScreen() {
   renderSettings(els.screens.settings, {
     mode: state.mode,
     tokenStatus: !getToken() ? 'missing' : state.tokenInvalid ? 'invalid' : 'ok',
+    notifyStatus: notificationSupport(),
     version: APP_VERSION,
     onBack: () => history.back(),
+    onTestPush: testPush,
     onMode: (mode) => {
       state.mode = mode;
       local.setViewMode(mode);
@@ -471,6 +565,7 @@ function renderSettingsScreen() {
       toast('Токен сохранён');
       render();
       refreshShared({ silent: true });
+      if (Object.keys(state.reminders).length) syncPush();
     },
     onEdit: () => showScreen('editor'),
     onUpdate: updateApp,

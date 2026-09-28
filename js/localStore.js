@@ -1,3 +1,5 @@
+import { normalizeOffsets } from './reminders.js';
+
 export const VIEW_MODES = ['day1', 'day2', 'week_grid', 'week_list'];
 
 const KEYS = {
@@ -6,6 +8,8 @@ const KEYS = {
   cache: 'sp_shared_cache',
   view: 'sp_view_mode',
   banner: 'sp_banner_dismissed',
+  reminders: 'sp_reminders',
+  device: 'sp_device_id',
 };
 const EXPORT_FORMAT = 'sasha-planner-personal';
 
@@ -45,6 +49,17 @@ export function createLocalStore(storage = globalThis.localStorage) {
   const setPersonal = (events) => safeSet(storage, KEYS.personal, JSON.stringify(events));
   const getDone = () => new Set(readArray(storage, KEYS.done).filter((k) => typeof k === 'string'));
   const saveDone = (set) => safeSet(storage, KEYS.done, JSON.stringify([...set]));
+  const getReminders = () => {
+    const v = readJson(storage, KEYS.reminders);
+    if (!v || typeof v !== 'object' || Array.isArray(v)) return {};
+    const out = {};
+    for (const [id, offsets] of Object.entries(v)) {
+      const clean = normalizeOffsets(offsets);
+      if (clean.length) out[id] = clean;
+    }
+    return out;
+  };
+  const saveReminders = (map) => safeSet(storage, KEYS.reminders, JSON.stringify(map));
 
   return {
     getPersonal,
@@ -67,6 +82,33 @@ export function createLocalStore(storage = globalThis.localStorage) {
       return VIEW_MODES.includes(v) ? v : 'day1';
     },
     setViewMode: (mode) => safeSet(storage, KEYS.view, mode),
+    getReminders,
+    setReminders(id, offsets) {
+      const map = getReminders();
+      const clean = normalizeOffsets(offsets);
+      if (clean.length) map[id] = clean;
+      else delete map[id];
+      saveReminders(map);
+    },
+    copyReminders(fromId, toIds) {
+      const map = getReminders();
+      if (!map[fromId]) return;
+      toIds.forEach((id) => { map[id] = [...map[fromId]]; });
+      saveReminders(map);
+    },
+    deleteReminders(id) {
+      const map = getReminders();
+      delete map[id];
+      saveReminders(map);
+    },
+    getDeviceId() {
+      let id = safeGet(storage, KEYS.device);
+      if (!id) {
+        id = crypto.randomUUID();
+        safeSet(storage, KEYS.device, id);
+      }
+      return id;
+    },
     isBannerDismissed: () => safeGet(storage, KEYS.banner) === '1',
     dismissBanner: () => safeSet(storage, KEYS.banner, '1'),
     exportPersonal() {

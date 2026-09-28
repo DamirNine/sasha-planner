@@ -70,6 +70,7 @@ export function fullCard(occ, onToggle, onMenu) {
     h('div', { class: 'title' }, hyphenate(occ.title)),
     occ.notes ? h('div', { class: 'notes' }, occ.notes) : null,
     occ.isPersonal ? h('span', { class: 'badge' }, 'личное') : null,
+    occ.hasReminder ? h('span', { class: 'bell', 'aria-label': 'Есть напоминание' }, '🔔') : null,
     checkButton(occ, onToggle),
     onMenu ? moreButton(occ, onMenu) : null);
 }
@@ -104,7 +105,7 @@ function compactCard(occ, { onToggle, onOpen, onMenu }) {
     onclick: () => onOpen(occ),
   },
   h('div', { class: 'time' }, timeRange(occ) || 'Без времени'),
-  h('div', { class: 'title' }, hyphenate(occ.title)),
+  h('div', { class: 'title' }, occ.hasReminder ? '🔔 ' : '', hyphenate(occ.title)),
   occ.place ? h('div', { class: 'place' }, occ.place) : null,
   checkButton(occ, onToggle),
   moreButton(occ, onMenu));
@@ -156,7 +157,7 @@ function weekGrid(days, occurrences, { onOpen, onAdd }, today) {
           borderLeftColor: typeColor(it.occ.event_type),
         },
         onclick: () => onOpen(it.occ),
-      }, h('span', { class: 'gi-title' }, hyphenate(it.occ.title)), it.occ.place ? h('span', { class: 'gi-place' }, it.occ.place) : null)));
+      }, h('span', { class: 'gi-title' }, it.occ.hasReminder ? '🔔' : '', hyphenate(it.occ.title)), it.occ.place ? h('span', { class: 'gi-place' }, it.occ.place) : null)));
     }));
   return h('div', { class: 'week-grid' }, head, untimedRow, body);
 }
