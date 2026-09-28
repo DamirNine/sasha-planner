@@ -135,7 +135,7 @@ function weekGrid(days, occurrences, { onOpen, onAdd }, today) {
     ? h('div', { class: 'grid grid-untimed' }, h('div'), ...days.map((key) => h('div', {},
       ...untimed.filter((o) => o.date === key).map((o) => h('button', {
         type: 'button', class: `grid-chip${o.isDone ? ' done' : ''}`, onclick: () => onOpen(o),
-      }, hyphenate(o.title))))))
+      }, h('span', { class: 'gi-title' }, o.hasReminder ? '🔔' : '', hyphenate(o.title)))))))
     : null;
   const body = h('div', { class: 'grid grid-body', style: { height: `${height}px` } },
     h('div', { class: 'grid-hours' }, ...hours),
