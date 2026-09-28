@@ -35,6 +35,12 @@ export function applyOp(events, op, now = new Date().toISOString()) {
         const dates = [...new Set([...(e.excluded_dates || []), ...op.dates])].sort();
         return { ...e, excluded_dates: dates, updated_at: now };
       });
+    case 'include':
+      return events.map((e) => {
+        if (e.event_id !== op.id) return e;
+        const back = new Set(op.dates);
+        return { ...e, excluded_dates: (e.excluded_dates || []).filter((d) => !back.has(d)), updated_at: now };
+      });
     case 'delete':
       return events.filter((e) => e.event_id !== op.id);
     case 'update':

@@ -1,4 +1,4 @@
-const VERSION = '2.5.0';
+const VERSION = '2.5.1';
 const CACHE = `sp-code-${VERSION}`;
 const FILES = [
   './',

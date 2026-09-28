@@ -5,6 +5,7 @@ import { applyOp, normalizeEvents } from './eventOps.js';
 const COMMIT_MESSAGES = {
   add: 'Добавлено общее событие',
   exclude: 'Удалены дни общего события',
+  include: 'Возвращены дни общего события',
   delete: 'Удалено общее событие',
   update: 'Изменено общее событие',
   batch: 'Изменено общее событие',

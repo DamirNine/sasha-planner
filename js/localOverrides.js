@@ -18,6 +18,15 @@ export function addHidden(hidden, op) {
   return { ...hidden, [op.id]: [...new Set([...(current || []), ...op.dates])].sort() };
 }
 
+// allDays: every day of the series, needed only when the whole series was hidden and just some days come back.
+export function removeHidden(hidden, id, dates, allDays = []) {
+  const { [id]: current, ...rest } = hidden;
+  if (dates === 'all' || current === undefined) return rest;
+  const back = new Set(dates);
+  const stay = (current === 'all' ? allDays : current).filter((d) => !back.has(d));
+  return stay.length ? { ...rest, [id]: stay } : rest;
+}
+
 export function localOnlyChange(op, series, { makeId } = {}) {
   if (op.type === 'delete' || op.type === 'exclude') return { hideOp: op, personalOps: [] };
   if (op.type === 'update') {

@@ -22,7 +22,7 @@ import { renderSettings } from './render/settings.js';
 import { openRemindersSheet } from './render/remindersField.js';
 import { notificationSupport, syncReminders, sendTestPush } from './push.js';
 import { remindersChanged } from './reminders.js';
-import { applyHidden, addHidden, localOnlyChange, convertedEvent, hiddenSummary } from './localOverrides.js';
+import { applyHidden, addHidden, removeHidden, localOnlyChange, convertedEvent, hiddenSummary } from './localOverrides.js';
 import { renderDateStrip, highlightStripDay, renderSchedule, observeVisibleDay, stopObservingDays, openDetails, dayHeading } from './render/schedule.js';
 
 const LOCAL_DEV = ['localhost', '127.0.0.1'].includes(location.hostname);
@@ -223,16 +223,18 @@ function openSeriesMenu(series, isPersonal, date = null) {
       },
     }),
   };
+  const restore = restoreDeletedItem(series, isPersonal);
   const items = isPersonal
-    ? [editItem('Редактировать', series, true, date, false), reminders, deleteItem('Удалить', series, true, date, false)]
+    ? [editItem('Редактировать', series, true, date, false), reminders, restore, deleteItem('Удалить', series, true, date, false)]
     : [
       editItem('Изменить у всех', series, false, date, false),
       editItem('Изменить только у себя', series, false, date, true),
       reminders,
+      restore,
       deleteItem('Удалить у всех', series, false, date, false),
       deleteItem('Удалить только у себя', series, false, date, true),
     ];
-  openMenu(els.sheet, { title: series.title, subtitle: when, items });
+  openMenu(els.sheet, { title: series.title, subtitle: when, items: items.filter(Boolean) });
 }
 
 function openEventMenu(occ) {
@@ -410,12 +412,69 @@ async function convertSeries(series, isPersonal, fields, reminders) {
   return true;
 }
 
+function seriesDays(event) {
+  return state.settings ? occurrenceDates(event, state.settings, state.settings.reference_monday, state.settings.semester_end_date) : [];
+}
+
+function restoredText(dates) {
+  return dates.length === 1 ? `Вернули: ${dayHeading(dates[0]).toLowerCase()}` : `Вернули дней: ${dates.length}`;
+}
+
+function chooseDaysToRestore({ title, dates, onRestore }) {
+  if (dates.length <= 1) {
+    onRestore(dates);
+    return;
+  }
+  openMenu(els.sheet, {
+    title,
+    subtitle: 'Какие дни вернуть?',
+    items: [
+      { label: `Все дни (${dates.length})`, onSelect: () => onRestore(dates) },
+      {
+        label: 'Выбрать дни',
+        chevron: true,
+        onSelect: () => openDayPicker(els.sheet, { title: 'Какие дни вернуть?', days: dates, confirmLabel: 'Вернуть', onConfirm: onRestore }),
+      },
+    ],
+  });
+}
+
 function restoreHidden(event) {
-  const { [event.event_id]: ignored, ...rest } = state.hidden;
-  saveHidden(rest);
-  render();
-  toast(`«${event.title}» снова видно`);
-  if (Object.keys(state.reminders).length) syncPush();
+  const value = state.hidden[event.event_id];
+  const days = value === 'all' ? seriesDays(event) : value;
+  chooseDaysToRestore({
+    title: event.title,
+    dates: days,
+    onRestore: (dates) => {
+      saveHidden(removeHidden(state.hidden, event.event_id, dates.length ? dates : 'all', days));
+      render();
+      toast(dates.length ? restoredText(dates) : `«${event.title}» снова видно`);
+      if (Object.keys(state.reminders).length) syncPush();
+    },
+  });
+}
+
+function restoreDeletedItem(series, isPersonal) {
+  const raw = isPersonal ? series : state.shared.find((e) => e.event_id === series.event_id) || series;
+  const deleted = raw.recurrence_rule ? [...(raw.excluded_dates || [])].sort() : [];
+  if (!deleted.length) return null;
+  return {
+    label: isPersonal ? `Вернуть удалённые дни (${deleted.length})` : `Вернуть дни, удалённые у всех (${deleted.length})`,
+    chevron: true,
+    onSelect: () => {
+      if (!isPersonal && !canEditShared()) {
+        toast('Возвращать дни у всех можно после установки токена');
+        return;
+      }
+      chooseDaysToRestore({
+        title: series.title,
+        dates: deleted,
+        onRestore: async (dates) => {
+          if (await applyChange({ type: 'include', id: series.event_id, dates }, isPersonal)) toast(restoredText(dates));
+        },
+      });
+    },
+  };
 }
 
 const PUSH_MESSAGES = {
