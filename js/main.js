@@ -207,9 +207,8 @@ function deleteItem(label, series, isPersonal, date, localOnly) {
   };
 }
 
-function openSeriesMenu(series, isPersonal, date = null) {
-  const when = date ? dayHeading(date) : '';
-  const reminders = {
+function remindersItem(series) {
+  return {
     label: state.reminders[series.event_id] ? 'Напоминания 🔔' : 'Напоминания',
     chevron: true,
     onSelect: () => openRemindersSheet(els.sheet, {
@@ -223,6 +222,11 @@ function openSeriesMenu(series, isPersonal, date = null) {
       },
     }),
   };
+}
+
+function openSeriesMenu(series, isPersonal, date = null) {
+  const when = date ? dayHeading(date) : '';
+  const reminders = remindersItem(series);
   const restore = restoreDeletedItem(series, isPersonal);
   const items = isPersonal
     ? [editItem('Редактировать', series, true, date, false), reminders, restore, deleteItem('Удалить', series, true, date, false)]
@@ -237,9 +241,37 @@ function openSeriesMenu(series, isPersonal, date = null) {
   openMenu(els.sheet, { title: series.title, subtitle: when, items: items.filter(Boolean) });
 }
 
+// ⋮ on a card: two top buttons, the concrete actions one level down.
 function openEventMenu(occ) {
   const series = findSeries(occ.event_id, occ.isPersonal);
-  if (series) openSeriesMenu(series, occ.isPersonal, occ.date);
+  if (!series) return;
+  const { isPersonal, date } = occ;
+  const title = series.title;
+  const subtitle = dayHeading(date);
+  const submenu = (items) => () => openMenu(els.sheet, { title, subtitle, items });
+  const editItems = isPersonal
+    ? [editItem('Изменить', series, true, date, false), remindersItem(series)]
+    : [
+      editItem('Изменить у всех', series, false, date, false),
+      editItem('Изменить только у себя', series, false, date, true),
+      remindersItem(series),
+    ];
+  const del = isPersonal
+    ? deleteItem('Удалить', series, true, date, false)
+    : {
+      label: 'Удалить',
+      danger: true,
+      chevron: true,
+      onSelect: submenu([
+        deleteItem('Удалить у всех', series, false, date, false),
+        deleteItem('Удалить только у себя', series, false, date, true),
+      ]),
+    };
+  openMenu(els.sheet, {
+    title,
+    subtitle,
+    items: [{ label: 'Редактировать', chevron: true, onSelect: submenu(editItems) }, del],
+  });
 }
 
 function renderPageAt(el, offset) {
