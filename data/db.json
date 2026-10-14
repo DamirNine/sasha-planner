@@ -558,24 +558,6 @@
     "excluded_dates": []
   },
   {
-    "event_id": "weekly-tutoring-fri",
-    "source_type": "recurring",
-    "date": "2026-09-04",
-    "start_time": "18:00",
-    "end_time": "20:30",
-    "title": "Репетиторство",
-    "event_type": "tutoring",
-    "place": "",
-    "teacher": "",
-    "progress_group": "required",
-    "priority": "",
-    "recurrence_rule": "FREQ=WEEKLY;BYDAY=FR",
-    "notes": "",
-    "created_at": "2026-09-15T00:00:00.000Z",
-    "updated_at": "2026-09-15T00:00:00.000Z",
-    "excluded_dates": []
-  },
-  {
     "event_id": "weekly-consultation-fri",
     "source_type": "recurring",
     "date": "2026-09-04",
